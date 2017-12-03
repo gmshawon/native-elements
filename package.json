@@ -20,11 +20,11 @@
     "node": ">=6"
   },
   "scripts": {
-    "lint": "stylelint pcss/*.pcss",
-    "minify": "minify dist/hiq.css --output dist/hiq.min.css",
-    "precommit": "npm run lint && npm run postcss && npm run minify",
-    "postcss": "postcss elements/**/*.pcss -d ./ -b ./elements -r hue",
-    "watch": "npm run lint && npm run postcss -- --watch",
+    "lint": "stylelint elements/**/*.pcss",
+    "minify": "minify dist/nue.css --output dist/nue.min.css",
+    "precommit": "yarn lint && yarn postcss && yarn minify",
+    "build": "postcss elements/nue/src/*.pcss -o ./dist/nue.css",
+    "watch": "yarn lint && yarn postcss -- --watch",
     "release": "git pull && standard-version"
   },
   "files": [

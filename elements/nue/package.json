@@ -1,8 +1,8 @@
 {
-  "name": "nue-button",
+  "name": "nue-elements",
   "version": "0.0.1",
   "description": "button elements from Native UI Elements",
-  "main": "src/nue-button.pcss",
+  "main": "src/nue.pcss",
   "author": {
     "name": "Equinusocio",
     "url": "http://equinsuocha.io"
