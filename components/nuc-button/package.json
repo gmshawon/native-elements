@@ -1,0 +1,11 @@
+{
+  "name": "nuc-button",
+  "version": "0.0.1",
+  "description": "button elements from Native UI Components",
+  "main": "src/button.pcss",
+  "author": {
+    "name": "Equinusocio",
+    "url": "http://equinsuocha.io"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,2 +1,2 @@
 # native-elements
-Native HTML elements with CSS super powers.
+Native HTML elements with CSS superpowers.

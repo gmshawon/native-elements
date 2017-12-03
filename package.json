@@ -1,12 +1,12 @@
 {
   "name": "native-elements",
   "version": "0.0.0",
-  "description": "Native UI kit elements with CSS super powers.",
-  "license": "MIT",
+  "description": "Native UI Components with CSS superpowers. ",
+  "license": "Apache-2.0",
   "repository": "equinusocio/native-elements",
   "private": true,
   "workspaces": [
-    "elements/*"
+    "components/*"
   ],
   "bugs": {
     "url": "https://github.com/equinusocio/native-elements/issues"
