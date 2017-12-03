@@ -1,12 +1,12 @@
 {
   "name": "native-elements",
   "version": "0.0.0",
-  "description": "Native UI Components with CSS superpowers. ",
+  "description": "Native UI Elements with CSS superpowers. ",
   "license": "Apache-2.0",
   "repository": "equinusocio/native-elements",
   "private": true,
   "workspaces": [
-    "components/*"
+    "elements/*"
   ],
   "bugs": {
     "url": "https://github.com/equinusocio/native-elements/issues"
@@ -22,14 +22,9 @@
   "scripts": {
     "lint": "stylelint pcss/*.pcss",
     "minify": "minify dist/hiq.css --output dist/hiq.min.css",
-    "precommit": "npm run lint && npm run postcss && npm run minify && npm run docs-lint && npm run docs-postcss && npm run docs-minify",
-    "postcss": "postcss pcss/hiq.pcss -o dist/hiq.css",
+    "precommit": "npm run lint && npm run postcss && npm run minify",
+    "postcss": "postcss elements/**/*.pcss -d ./ -b ./elements -r hue",
     "watch": "npm run lint && npm run postcss -- --watch",
-    "docs-lint": "stylelint assets/pcss/*.pcss",
-    "docs-minify": "minify assets/build/docs.css --output assets/build/docs.min.css",
-    "docs-postcss": "postcss assets/css/docs.pcss -o assets/build/docs.css",
-    "docs-watch": "npm run docs-lint && npm run docs-postcss -- --watch",
-    "docs-generate": "bundle exec jekyll serve",
     "release": "git pull && standard-version"
   },
   "files": [
@@ -47,12 +42,10 @@
   ],
   "devDependencies": {
     "autoprefixer": "7.1.6",
-    "postcss-css-variables": "0.8.0",
     "minifier": "0.8.1",
     "postcss": "6.0.14",
     "postcss-cli": "4.1.1",
     "postcss-custom-media": "6.0.0",
-    "postcss-custom-selectors": "4.0.1",
     "postcss-discard-comments": "2.0.4",
     "postcss-easy-import": "3.0.0",
     "postcss-loader": "2.0.8",

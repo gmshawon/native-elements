@@ -1,0 +1,126 @@
+button,
+[role='button'],
+[type='button'],
+[type='submit'],
+[type='reset'] {
+  /* Border API */
+  --buttonBorder: var(--x-button-border, 0);
+  --buttonHoverBorder: var(--x-button-hover-border, 0);
+  --buttonFocusBorder: var(--x-button-focus-border, 0);
+  --buttonActiveBorder: var(--x-button-active-border, 0);
+  --buttonDisabledBorder: var(--x-button-disabled-border, 0);
+
+  /* Background API */
+  --buttonBackground: var(--x-button-background, hsl(233, 64%, 62%));
+  --buttonHoverBackground: var(--x-button-hover-background, hsl(233, 64%, 52%));
+  --buttonFocusBackground: var(--x-button-focus-background, hsl(233, 64%, 52%));
+  --buttonActiveBackground: var(--x-button-active-background, hsl(233, 64%, 32%));
+  --buttonDisabledBackground: var(--x-button-disabled-background, hsl(220, 10%, 95%));
+
+  /* Foreground API */
+  --buttonForeground: var(--x-button-foreground, #FFF);
+  --buttonHoverForeground: var(--x-button-hover-foreground, #FFF);
+  --buttonFocusForeground: var(--x-button-focus-foreground, #FFF);
+  --buttonActiveForeground: var(--x-button-active-foreground, #FFF);
+  --buttonDisabledForeground: var(--x-button-disabled-foreground, hsl(220, 10%, 60%));
+
+  /* Icon API */
+  --buttonIconMargin: var(--x-button-icon-margin, calc(2rem / 2.2));
+  --buttonIconSeparator: var(--x-button-icon-separator, rgba(255, 255, 255, 0.3));
+  --buttonDisabledIconSeparator: var(--x-button-disabled-icon-separator, rgba(143, 150, 163, 0.3));
+
+  /* Misc API */
+  --buttonBorderRadius: var(--x-button-radius, 5px);
+  --buttonFontWeight: var(--x-button-font-weight, 700);
+  --buttonFontSize: var(--x-button-font-size, inherit);
+  --buttonPadding: var(--x-button-y-padding, 1rem) var(--x-button-x-padding, 2rem);
+  --buttonOutlineColor: var(--x-button-outline-color, hsl(233, 64%, 82%));
+  --buttonShadow: var(--x-button-shadow, 0 1px 2px rgba(0, 0, 0, 0.16));
+
+  box-sizing: border-box;
+  appearance: button;
+  user-select: none;
+  -webkit-touch-callout: none;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: hinerit;
+  text-decoration: none;
+  outline: none;
+  white-space: nowrap;
+  border: var(--buttonBorder);
+  background: var(--buttonBackground);
+  border-radius: var(--buttonBorderRadius);
+  font-weight: var(--buttonFontWeight);
+  color: var(--buttonForeground);
+  padding: var(--buttonPadding);
+  font-size: var(--buttonFontSize);
+  box-shadow: var(--buttonShadow);
+
+  &:hover {
+    border-color: var(--buttonHoverBorder);
+    background-color: var(--buttonHoverBackground);
+    color: var(--buttonHoverForeground);
+  }
+
+  /* Simulate focus outline with box-shadow */
+  &:focus,
+  &:active {
+    box-shadow: 0 0 0 0.2rem var(--buttonOutlineColor);
+  }
+
+  &:focus {
+    border: var(--buttonFocusBorder);
+    background: var(--buttonFocusBackground);
+    color: var(--buttonFocusForeground);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    border: var(--buttonActiveBorder);
+    background: var(--buttonActiveBackground);
+    color: var(--buttonActiveForeground);
+  }
+
+  &:disabled,
+  &[aria-disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    border: var(--buttonDisabledBorder);
+    background: var(--buttonDisabledBackground);
+    color: var(--buttonDisabledForeground);
+  }
+}
+
+/*
+:host-context(fieldset[disabled]) [role='button'] {
+  pointer-events: none;
+}
+
+
+.Icon {
+  display: block;
+  color: inherit;
+  fill: inherit;
+  margin-right: var(--buttonIconMargin);
+  padding-right: var(--buttonIconMargin);
+  border-right: 1px solid var(--buttonIconSeparator);
+
+
+  @nest :host([icon-right]) & {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+    margin-left: var(--buttonIconMargin);
+    padding-left: var(--buttonIconMargin);
+    border-left: 1px solid var(--buttonIconSeparator);
+  }
+
+  @nest [disabled] & {
+    border-right: 1px solid var(--buttonDisabledIconSeparator);
+  }
+}
+*/

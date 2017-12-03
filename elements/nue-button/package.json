@@ -1,7 +1,7 @@
 {
   "name": "nuc-button",
   "version": "0.0.1",
-  "description": "button elements from Native UI Components",
+  "description": "button elements from Native UI Elements",
   "main": "src/button.pcss",
   "author": {
     "name": "Equinusocio",
