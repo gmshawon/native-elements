@@ -1,7 +1,7 @@
 {
   "name": "native-elements",
   "version": "0.0.0",
-  "description": "Native HTML elements with CSS superpowers",
+  "description": "Native UI kit elements with CSS super powers.",
   "license": "MIT",
   "repository": "equinusocio/native-elements",
   "private": true,
@@ -41,7 +41,9 @@
     "html",
     "css",
     "native",
-    "npm"
+    "npm",
+    "ui",
+    "kit"
   ],
   "devDependencies": {
     "autoprefixer": "7.1.6",
