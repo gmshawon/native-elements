@@ -20,6 +20,8 @@
     "node": ">=6"
   },
   "scripts": {
+    "build": "node scripts/postcss",
+    "dev": "node scripts/postcss watch",
     "lint": "stylelint elements/**/*.pcss",
     "minify": "minify dist/nue.css --output dist/nue.min.css",
     "watch": "yarn lint && yarn postcss -- --watch",
@@ -39,8 +41,10 @@
     "kit"
   ],
   "devDependencies": {
-    "husky": "0.14.3",
     "autoprefixer": "7.1.6",
+    "chokidar": "1.7.0",
+    "glob-fs": "0.1.7",
+    "husky": "0.14.3",
     "minifier": "0.8.1",
     "postcss": "6.0.14",
     "postcss-cli": "4.1.1",
