@@ -22,6 +22,8 @@
   "scripts": {
     "lint": "stylelint elements/**/*.pcss",
     "minify": "minify dist/nue.css --output dist/nue.min.css",
+    "prot": "yarn lint && yarn postcss && yarn minify",
+    "postcss": "node ./scripts/postcss.js",
     "watch": "yarn lint && yarn postcss -- --watch",
     "release": "git pull && standard-version"
   },

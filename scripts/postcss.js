@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 const postcss = require('postcss');
 const postcssrc = require('postcss-load-config');
 
-const folder = './elements/**/*.pcss';
+const folder = './elements';
 const outputFolder = './out';
 
 const run = async () => {
@@ -12,7 +12,7 @@ const run = async () => {
     const fileContent = await fs.readFile(`${folder}/${file}`, 'utf8');
     const {css} = await postcssrc().then(({plugins}) => postcss(plugins).process(fileContent));
     await fs.ensureDir(outputFolder);
-    await fs.writeFile(`${outputFolder}/${file.replace('postcss', 'css')}`, css);
+    await fs.writeFile(`${outputFolder}/${file.replace('pcss', 'css')}`, css);
   });
 }
 
