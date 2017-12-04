@@ -17,7 +17,7 @@
     "url": "http://equinsuocha.io"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
     "build": "node scripts/postcss",
