@@ -22,8 +22,6 @@
   "scripts": {
     "lint": "stylelint elements/**/*.pcss",
     "minify": "minify dist/nue.css --output dist/nue.min.css",
-    "precommit": "yarn lint && yarn postcss && yarn minify",
-    "build": "postcss elements/nue/src/*.pcss -o ./dist/nue.css",
     "watch": "yarn lint && yarn postcss -- --watch",
     "release": "git pull && standard-version"
   },
@@ -41,6 +39,7 @@
     "kit"
   ],
   "devDependencies": {
+    "husky": "0.14.3",
     "autoprefixer": "7.1.6",
     "minifier": "0.8.1",
     "postcss": "6.0.14",
