@@ -24,9 +24,6 @@ const _process = async file => {
   return true;
 };
 
-/** Build single file changed component */
-const _buildSingleFile = async pathToFile => _process(pathToFile);
-
 /** dev command */
 const dev = folder => {
   const watcher = chokidar.watch(folder, {
@@ -40,7 +37,7 @@ const dev = folder => {
 
   return watcher
     .on('add', sourcePath => console.log(`PostCSS Watcher: file ${sourcePath} has been added`))
-    .on('change', async sourcePath => console.log(`Building: ${sourcePath}`, await _buildSingleFile(sourcePath)))
+    .on('change', async sourcePath => console.log(`Building: ${sourcePath}`, await _process(sourcePath)))
     .on('unlink', sourcePath => console.log(`PostCSS Watcher: File ${sourcePath} has been removed`));
 };
 
