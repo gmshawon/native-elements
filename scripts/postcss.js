@@ -6,11 +6,11 @@ const chokidar = require('chokidar');
 const postcss = require('postcss');
 const postcssrc = require('postcss-load-config');
 
-const isDev = process.argv.find(arg => arg.includes('watch'));
+const IS_DEV = process.argv.find(arg => arg.includes('watch'));
 const elementArg = process.argv.find(arg => arg.includes('element='));
 const element = elementArg ? elementArg.replace('element=', '') : null;
 
-const folder = element ? `./elements/${element}/**/*.pcss` : './elements/**/*.pcss';
+const FOLDER = element ? `./elements/${element}/**/*.pcss` : './elements/**/*.pcss';
 
 const _process = async file => {
   const cssFile = file.replace('postcss', 'css').replace('src', 'dist');
@@ -28,7 +28,7 @@ const _process = async file => {
 const _buildSingleFile = async pathToFile => _process(pathToFile);
 
 /** dev command */
-const dev = () => {
+const dev = folder => {
   const watcher = chokidar.watch(folder, {
     ignored: /dist/,
     persistent: true,
@@ -45,12 +45,12 @@ const dev = () => {
 };
 
 /** Build command */
-const build = async () => {
+const build = async folder => {
   const files = glob.readdirSync(folder);
   files.forEach(async file => _process(file));
 };
 
 const main = () =>
-  isDev ? dev() : build().catch(err => console.error(err));
+  IS_DEV ? dev(FOLDER) : build(FOLDER).catch(err => console.error(err));
 
 main();
