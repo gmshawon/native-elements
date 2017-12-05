@@ -13,7 +13,7 @@ const element = elementArg ? elementArg.replace('element=', '') : null;
 const FOLDER = element ? `./elements/${element}/**/*.pcss` : './elements/**/*.pcss';
 
 const _process = async file => {
-  const cssFile = file.replace('postcss', 'css').replace('src', 'dist');
+  const cssFile = file.replace('pcss', 'css').replace('src', 'dist');
   const fileContent = await fs.readFile(file, 'utf8');
   const res = await postcssrc()
     .then(({plugins}) => postcss(plugins).process(fileContent, {from: file, to: cssFile}));
@@ -33,7 +33,7 @@ const dev = folder => {
       stabilityThreshold: 1000,
       pollInterval: 100
     }
-});
+  });
 
   return watcher
     .on('add', sourcePath => console.log(`PostCSS Watcher: file ${sourcePath} has been added`))

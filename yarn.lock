@@ -314,7 +314,7 @@ chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0:
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
 
-chokidar@^1.6.1, chokidar@^1.7.0:
+chokidar@1.7.0, chokidar@^1.6.1:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
   dependencies:
@@ -1040,7 +1040,7 @@ glob-fs-gitignore@^0.1.5:
     micromatch "^2.3.11"
     parse-gitignore "^0.2.0"
 
-glob-fs@^0.1.7:
+glob-fs@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/glob-fs/-/glob-fs-0.1.7.tgz#9a7ebbfc694fae9cebec5d59dace93ecfb364f26"
   dependencies:
@@ -1716,7 +1716,7 @@ micromatch@^2.1.5, micromatch@^2.3.11, micromatch@^2.3.7:
     parse-glob "^3.0.4"
     regex-cache "^0.4.2"
 
-micromatch@jonschlinkert/micromatch#2.2.0:
+"micromatch@github:jonschlinkert/micromatch#2.2.0":
   version "2.2.0"
   resolved "https://codeload.github.com/jonschlinkert/micromatch/tar.gz/5017fd78202e04c684cc31d3c2fb1f469ea222ff"
   dependencies:
