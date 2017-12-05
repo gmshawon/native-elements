@@ -33,7 +33,7 @@ const dev = folder => {
       stabilityThreshold: 1000,
       pollInterval: 100
     }
-  });
+});
 
   return watcher
     .on('add', sourcePath => console.log(`PostCSS Watcher: file ${sourcePath} has been added`))
