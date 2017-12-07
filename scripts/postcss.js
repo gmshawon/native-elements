@@ -22,7 +22,7 @@ const _process = async file => {
   await fs.ensureDir(dirname(cssFile));
   await fs.remove(cssFile);
   await fs.writeFile(cssFile, res.css);
-  return chalk.green('✔');
+  return chalk.green('[ updated ]');
 };
 
 /** dev command */
@@ -37,12 +37,12 @@ const dev = folder => {
   });
 
   return watcher
-    .on('add', sourcePath => console.log(sourcePath, chalk.green('[ added ✔ ]')))
+    .on('add', sourcePath => console.log('—', sourcePath, chalk.green('[ added ]')))
     .on('change', async sourcePath => {
-      console.log(sourcePath, await _process(sourcePath))
-      console.log('nue.css', await _process('./elements/nue/src/nue.pcss'))
+      console.log('—', sourcePath, await _process(sourcePath))
+      console.log('—', 'nue.css', await _process('./elements/nue/src/nue.pcss'))
     })
-    .on('unlink', sourcePath => console.log(sourcePath, chalk.red('[ removed ]')));
+    .on('unlink', sourcePath => console.log('—', sourcePath, chalk.red('[ removed ]')));
 };
 
 /** Build command */
