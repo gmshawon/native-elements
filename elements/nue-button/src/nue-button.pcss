@@ -1,41 +1,38 @@
 button,
-[role='button'],
-[type='button'],
-[type='submit'],
-[type='reset'] {
+[role='button'] {
   /* Border API */
-  --buttonBorder: var(--x-button-border, 0);
-  --buttonHoverBorder: var(--x-button-hover-border, 0);
-  --buttonFocusBorder: var(--x-button-focus-border, 0);
-  --buttonActiveBorder: var(--x-button-active-border, 0);
-  --buttonDisabledBorder: var(--x-button-disabled-border, 0);
+  --buttonBorder: var(--nue-button-border, 0);
+  --buttonHoverBorder: var(--nue-button-hover-border, 0);
+  --buttonFocusBorder: var(--nue-button-focus-border, 0);
+  --buttonActiveBorder: var(--nue-button-active-border, 0);
+  --buttonDisabledBorder: var(--nue-button-disabled-border, 0);
 
   /* Background API */
-  --buttonBackground: var(--x-button-background, hsl(233, 64%, 62%));
-  --buttonHoverBackground: var(--x-button-hover-background, hsl(233, 64%, 52%));
-  --buttonFocusBackground: var(--x-button-focus-background, hsl(233, 64%, 52%));
-  --buttonActiveBackground: var(--x-button-active-background, hsl(233, 64%, 32%));
-  --buttonDisabledBackground: var(--x-button-disabled-background, hsl(220, 10%, 95%));
+  --buttonBackground: var(--nue-button-background, hsl(233, 64%, 62%));
+  --buttonHoverBackground: var(--nue-button-hover-background, hsl(233, 64%, 52%));
+  --buttonFocusBackground: var(--nue-button-focus-background, hsl(233, 64%, 52%));
+  --buttonActiveBackground: var(--nue-button-active-background, hsl(233, 64%, 32%));
+  --buttonDisabledBackground: var(--nue-button-disabled-background, hsl(220, 10%, 95%));
 
   /* Foreground API */
-  --buttonForeground: var(--x-button-foreground, #FFF);
-  --buttonHoverForeground: var(--x-button-hover-foreground, #FFF);
-  --buttonFocusForeground: var(--x-button-focus-foreground, #FFF);
-  --buttonActiveForeground: var(--x-button-active-foreground, #FFF);
-  --buttonDisabledForeground: var(--x-button-disabled-foreground, hsl(220, 10%, 60%));
+  --buttonForeground: var(--nue-button-foreground, #FFF);
+  --buttonHoverForeground: var(--nue-button-hover-foreground, #FFF);
+  --buttonFocusForeground: var(--nue-button-focus-foreground, #FFF);
+  --buttonActiveForeground: var(--nue-button-active-foreground, #FFF);
+  --buttonDisabledForeground: var(--nue-button-disabled-foreground, hsl(220, 10%, 60%));
 
   /* Icon API */
-  --buttonIconMargin: var(--x-button-icon-margin, calc(2rem / 2.2));
-  --buttonIconSeparator: var(--x-button-icon-separator, rgba(255, 255, 255, 0.3));
-  --buttonDisabledIconSeparator: var(--x-button-disabled-icon-separator, rgba(143, 150, 163, 0.3));
+  --buttonIconMargin: var(--nue-button-icon-margin, calc(2rem / 2.2));
+  --buttonIconSeparator: var(--nue-button-icon-separator, rgba(255, 255, 255, 0.3));
+  --buttonDisabledIconSeparator: var(--nue-button-disabled-icon-separator, rgba(143, 150, 163, 0.3));
 
   /* Misc API */
-  --buttonBorderRadius: var(--x-button-radius, 5px);
-  --buttonFontWeight: var(--x-button-font-weight, 700);
-  --buttonFontSize: var(--x-button-font-size, inherit);
-  --buttonPadding: var(--x-button-y-padding, 1rem) var(--x-button-x-padding, 2rem);
-  --buttonOutlineColor: var(--x-button-outline-color, hsl(233, 64%, 82%));
-  --buttonShadow: var(--x-button-shadow, 0 1px 2px rgba(0, 0, 0, 0.16));
+  --buttonBorderRadius: var(--nue-button-radius, 5px);
+  --buttonFontWeight: var(--nue-button-font-weight, 700);
+  --buttonFontSize: var(--nue-button-font-size, inherit);
+  --buttonPadding: var(--nue-button-y-padding, 1rem) var(--nue-button-x-padding, 2rem);
+  --buttonOutlineColor: var(--nue-button-outline-color, hsl(233, 64%, 82%));
+  --buttonShadow: var(--nue-button-shadow, 0 1px 2px rgba(0, 0, 0, 0.16));
 
   box-sizing: border-box;
   appearance: button;
@@ -78,7 +75,7 @@ button,
     color: var(--buttonFocusForeground);
   }
 
-  &:active {
+  &:not(:disabled, [aria-disabled]):active {
     transform: translateY(1px);
     border: var(--buttonActiveBorder);
     background: var(--buttonActiveBackground);
@@ -93,24 +90,18 @@ button,
     background: var(--buttonDisabledBackground);
     color: var(--buttonDisabledForeground);
   }
-}
 
-/*
-:host-context(fieldset[disabled]) [role='button'] {
-  pointer-events: none;
-}
+  & i {
+    display: block;
+    color: inherit;
+    fill: inherit;
+    line-height: inherit;
+    margin-right: var(--buttonIconMargin);
+    padding-right: var(--buttonIconMargin);
+    border-right: 1px solid var(--buttonIconSeparator);
+  }
 
-
-.Icon {
-  display: block;
-  color: inherit;
-  fill: inherit;
-  margin-right: var(--buttonIconMargin);
-  padding-right: var(--buttonIconMargin);
-  border-right: 1px solid var(--buttonIconSeparator);
-
-
-  @nest :host([icon-right]) & {
+  &[icon-right] i {
     margin-right: 0;
     padding-right: 0;
     border-right: 0;
@@ -119,8 +110,8 @@ button,
     border-left: 1px solid var(--buttonIconSeparator);
   }
 
-  @nest [disabled] & {
+  &[disabled] i {
     border-right: 1px solid var(--buttonDisabledIconSeparator);
   }
 }
-*/
+
