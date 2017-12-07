@@ -2,6 +2,8 @@ const {resolve, dirname} = require('path');
 const fs = require('fs-extra');
 const glob = require('glob-fs')({gitignore: true});
 const chokidar = require('chokidar');
+const chalk = require('chalk');
+const del = require('del');
 
 const postcss = require('postcss');
 const postcssrc = require('postcss-load-config');
@@ -21,7 +23,7 @@ const _process = async file => {
   await fs.ensureDir(dirname(cssFile));
   await fs.remove(cssFile);
   await fs.writeFile(cssFile, res.css);
-  return true;
+  return chalk.green('✔');
 };
 
 /** dev command */
@@ -35,15 +37,21 @@ const dev = folder => {
     }
   });
 
-  return watcher
-    .on('add', sourcePath => console.log(`PostCSS Watcher: file ${sourcePath} has been added`))
-    .on('change', async sourcePath => console.log(`Building: ${sourcePath}`, await _process(sourcePath)))
-    .on('unlink', sourcePath => console.log(`PostCSS Watcher: File ${sourcePath} has been removed`));
+  del(['elements/**/dist/*.css']).then(paths => {
+    console.log('Deleted files and folders:\n', paths.join('\n'));
+    return watcher
+      .on('add', sourcePath => console.log(chalk.bold('Watcher:'), `file ${chalk.underline(sourcePath)} has been added`, chalk.green('+')))
+      .on('change', async sourcePath => console.log(chalk.bold('Building:'), `${chalk.underline(sourcePath)}`, await _process(sourcePath)))
+      .on('unlink', sourcePath => console.log(chalk.bold('Watcher:'), `file ${chalk.underline(sourcePath)} has been removed`, chalk.red('-')));
+  });
 };
 
 /** Build command */
 const build = async folder => {
   const files = glob.readdirSync(folder);
+  del(['elements/**/dist/*.css']).then(paths => {
+    console.log('Deleted files and folders:\n', paths.join('\n'));
+  });
   files.forEach(async file => _process(file));
 };
 
