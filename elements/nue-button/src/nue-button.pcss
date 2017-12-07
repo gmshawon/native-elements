@@ -75,13 +75,6 @@ button,
     color: var(--buttonFocusForeground);
   }
 
-  &:not(:disabled, [aria-disabled]):active {
-    transform: translateY(1px);
-    border: var(--buttonActiveBorder);
-    background: var(--buttonActiveBackground);
-    color: var(--buttonActiveForeground);
-  }
-
   &:disabled,
   &[aria-disabled] {
     cursor: not-allowed;
@@ -91,8 +84,14 @@ button,
     color: var(--buttonDisabledForeground);
   }
 
+  &:not(:disabled, [aria-disabled]):active {
+    transform: translateY(1px);
+    border: var(--buttonActiveBorder);
+    background: var(--buttonActiveBackground);
+    color: var(--buttonActiveForeground);
+  }
+
   & i {
-    display: block;
     color: inherit;
     fill: inherit;
     line-height: inherit;
