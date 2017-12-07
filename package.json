@@ -20,7 +20,7 @@
     "node": ">=8"
   },
   "scripts": {
-    "build": "node scripts/postcss",
+    "build": "yarn lint && node scripts/postcss",
     "dev": "node scripts/postcss watch",
     "lint": "stylelint elements/**/*.pcss",
     "minify": "minify dist/nue.css --output dist/nue.min.css",
