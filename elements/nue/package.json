@@ -1,7 +1,7 @@
 {
   "name": "native-elements",
   "version": "0.0.1",
-  "description": "Native UI Elements with CSS superpowers.",
+  "description": "Native HTML Elements with CSS superpowers.",
   "main": "src/nue.pcss",
   "author": {
     "name": "Equinusocio",
