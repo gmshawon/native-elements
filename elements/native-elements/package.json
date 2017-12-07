@@ -2,7 +2,7 @@
   "name": "native-elements",
   "version": "0.0.1",
   "description": "Native HTML Elements with CSS superpowers.",
-  "main": "src/nue.pcss",
+  "main": "src/native-elements.pcss",
   "author": {
     "name": "Equinusocio",
     "url": "http://equinsuocha.io"

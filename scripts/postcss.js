@@ -1,4 +1,6 @@
 const {resolve, dirname} = require('path');
+const package = require('../package.json');
+const paths = package.paths;
 const fs = require('fs-extra');
 const glob = require('glob-fs')({gitignore: true});
 const chokidar = require('chokidar');
@@ -11,7 +13,7 @@ const IS_DEV = process.argv.find(arg => arg.includes('watch'));
 const elementArg = process.argv.find(arg => arg.includes('element='));
 const element = elementArg ? elementArg.replace('element=', '') : null;
 
-const FOLDER = element ? `./elements/${element}/**/*.pcss` : './elements/**/*.pcss';
+const FOLDER = element ? `${paths.elements}/${element}/**/*.pcss` : `${paths.elements}/**/*.pcss`;
 
 const _process = async file => {
   const cssFile = file.replace('pcss', 'css').replace('src', 'dist');
@@ -40,7 +42,7 @@ const dev = folder => {
     .on('add', sourcePath => console.log('→', sourcePath, chalk.green('[ added ]')))
     .on('change', async sourcePath => {
       console.log('→', sourcePath, await _process(sourcePath))
-      console.log('→', 'nue.css', await _process('./elements/nue/src/nue.pcss'))
+      console.log('→', 'native-elements.css', await _process(`${paths.elements}/${package.name}/src/native-elements.pcss`))
     })
     .on('unlink', sourcePath => console.log('→', sourcePath, chalk.red('[ removed ]')));
 };

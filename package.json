@@ -11,6 +11,11 @@
   "bugs": {
     "url": "https://github.com/equinusocio/native-elements/issues"
   },
+  "paths": {
+    "elements": "./elements",
+    "scripts": "./scripts",
+    "demo": "./demo"
+  },
   "homepage": "https://github.com/equinusocio/native-elements",
   "author": {
     "name": "Equinusocio",
@@ -24,7 +29,7 @@
     "dev": "yarn clean && yarn postcss watch",
     "lint": "stylelint elements/**/*.pcss",
     "clean": "node scripts/clean",
-    "minify": "minify elements/**/**/nue-*.css --template {{filename}}.{{ext}} && minify elements/nue/dist/nue.css --template {{filename}}.{{ext}}",
+    "minify": "minify elements/**/**/nue-*.css --template {{filename}}.{{ext}} && minify elements/native-elements/dist/native-elements.css --template {{filename}}.{{ext}}",
     "postcss": "node scripts/postcss",
     "release": "git pull && standard-version"
   },
