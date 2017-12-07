@@ -1,15 +1,16 @@
 const {resolve, dirname} = require('path');
 const fs = require('fs-extra');
 const del = require('del');
+const chalk = require('chalk');
 
 /** Build command */
-const del = () => {
-  del(['elements/**/dist/*.css']).then(paths => {
-    console.log('Deleted files and folders:\n', paths.join('\n'));
+const clean = () => {
+  del(['elements/**/dist']).then(paths => {
+    console.log(chalk.cyan.bold('Cleaning dist folders'));
   });
 };
 
 const main = () =>
-  del();
+  clean();
 
 main();

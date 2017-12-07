@@ -20,8 +20,8 @@
     "node": ">=8"
   },
   "scripts": {
-    "build": "yarn lint && yarn postcss",
-    "dev": "yarn postcss watch",
+    "build": "yarn clean && yarn lint && yarn postcss && yarn minify",
+    "dev": "yarn clean && yarn postcss watch",
     "lint": "stylelint elements/**/*.pcss",
     "clean": "node scripts/clean",
     "minify": "minify elements/**/**/nue-*.css --template {{filename}}.min.{{ext}}",
