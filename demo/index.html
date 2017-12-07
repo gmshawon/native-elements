@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../elements/nue/dist/nue.css">
+
+  <style>
+    html {
+      font-size: 100%;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.5;
+      background: #FFF;
+      overflow: hidden;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      height: 100%;
+    }
+
+    h2 {
+      font-weight: 400;
+    }
+
+    main {
+      margin: 0 auto;
+      width: 80vw;
+      max-width: 800px;
+      min-width: 300px;
+      padding: 100px;
+      box-sizing: border-box;
+    }
+
+    .SecondButton {
+      --button-radius: 3px;
+      --button-y-padding: 0.8rem;
+      --button-x-padding: 1.4rem;
+    }
+
+    .ThirdButton {
+      --button-radius: 100px;
+      --button-y-padding: 0.5rem;
+      --button-x-padding: 1.5rem;
+    }
+
+    .FullRound {
+      --button-radius: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Elements bundle will be imported by webpack during development.
+      Just add elements for testing -->
+  <main>
+    <h2>Buttons</h2>
+    <button name="puppo" tabindex="2" autofocus>Button</button>
+    <button class="SecondButton">Button</button>
+    <button class="ThirdButton">Button</button>
+    <button disabled>Button</button>
+
+    <h2>Buttons & icon</h2>
+    <button >
+      <span>←</span>
+      Button
+    </button>
+    <button icon-right class="FullRound">
+      <span>→</span>
+      Button
+    </button>
+
+    <button icon disabled>
+      <span >←</span>
+      Button
+    </button>
+
+    <x-range></x-range>
+  </main>
+
+</body>
+</html>
