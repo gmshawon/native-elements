@@ -37,9 +37,12 @@ const dev = folder => {
   });
 
   return watcher
-    .on('add', sourcePath => console.log(chalk.bold('Watching:'), `file ${sourcePath} has been added`, chalk.green('+')))
-    .on('change', async sourcePath => console.log(chalk.bold('Building:'), `${sourcePath}`, await _process(sourcePath)))
-    .on('unlink', sourcePath => console.log(chalk.bold('Watching:'), `file ${sourcePath} has been removed`, chalk.red('-')));
+    .on('add', sourcePath => console.log(sourcePath, chalk.green('[ added ✔ ]')))
+    .on('change', async sourcePath => {
+      console.log(sourcePath, await _process(sourcePath))
+      console.log('nue.css', await _process('./elements/nue/src/nue.pcss'))
+    })
+    .on('unlink', sourcePath => console.log(sourcePath, chalk.red('[ removed ]')));
 };
 
 /** Build command */
