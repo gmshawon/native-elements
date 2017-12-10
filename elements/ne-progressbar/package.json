@@ -1,0 +1,12 @@
+{
+  "name": "@native-elements/ne-progress",
+  "version": "1.0.7",
+  "description": "Progress element from Native Elements",
+  "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-progress",
+  "main": "src/ne-progress.pcss",
+  "author": {
+    "name": "Equinusocio",
+    "url": "http://equinsuocha.io"
+  },
+  "license": "Apache-2.0"
+}
