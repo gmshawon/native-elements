@@ -58,11 +58,11 @@ Check the [live demo](https://ne-button.stackblitz.io/)
   --ne-button-disabled-border: 0; /*  border */
 
   /* Background API */
-  --ne-button-background: hsl(233, 64%, 62%)); /*  background  */
-  --ne-button-hover-background: hsl(233, 64%, 52%)); /*  background  */
-  --ne-button-focus-background: hsl(233, 64%, 52%)); /*  background  */
-  --ne-button-active-background: hsl(233, 64%, 32%)); /*  background  */
-  --ne-button-disabled-background: hsl(220, 10%, 95%)); /*  background  */
+  --ne-button-background: hsl(233, 64%, 62%); /*  background  */
+  --ne-button-hover-background: hsl(233, 64%, 52%); /*  background  */
+  --ne-button-focus-background: hsl(233, 64%, 52%); /*  background  */
+  --ne-button-active-background: hsl(233, 64%, 32%); /*  background  */
+  --ne-button-disabled-background: hsl(220, 10%, 95%); /*  background  */
 
   /* Foreground API */
   --ne-button-foreground: #FFF; /*  color */
