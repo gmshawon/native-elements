@@ -11,7 +11,7 @@ Native HTML `<button>` element with **CSS API** that you give you superpowers. ð
 <!-- TOC -->
 
 - [Button - Native Elements](#button---native-elements)
-  - [Example - [Live](https://ne-button.stackblitz.io/)](#example---livehttpsne-buttonstackblitzio)
+  - [Example](#example)
   - [CSS API](#css-api)
   - [HTML API](#html-api)
   - [Install](#install)
@@ -22,7 +22,7 @@ Native HTML `<button>` element with **CSS API** that you give you superpowers. ð
 
 ---
 
-## Example - [Live](https://ne-button.stackblitz.io/)
+## Example
 ```html
 <!-- Black bg button with white text -->
 <button>Text</button>
@@ -45,6 +45,9 @@ button {
   --ne-button-radius: 4px;
 }
 ```
+
+Check the [live demo](https://ne-button.stackblitz.io/)
+
 
 ## CSS API
 
