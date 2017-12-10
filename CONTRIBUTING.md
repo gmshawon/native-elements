@@ -1,7 +1,7 @@
 # Contributing
 
 Build single component:
-`yarn build element=nue-button`
+`yarn build element=ne-button`
 
 All components:
 `yarn build`

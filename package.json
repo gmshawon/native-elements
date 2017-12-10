@@ -29,7 +29,7 @@
     "dev": "yarn clean && yarn postcss watch",
     "lint": "stylelint elements/**/*.pcss",
     "clean": "node scripts/clean",
-    "minify": "minify elements/**/**/nue-*.css --template {{filename}}.{{ext}} && minify elements/native-elements/dist/native-elements.css --template {{filename}}.{{ext}}",
+    "minify": "minify elements/**/**/ne-*.css --template {{filename}}.{{ext}} && minify elements/native-elements/dist/native-elements.css --template {{filename}}.{{ext}}",
     "postcss": "node scripts/postcss",
     "release": "git pull && standard-version"
   },
