@@ -13,6 +13,7 @@ Native HTML `<button>` element with **CSS API** that you can use to customise it
 - [Button - Native Elements](#button---native-elements)
   - [Example](#example)
   - [CSS API](#css-api)
+  - [HTML API](#html-api)
   - [Install](#install)
   - [Usage](#usage)
     - [PostCSS](#postcss)
@@ -85,7 +86,11 @@ button {
   --ne-button-shadow: 0 1px 2px rgba(0, 0, 0, 0.16); /* box-shadow */
 }
 ```
+## HTML API
 
+> ne-icon-right
+
+Fix the icon style when is positioned after the text.
 
 ## Install
 
