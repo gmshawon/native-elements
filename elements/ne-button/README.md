@@ -11,7 +11,7 @@ Native HTML `<button>` element with **CSS API** that you give you superpowers. ð
 <!-- TOC -->
 
 - [Button - Native Elements](#button---native-elements)
-  - [Example](#example)
+  - [Example - [Live](https://ne-button.stackblitz.io/)](#example---livehttpsne-buttonstackblitzio)
   - [CSS API](#css-api)
   - [HTML API](#html-api)
   - [Install](#install)
@@ -22,7 +22,7 @@ Native HTML `<button>` element with **CSS API** that you give you superpowers. ð
 
 ---
 
-## Example
+## Example - [Live](https://ne-button.stackblitz.io/)
 ```html
 <!-- Black bg button with white text -->
 <button>Text</button>
@@ -96,8 +96,9 @@ Fix the icon style when is positioned after the text.
 
 You can just install it with **npm** by running:
 ```
-yarn add ne-button
+yarn add @native-elements/ne-button
 ```
+
 
 ## Usage
 Just import the css from your **node_modules** inside your project.
