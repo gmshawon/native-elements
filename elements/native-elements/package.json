@@ -1,11 +1,15 @@
 {
   "name": "native-elements",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Native HTML Elements with CSS superpowers.",
   "main": "src/native-elements.pcss",
+  "repository": "https://github.com/equinusocio/native-elements",
   "author": {
     "name": "Equinusocio",
     "url": "http://equinsuocha.io"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@native-elements/ne-button": "1.0.7"
+  }
 }
