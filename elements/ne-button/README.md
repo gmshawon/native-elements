@@ -6,7 +6,7 @@
 <img width="16px" alt="Safari" src="https://goo.gl/S1vPDZ">
 <img width="16px" alt="Microsoft Edge" src="https://goo.gl/Xi8Dsz" title="💩">
 
-Native HTML `<button>` element with **CSS API** that you can use to customise it. 🕶
+Native HTML `<button>` element with **CSS API** that you give you superpowers. 🕶
 
 <!-- TOC -->
 
