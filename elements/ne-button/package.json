@@ -1,5 +1,5 @@
 {
-  "name": "ne-button",
+  "name": "@native-elements/ne-button",
   "version": "1.0.0",
   "description": "Button element from Native Elements",
   "main": "src/ne-button.pcss",
