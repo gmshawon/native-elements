@@ -1,11 +1,14 @@
 progress {
+  /* Border API */
+  --progressBorderColor: var(--ne-progress-border-color, hsl(0, 0%, 89%));
+
   /* Background API */
-  --progressBackground: var(--ne-progress-background, hsl(0, 0%, 89%));
-  --progressFilledColor: var(--ne-progress-filled-color, hsl(233, 64%, 62%));
+  --progressBackground: var(--ne-progress-background, hsl(0, 0%, 97%));
+  --progressFilledColor: var(--ne-progress-filled-color, hsl(0, 0%, 89%));
 
   /* Stripes API */
-  --progressStripesWidth: var(--ne-progress-stripe-width, 1rem);
-  --progressStripesColor: var(--ne-progress-stripe-colors, rgba(255, 255, 255, 0.15));
+  --progressStripesSize: var(--ne-progress-stripe-size, 1rem);
+  --progressStripesColor: var(--ne-progress-stripe-colors, rgba(255, 255, 255, 0.4));
 
   /* Misc API */
   --progressHeight: var(--ne-progress-height, 5px);
@@ -20,10 +23,13 @@ progress {
   display: block;
   height: var(--progressHeight);
   border-radius: var(--progressBorderRadius);
+  background-color: var(--progressBackground);
+  box-shadow: inset 0 0 0 1px var(--progressBorderColor);
 
   &::-webkit-progress-bar {
     border-radius: 10px;
     background-color: var(--progressBackground);
+    box-shadow: inset 0 0 0 1px var(--progressBorderColor);
   }
 
   &::-webkit-progress-value {
@@ -46,7 +52,7 @@ progress {
     display: block;
     background-color: var(--progressFilledColor);
     background-image: repeating-linear-gradient(45deg, transparent, transparent 25%, var(--progressStripesColor) 25%, var(--progressStripesColor) 50%);
-    background-size: 1rem 1rem;
+    background-size: var(--progressStripesSize) var(--progressStripesSize);
     animation: progress-stripes 1s linear infinite;
   }
 
@@ -75,6 +81,6 @@ progress {
   }
 
   to {
-    background-position: var(--progressStripesWidth) 0;
+    background-position: var(--progressStripesSize) 0;
   }
 }
