@@ -9,6 +9,7 @@
     "no-descending-specificity": null,
     "selector-type-no-unknown": null,
     "string-quotes": "single",
+    "at-rule-no-unknown": null,
     "property-no-vendor-prefix": true,
     "max-nesting-depth": 2,
     "property-no-unknown": [true, {
