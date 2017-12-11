@@ -2,7 +2,14 @@ progress {
   /* Background API */
   --progressBackground: var(--ne-progress-background, hsl(0, 0%, 89%));
   --progressFilledColor: var(--ne-progress-filled-color, hsl(233, 64%, 62%));
+
+  /* Stripes API */
+  --progressStripesWidth: var(--ne-progress-stripe-width, 1rem);
   --progressStripesColor: var(--ne-progress-stripe-colors, rgba(255, 255, 255, 0.15));
+
+  /* Misc API */
+  --progressHeight: var(--ne-progress-height, 5px);
+  --progressBorderRadius: var(--ne-progress-radius, 10px);
 
   position: relative;
   width: 100%;
@@ -10,8 +17,8 @@ progress {
   vertical-align: baseline;
   appearance: none;
   overflow: hidden;
-  height: 5px;
-  border-radius: 10px;
+  height: var(--progressHeight);
+  border-radius: var(--progressBorderRadius);
 
   &::-webkit-progress-bar {
     border-radius: 10px;
@@ -28,20 +35,35 @@ progress {
     background-color: var(--progressFilledColor);
   }
 
+  @define-mixin progress-indeterminate {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: var(--progressFilledColor);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25%, var(--progressStripesColor) 25%, var(--progressStripesColor) 50%);
+    background-size: 1rem 1rem;
+    animation: progress-stripes 1s linear infinite;
+  }
+
   &:indeterminate {
 
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: block;
-      background-color: var(--progressFilledColor);
-      background-image: linear-gradient(45deg, var(--progressStripesColor) 25%, transparent 25%, transparent 50%, var(--progressStripesColor) 50%, var(--progressStripesColor) 75%, transparent 75%, transparent);
-      background-size: 1rem 1rem;
-      animation: progress-stripes 1.5s linear infinite;
-      content: '';
+    &::before {
+      @mixin progress-indeterminate;
+      z-index: 2;
+    }
+
+    &::-moz-progress-bar {
+      @mixin progress-indeterminate;
+    }
+
+    /* Safari only override */
+    &::-webkit-progress-bar {
+      @mixin progress-indeterminate;
+      z-index: 1;
     }
   }
 }
@@ -52,6 +74,6 @@ progress {
   }
 
   to {
-    background-position: 1rem 0;
+    background-position: var(--progressStripesWidth) 0;
   }
 }
