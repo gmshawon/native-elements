@@ -107,7 +107,7 @@ Just import the css from your **node_modules** inside your project.
 ```
 
 ### PostCSS
-If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
+If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your build process:
 ```css
 @import 'node_modules/ne-button/src/ne-button.pcss';
 ```
