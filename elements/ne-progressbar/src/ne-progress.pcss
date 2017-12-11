@@ -17,6 +17,7 @@ progress {
   vertical-align: baseline;
   appearance: none;
   overflow: hidden;
+  display: block;
   height: var(--progressHeight);
   border-radius: var(--progressBorderRadius);
 
@@ -51,7 +52,7 @@ progress {
 
   &:indeterminate {
 
-    &::before {
+    &::after {
       @mixin progress-indeterminate;
       z-index: 2;
     }
