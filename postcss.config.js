@@ -6,6 +6,7 @@ module.exports = () => ({
     'postcss-custom-media': {},
     'postcss-selector-not': {},
     'postcss-discard-comments': {},
+    'postcss-discard-empty': {},
     'autoprefixer': {},
   }
 });
