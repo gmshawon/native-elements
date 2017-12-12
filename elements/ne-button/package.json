@@ -8,5 +8,8 @@
     "name": "Equinusocio",
     "url": "http://equinsuocha.io"
   },
+  "bugs": {
+    "url": "https://github.com/equinusocio/native-elements/issues"
+  },
   "license": "Apache-2.0"
 }
