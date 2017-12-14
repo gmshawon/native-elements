@@ -1,10 +1,11 @@
 const {resolve, dirname} = require('path');
-const package = require('../package.json');
-const paths = package.paths;
 const fs = require('fs-extra');
-const glob = require('glob-fs')({gitignore: true});
 const chokidar = require('chokidar');
 const chalk = require('chalk');
+
+const readProcess = require('./_read-process.js');
+const package = require('../package.json');
+const paths = package.paths;
 
 const postcss = require('postcss');
 const postcssrc = require('postcss-load-config');
@@ -48,12 +49,10 @@ const dev = folder => {
 };
 
 /** Build command */
-const build = async folder => {
-  const files = glob.readdirSync(folder);
-  files.forEach(async file => _process(file));
-};
+const build = folder =>
+  readProcess(folder, _process);
 
 const main = () =>
-  IS_DEV ? dev(FOLDER) : build(FOLDER).catch(err => console.error(err));
+  IS_DEV ? dev(FOLDER) : build(FOLDER)
 
 main();
