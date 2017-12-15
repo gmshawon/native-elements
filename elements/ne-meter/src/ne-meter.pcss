@@ -1,3 +1,71 @@
-.test {
-  display: block;
+meter {
+  /* Border API */
+  --meterBorderColor: var(--ne-progress-border-color, hsl(0, 0%, 89%));
+
+  /* Background API */
+  --meterBackground: var(--ne-meter-background, hsl(0, 0%, 97%));
+  --meterFilledColorTop: var(--ne-meter-filled-color-top, hsl(67, 78%, 52%));
+  --meterFilledColorMid: var(--ne-meter-filled-color-mid, hsl(41, 100%, 60%));
+  --meterFilledColorLow: var(--ne-meter-filled-color-low, hsl(354, 100%, 65%));
+
+  /* Misc API */
+  --progressBorderRadius: var(--ne-progress-radius, 5px);
+  --progressWidth: var(--ne-progress-width, 30px);
+  --progressHeight: var(--ne-progress-height, 3px);
+
+  width: var(--progressWidth);
+  height: var(--progressHeight);
+  vertical-align: middle;
+
+  @define-mixin progress {
+    background: var(--meterBackground);
+    box-shadow: inset 0 0 0 1px var(--meterBorderColor);
+    border-radius: var(--progressBorderRadius);
+    overflow: hidden;
+  }
+
+  @mixin progress;
+
+  &::-webkit-meter-bar {
+    @mixin progress;
+  }
+
+  @define-mixin meter-top {
+    background: var(--meterFilledColorTop);
+  }
+
+  @define-mixin meter-mid {
+    background: var(--meterFilledColorMid);
+  }
+
+  @define-mixin meter-low {
+    background: var(--meterFilledColorLow);
+  }
+
+  /* Low value */
+  &::-webkit-meter-even-less-good-value {
+    @mixin meter-low;
+  }
+
+  &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    @mixin meter-low;
+  }
+
+  /* Mid value */
+  &::-webkit-meter-suboptimum-value {
+    @mixin meter-mid;
+  }
+
+  &:-moz-meter-sub-optimum::-moz-meter-bar {
+    @mixin meter-mid;
+  }
+
+  /* Top value */
+  &::-webkit-meter-optimum-value {
+    @mixin meter-top;
+  }
+
+  &:-moz-meter-optimum::-moz-meter-bar {
+    @mixin meter-top;
+  }
 }

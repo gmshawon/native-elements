@@ -32,7 +32,19 @@ Check the [live demo](https://ne-meter.stackblitz.io/)
 
 ```css
 * {
+  /* Border API */
+  --ne-progress-border-color: hsl(0, 0%, 89%); /* color */
 
+  /* Background API */
+  --ne-meter-background: hsl(0, 0%, 97%); /* color */
+  --ne-meter-filled-color-top: hsl(67, 78%, 52%); /* color */
+  --ne-meter-filled-color-mid: hsl(41, 100%, 60%); /* color */
+  --ne-meter-filled-color-low: hsl(354, 100%, 65%); /* color */
+
+  /* Misc API */
+  --ne-progress-radius: 5px; /* unit */
+  --ne-progress-width: 30px; /* unit */
+  --ne-progress-height: 3px; /* unit */
 }
 ```
 
