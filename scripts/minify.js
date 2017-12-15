@@ -8,7 +8,7 @@ const FOLDER = './elements/**/dist/*.css';
 
 const _process = async filePath => {
   const fileContent = await fs.readFile(filePath, 'utf8');
-  const output = await new CleanCSS({}).minify(fileContent);
+  const output = await new CleanCSS({level: 0}).minify(fileContent);
   await fs.writeFile(filePath, output.styles);
 };
 
