@@ -19,10 +19,14 @@ Native HTML `<meter>` element with **CSS API** that give you superpowers. 🕶
 ## Example
 
 ```html
+  <input type="password" value="342567rt">
+  <meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
 ```
 
 ```css
-
+meter {
+  --ne-meter-border-color: transparent;
+}
 ```
 
 Check the [live demo](https://ne-meter.stackblitz.io/)
@@ -33,7 +37,7 @@ Check the [live demo](https://ne-meter.stackblitz.io/)
 ```css
 * {
   /* Border API */
-  --ne-progress-border-color: hsl(0, 0%, 89%); /* color */
+  --ne-meter-border-color: hsl(0, 0%, 89%); /* color */
 
   /* Background API */
   --ne-meter-background: hsl(0, 0%, 97%); /* color */
@@ -42,9 +46,9 @@ Check the [live demo](https://ne-meter.stackblitz.io/)
   --ne-meter-filled-color-low: hsl(354, 100%, 65%); /* color */
 
   /* Misc API */
-  --ne-progress-radius: 5px; /* unit */
-  --ne-progress-width: 30px; /* unit */
-  --ne-progress-height: 3px; /* unit */
+  --ne-meter-radius: 5px; /* unit */
+  --ne-meter-width: 30px; /* unit */
+  --ne-meter-height: 3px; /* unit */
 }
 ```
 

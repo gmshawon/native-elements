@@ -1,6 +1,6 @@
 meter {
   /* Border API */
-  --meterBorderColor: var(--ne-progress-border-color, hsl(0, 0%, 89%));
+  --meterBorderColor: var(--ne-meter-border-color, hsl(0, 0%, 89%));
 
   /* Background API */
   --meterBackground: var(--ne-meter-background, hsl(0, 0%, 97%));
@@ -9,18 +9,18 @@ meter {
   --meterFilledColorLow: var(--ne-meter-filled-color-low, hsl(354, 100%, 65%));
 
   /* Misc API */
-  --progressBorderRadius: var(--ne-progress-radius, 5px);
-  --progressWidth: var(--ne-progress-width, 30px);
-  --progressHeight: var(--ne-progress-height, 3px);
+  --meterBorderRadius: var(--ne-meter-radius, 5px);
+  --meterWidth: var(--ne-meter-width, 30px);
+  --meterHeight: var(--ne-meter-height, 3px);
 
-  width: var(--progressWidth);
-  height: var(--progressHeight);
+  width: var(--meterWidth);
+  height: var(--meterHeight);
   vertical-align: middle;
 
   @define-mixin progress {
     background: var(--meterBackground);
     box-shadow: inset 0 0 0 1px var(--meterBorderColor);
-    border-radius: var(--progressBorderRadius);
+    border-radius: var(--meterBorderRadius);
     overflow: hidden;
   }
 
