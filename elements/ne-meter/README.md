@@ -46,7 +46,7 @@ Check the [live demo](https://ne-meter.stackblitz.io/)
   --ne-meter-filled-color-low: hsl(354, 100%, 65%); /* color */
 
   /* Misc API */
-  --ne-meter-radius: 5px; /* unit */
+  --ne-meter-radius: 5px; /* border-radius */
   --ne-meter-width: 30px; /* unit */
   --ne-meter-height: 3px; /* unit */
 }
