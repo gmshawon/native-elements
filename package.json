@@ -28,7 +28,7 @@
     "prebuild": "yarn clean && yarn lint",
     "build": "node scripts/postcss",
     "postbuild": "node scripts/minify",
-    "dev": "yarn clean && yarn postcss watch",
+    "dev": "yarn clean && node scripts/postcss watch",
     "lint": "stylelint elements/**/*.pcss",
     "clean": "node scripts/clean",
     "release": "git pull && standard-version"
