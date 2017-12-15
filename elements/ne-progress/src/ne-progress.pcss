@@ -23,23 +23,23 @@ progress {
   display: block;
   height: var(--progressHeight);
   border-radius: var(--progressBorderRadius);
-  background-color: var(--progressBackground);
+  background: var(--progressBackground);
   box-shadow: inset 0 0 0 1px var(--progressBorderColor);
 
   &::-webkit-progress-bar {
     border-radius: 10px;
-    background-color: var(--progressBackground);
+    background: var(--progressBackground);
     box-shadow: inset 0 0 0 1px var(--progressBorderColor);
   }
 
   &::-webkit-progress-value {
     border-radius: 10px;
-    background-color: var(--progressFilledColor);
+    background: var(--progressFilledColor);
   }
 
   &::-moz-progress-bar {
     border-radius: 10px;
-    background-color: var(--progressFilledColor);
+    background: var(--progressFilledColor);
   }
 
   @define-mixin progress-indeterminate {
