@@ -41,9 +41,9 @@ Check the [live demo](https://ne-meter.stackblitz.io/)
 
   /* Background API */
   --ne-meter-background: hsl(0, 0%, 97%); /* color */
-  --ne-meter-filled-color-top: hsl(67, 78%, 52%); /* color */
-  --ne-meter-filled-color-mid: hsl(41, 100%, 60%); /* color */
-  --ne-meter-filled-color-low: hsl(354, 100%, 65%); /* color */
+  --ne-meter-filled-color-strong: hsl(67, 78%, 52%); /* color */
+  --ne-meter-filled-color-good: hsl(41, 100%, 60%); /* color */
+  --ne-meter-filled-color-weak: hsl(354, 100%, 65%); /* color */
 
   /* Misc API */
   --ne-meter-radius: 5px; /* border-radius */

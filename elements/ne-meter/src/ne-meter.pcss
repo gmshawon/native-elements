@@ -4,9 +4,9 @@ meter {
 
   /* Background API */
   --meterBackground: var(--ne-meter-background, hsl(0, 0%, 97%));
-  --meterFilledColorTop: var(--ne-meter-filled-color-top, hsl(67, 78%, 52%));
-  --meterFilledColorMid: var(--ne-meter-filled-color-mid, hsl(41, 100%, 60%));
-  --meterFilledColorLow: var(--ne-meter-filled-color-low, hsl(354, 100%, 65%));
+  --meterFilledColorStrong: var(--ne-meter-filled-color-strong, hsl(67, 78%, 52%));
+  --meterFilledColorGood: var(--ne-meter-filled-color-good, hsl(41, 100%, 60%));
+  --meterFilledColorWeak: var(--ne-meter-filled-color-weak, hsl(354, 100%, 65%));
 
   /* Misc API */
   --meterBorderRadius: var(--ne-meter-radius, 5px);
@@ -31,15 +31,15 @@ meter {
   }
 
   @define-mixin meter-top {
-    background: var(--meterFilledColorTop);
+    background: var(--meterFilledColorStrong);
   }
 
   @define-mixin meter-mid {
-    background: var(--meterFilledColorMid);
+    background: var(--meterFilledColorGood);
   }
 
   @define-mixin meter-low {
-    background: var(--meterFilledColorLow);
+    background: var(--meterFilledColorWeak);
   }
 
   /* Low value */
