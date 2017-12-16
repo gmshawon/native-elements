@@ -30,42 +30,42 @@ meter {
     @mixin progress;
   }
 
-  @define-mixin meter-top {
+  @define-mixin meter-strong {
     background: var(--meterFilledColorStrong);
   }
 
-  @define-mixin meter-mid {
+  @define-mixin meter-good {
     background: var(--meterFilledColorGood);
   }
 
-  @define-mixin meter-low {
+  @define-mixin meter-weak {
     background: var(--meterFilledColorWeak);
   }
 
   /* Low value */
   &::-webkit-meter-even-less-good-value {
-    @mixin meter-low;
+    @mixin meter-weak;
   }
 
   &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-    @mixin meter-low;
+    @mixin meter-weak;
   }
 
   /* Mid value */
   &::-webkit-meter-suboptimum-value {
-    @mixin meter-mid;
+    @mixin meter-good;
   }
 
   &:-moz-meter-sub-optimum::-moz-meter-bar {
-    @mixin meter-mid;
+    @mixin meter-good;
   }
 
   /* Top value */
   &::-webkit-meter-optimum-value {
-    @mixin meter-top;
+    @mixin meter-strong;
   }
 
   &:-moz-meter-optimum::-moz-meter-bar {
-    @mixin meter-top;
+    @mixin meter-strong;
   }
 }
