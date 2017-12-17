@@ -11,7 +11,7 @@ input[type='range'] {
   --rangeThumbBackground: var(--ne-range-thumb-background, #FFF);
   --rangeThumbShadow: var(--ne-range-thumb-shadow, 0 1px 2px 0 rgba(0, 0, 0, 0.16));
   --rangeThumbWidth: var(--ne-range-thumb-width, 1rem);
-  --rangeThumbHeight: var(--ne-range-thumb-height, 1rem);
+  --rangeThumbHeight: var(--ne-range-thumb-height, 1.2rem);
   --rangeThumbRadius: var(--ne-range-thumb-radius, 5px);
 
   /* Misc API */
@@ -96,14 +96,18 @@ input[type='range'] {
     cursor: pointer;
     box-shadow: var(--rangeThumbShadow);
     position: relative;
+
+    &:hover {
+      cursor: grab;
+    }
+
+    &:active {
+      cursor: grabbing;
+    }
   }
 
   &::-webkit-slider-thumb {
     @mixin thumb;
-  }
-
-  &:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 0 var(--hiq-outline-width, 0.2rem) var(--hiq-outline-color, hsl(210, 100%, 85%));
   }
 
   &::-moz-range-thumb {
@@ -112,8 +116,16 @@ input[type='range'] {
     appearance: none;
   }
 
-  &:focus::-moz-range-thumb {
-    box-shadow: 0 0 0 var(--hiq-outline-width, 0.2rem) var(--hiq-outline-color, hsl(210, 100%, 85%));
+  &:active::-webkit-slider-thumb {
+    transform: scale(1.1);
+  }
+
+  &:active::-moz-range-thumb {
+    transform: scale(1.1);
+  }
+
+  &:active::-ms-thumb {
+    transform: scale(1.1);
   }
 
   &::-ms-thumb {
@@ -124,10 +136,6 @@ input[type='range'] {
     background-color: var(--rangeThumbBackground);
     cursor: pointer;
     box-shadow: var(--rangeThumbShadow);
-  }
-
-  &:focus::-ms-thumb {
-    box-shadow: 0 0 0 var(--hiq-outline-width, 0.2rem) var(--hiq-outline-color, hsl(210, 100%, 85%));
   }
 
   &:disabled,
