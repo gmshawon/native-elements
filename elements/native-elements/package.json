@@ -16,6 +16,7 @@
     "@native-elements/ne-button": "1.0.8",
     "@native-elements/ne-checkradio": "1.0.5",
     "@native-elements/ne-meter": "1.0.3",
-    "@native-elements/ne-progress": "1.0.4"
+    "@native-elements/ne-progress": "1.0.4",
+    "@native-elements/ne-range": "1.0.0"
   }
 }
