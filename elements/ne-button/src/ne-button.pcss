@@ -32,6 +32,7 @@ button,
   --buttonFontSize: var(--ne-button-font-size, inherit);
   --buttonPadding: var(--ne-button-y-padding, 1rem) var(--ne-button-x-padding, 2rem);
   --buttonOutlineColor: var(--ne-button-outline-color, hsl(233, 64%, 82%));
+  --buttonOutlineWidth: var(--ne-button-outline-width, 0.2rem);
   --buttonShadow: var(--ne-button-shadow, 0 1px 2px rgba(0, 0, 0, 0.16));
 
   box-sizing: border-box;
@@ -70,7 +71,7 @@ button,
   /* Simulate focus outline with box-shadow */
   &:focus,
   &:active {
-    box-shadow: 0 0 0 0.2rem var(--buttonOutlineColor);
+    box-shadow: 0 0 0 var(--buttonOutlineWidth) var(--buttonOutlineColor);
   }
 
   &:focus {
