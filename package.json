@@ -31,7 +31,7 @@
     "dev": "node scripts/postcss watch",
     "lint": "stylelint elements/**/*.pcss",
     "clean": "node scripts/clean",
-    "release": "git pull && lerna publish --conventional-commits"
+    "release": "git pull && yarn build && lerna publish --conventional-commits"
   },
   "files": [
     "elements"
