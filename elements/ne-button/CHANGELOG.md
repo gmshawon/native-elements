@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.1.0...@native-elements/ne-button@1.1.1) (2017-12-20)
+
+
+### Bug Fixes
+
+* **ne-button:** Fix default custom properties inheritance ([dbd9345](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/dbd9345))
+
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2017-12-17)
 
