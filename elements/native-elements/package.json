@@ -11,12 +11,5 @@
   "bugs": {
     "url": "https://github.com/equinusocio/native-elements/issues"
   },
-  "license": "Apache-2.0",
-  "dependencies": {
-    "@native-elements/ne-button": "^1.1.0",
-    "@native-elements/ne-checkradio": "^1.0.8",
-    "@native-elements/ne-meter": "^1.0.6",
-    "@native-elements/ne-progress": "1.0.4",
-    "@native-elements/ne-range": "^0.0.8"
-  }
+  "license": "Apache-2.0"
 }
