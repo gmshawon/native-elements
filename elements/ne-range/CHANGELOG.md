@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.0.8"></a>
+## [0.0.8](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.0.7...@native-elements/ne-range@0.0.8) (2017-12-20)
+
+
+### Bug Fixes
+
+* **ne-range:** Fix scaling when thumb is active ([09be45e](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/09be45e))
+
+
+
+
 <a name="0.0.7"></a>
 ## [0.0.7](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.0.6...@native-elements/ne-range@0.0.7) (2017-12-17)
 

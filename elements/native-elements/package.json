@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/native-elements",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Native HTML Elements with CSS superpowers.",
   "main": "src/native-elements.pcss",
   "repository": "https://github.com/equinusocio/native-elements",
@@ -17,6 +17,6 @@
     "@native-elements/ne-checkradio": "^1.0.8",
     "@native-elements/ne-meter": "^1.0.6",
     "@native-elements/ne-progress": "1.0.4",
-    "@native-elements/ne-range": "0.0.7"
+    "@native-elements/ne-range": "^0.0.8"
   }
 }
