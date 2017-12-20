@@ -10,15 +10,15 @@ button,
   /* Background API */
   --buttonBackground: var(--ne-button-background, hsl(233, 64%, 62%));
   --buttonHoverBackground: var(--ne-button-hover-background, hsl(233, 64%, 52%));
-  --buttonFocusBackground: var(--ne-button-focus-background, hsl(233, 64%, 52%));
+  --buttonFocusBackground: var(--ne-button-focus-background, var(--ne-button-hover-background, hsl(233, 64%, 52%)));
   --buttonActiveBackground: var(--ne-button-active-background, hsl(233, 64%, 32%));
   --buttonDisabledBackground: var(--ne-button-disabled-background, hsl(220, 10%, 95%));
 
   /* Foreground API */
   --buttonForeground: var(--ne-button-foreground, #FFF);
-  --buttonHoverForeground: var(--ne-button-hover-foreground, #FFF);
-  --buttonFocusForeground: var(--ne-button-focus-foreground, #FFF);
-  --buttonActiveForeground: var(--ne-button-active-foreground, #FFF);
+  --buttonHoverForeground: var(--ne-button-hover-foreground, var(--ne-button-foreground, #FFF));
+  --buttonFocusForeground: var(--ne-button-focus-foreground, var(--ne-button-foreground, #FFF));
+  --buttonActiveForeground: var(--ne-button-active-foreground, var(--ne-button-foreground, #FFF));
   --buttonDisabledForeground: var(--ne-button-disabled-foreground, hsl(220, 10%, 60%));
 
   /* Icon API */
