@@ -1,0 +1,122 @@
+input[type='text'],
+input[type='password'],
+input[type='url'],
+input[type='email'],
+input[type='tel'],
+input[type='search'],
+input[type='number'],
+input[type='date'],
+input[type='time'],
+input[type='month'],
+input[type='week'],
+input[type='datetime-local'] {
+  /* Border API */
+  --textfieldBorder: var(--ne-textfield-border, 1px solid hsl(0, 0%, 89%));
+  --textfieldHoverBorderColor: var(--ne-textfield-hover-border-color, var(--ne-textfield-border, hsl(0, 0%, 89%)));
+
+  /* Background API */
+  --textfieldBackground: var(--ne-textfield-background, #FFF);
+  --textfieldHoverBackground: var(--ne-textfield-hover-background, var(---ne-textfield-background, #FFF));
+
+  /* Foreground API */
+  --textfieldColor: var(--ne-textfield-color, hsl(0, 0%, 13%));
+  --textfieldHoverColor: var(--ne-textfield-hover-color, var(--ne-textfield-color, hsl(0, 0%, 13%)));
+  --textfieldPlaceholderColor: var(--ne-textfield-placeholder-color, hsl(0, 0%, 89%));
+  --textfieldHoverPlaceholderColor: var(--ne-textfield-hover-placeholder-color, var(--ne-textfield-placeholder-color, hsl(0, 0%, 89%)));
+
+  /* Misc API */
+  --textfieldBorderRadius: var(--ne-textfield-radius, 5px);
+  --textfieldHeight: var(--ne-textfield-height, 2.5rem);
+  --textfieldPadding: var(--ne-textfield-y-padding, 0.5rem) var(--ne-textfield-x-padding, 0.75rem);
+
+  @mixin input;
+
+  display: block;
+  width: 100%;
+  height: var(--textfieldHeight);
+  padding: var(--textfieldPadding);
+  box-sizing: border-box;
+}
+
+/*
+correct cursor style of increment and decrement buttons in Chrome
+source: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss
+*/
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+override extra rounded corners on search inputs in iOS
+source: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss
+*/
+[type='search'] {
+  outline-offset: -2px;
+  appearance: none;
+}
+
+/*
+remove inner padding and cancel buttons in Chrome and Safari on macOS
+source: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss
+*/
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+  appearance: none;
+}
+
+
+@define-mixin input {
+  margin: 0;
+  border: var(--textfieldBorder);
+  border-radius: var(--textfieldBorderRadius);
+  background: var(--textfieldBackground);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  color: var(--textfieldColor);
+  letter-spacing: 0.5px;
+  transition: border-color 0.1s ease-out, color 0.1s ease-out, background-color 0.1s ease-out;
+
+  &::placeholder {
+    color: var(--textfieldPlaceholderColor);
+  }
+
+  &:hover {
+    border-color: var(--textfieldHoverBorderColor);
+    background: var(--textfieldHoverBackground);
+    color: var(--textfieldHoverColor);
+
+    &::placeholder {
+      color: var(--textfieldHoverPlaceholderColor);
+    }
+  }
+
+  &:focus {
+    border-color: var(--hiq-input-focus-border-color, var(--hiq-color-primary, hsl(210, 100%, 50%)));
+    background-color: var(--hiq-input-focus-background-color, var(--hiq-input-background-color, white));
+    box-shadow: 0 0 0 var(--hiq-outline-width, 0.2rem) var(--hiq-outline-color, hsl(210, 100%, 85%));
+    color: var(--hiq-input-focus-text-color, var(--hiq-input-text-color, var(--hiq-text-color, var(--hiq-gray-darker, hsl(220, 10%, 10%)))));
+
+    &::placeholder {
+      color: var(--hiq-input-focus-placeholder-color, var(--hiq-input-placeholder-color, var(--hiq-gray, hsl(220, 10%, 40%))));
+    }
+  }
+
+  &:disabled,
+  &[aria-disabled],
+  &[readonly] {
+    border-color: var(--hiq-disabled-border-color, var(--hiq-gray-lighter, hsl(220, 10%, 90%)));
+    background-color: var(--hiq-disabled-background-color, var(--hiq-gray-lightest, hsl(220, 10%, 95%)));
+    color: var(--hiq-disabled-text-color, var(--hiq-gray-light, hsl(220, 10%, 60%)));
+
+    &::placeholder {
+      color: var(--hiq-disabled-text-color, var(--hiq-gray-light, hsl(220, 10%, 60%)));
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
