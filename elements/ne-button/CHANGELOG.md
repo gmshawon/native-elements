@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.1.1...@native-elements/ne-button@1.1.2) (2017-12-21)
+
+
+### Bug Fixes
+
+* **ne-button:** Rename all foreground API from *-foreground to *-color ([ea71a7a](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/ea71a7a))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.1.0...@native-elements/ne-button@1.1.1) (2017-12-20)
 
