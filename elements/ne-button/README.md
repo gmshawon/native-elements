@@ -32,7 +32,7 @@ Native HTML `<button>` element with **CSS API** that give you superpowers. 🕶
 ```css
 button {
   --ne-button-background: #000;
-  --ne-button-foreground: #FFF;
+  --ne-button-color: #FFF;
 }
 
 .SpecialButton {
@@ -63,11 +63,11 @@ Check the [live demo](https://ne-button.stackblitz.io/)
   --ne-button-disabled-background: hsl(220, 10%, 95%); /*  background  */
 
   /* Foreground API */
-  --ne-button-foreground: #FFF; /*  color */
-  --ne-button-hover-foreground: #FFF; /*  color */
-  --ne-button-focus-foreground: #FFF; /*  color */
-  --ne-button-active-foreground: #FFF; /*  color */
-  --ne-button-disabled-foreground: hsl(220, 10%, 60%); /*  color */
+  --ne-button-color: #FFF; /*  color */
+  --ne-button-hover-color: #FFF; /*  color */
+  --ne-button-focus-color: #FFF; /*  color */
+  --ne-button-active-color: #FFF; /*  color */
+  --ne-button-disabled-color: hsl(220, 10%, 60%); /*  color */
 
   /* Icon API */
   --ne-button-icon-margin: calc(2rem / 2.2); /*  unit */
