@@ -1,12 +1,12 @@
 module.exports = () => ({
   plugins: {
     'postcss-easy-import': { extensions: '.pcss' },
+    'stylelint': { configFile: '.stylelintrc' },
     'postcss-mixins': {},
     'postcss-nesting': {},
     'postcss-custom-media': {},
     'postcss-selector-not': {},
-    'postcss-discard-comments': {},
-    'postcss-discard-empty': {},
     'autoprefixer': {},
+    'cssnano': { preset: 'default' }
   }
 });
