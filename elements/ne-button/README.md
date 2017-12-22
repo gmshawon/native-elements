@@ -80,7 +80,7 @@ Check the [live demo](https://ne-button.stackblitz.io/)
   --ne-button-font-size: inherit; /*  font-size */
   --ne-button-y-padding: 1rem; /* unit */
   --ne-button-x-padding: 2rem; /* unit */
-  --ne-button-outline-color: hsl(233, 64%, 82%); /* color */
+  --ne-button-outline-color: hsl(233, 64%, 85%); /* color */
   --ne-button-outline-width: 0.2rem; /* unit */
   --ne-button-shadow: 0 1px 2px rgba(0, 0, 0, 0.16); /* box-shadow */
 }
