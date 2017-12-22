@@ -1,0 +1,73 @@
+@define-mixin input {
+  margin: 0;
+  border: var(--textfieldBorder);
+  border-radius: var(--textfieldBorderRadius);
+  background: var(--textfieldBackground);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  color: var(--textfieldColor);
+  letter-spacing: 0.5px;
+  outline: none;
+  transition: border-color 0.1s ease-out, color 0.1s ease-out, box-shadow 0.1s ease-out, background-color 0.1s ease-out;
+
+  &::selection {
+    background-color: var(--textfieldSelectionBackground);
+    color: var(--textfieldSelectionForeground);
+  }
+
+  &::-moz-selection {
+    background-color: var(--textfieldSelectionBackground);
+    color: var(--textfieldSelectionForeground);
+  }
+
+  &::placeholder {
+    color: var(--textfieldPlaceholderColor);
+  }
+
+  &:hover {
+    border: var(--textfieldHoverBorder);
+    background: var(--textfieldHoverBackground);
+    color: var(--textfieldHoverColor);
+
+    &::placeholder {
+      color: var(--textfieldHoverPlaceholderColor);
+    }
+  }
+
+  &:focus {
+    border: var(--textfieldFocusBorder);
+    background: var(--textfieldFocusBackground);
+    box-shadow: 0 0 0 var(--textfieldOutlineWidth) var(--textfieldOutlineColor);
+    color: var(--textfieldFocusColor);
+
+    &::placeholder {
+      color: var(--textfieldFocusPlaceholderColor);
+    }
+  }
+
+  &:disabled,
+  &[aria-disabled],
+  &[readonly] {
+    border: var(--textfieldDisabledBorder);
+    background: var(--textfieldDisabledBackground);
+    color: var(--textfieldDisabledColor);
+
+    &::placeholder {
+      color: var(--textfieldDisabledPlaceholderColor);
+    }
+  }
+
+  &[readonly] {
+    color: var(--textfieldReadonlyColor);
+
+    &::placeholder {
+      color: var(--textfieldDisabledPlaceholderColor);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
