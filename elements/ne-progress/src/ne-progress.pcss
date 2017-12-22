@@ -59,19 +59,15 @@ progress {
   &:indeterminate {
     &::after {
       @mixin progress-indeterminate;
-
-      z-index: 2;
-    }
-
-    &::-moz-progress-bar {
-      @mixin progress-indeterminate;
     }
 
     /* Safari only override */
     &::-webkit-progress-bar {
       @mixin progress-indeterminate;
+    }
 
-      z-index: 1;
+    &::-moz-progress-bar {
+      @mixin progress-indeterminate;
     }
   }
 }
