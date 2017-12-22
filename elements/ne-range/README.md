@@ -63,7 +63,7 @@ Check the [live demo](https://ne-range.stackblitz.io/)
   /* Misc API */
   --ne-range-height: 5px; /* unit */
   --ne-range-radius: 10px; /* border-radius */
-  --ne-range-outline-color: hsl(233, 64%, 82%); /* color */
+  --ne-range-outline-color: hsl(233, 64%, 85%); /* color */
   --ne-range-outline-width: 0.2rem; /* unit */
 }
 ```

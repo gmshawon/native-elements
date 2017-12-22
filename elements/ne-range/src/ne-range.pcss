@@ -21,7 +21,7 @@ input[type='range'] {
   /* Misc API */
   --rangeHeight: var(--ne-range-height, 5px);
   --rangeBorderRadius: var(--ne-range-radius, 10px);
-  --rangeOutlineColor: var(--ne-range-outline-color, hsl(233, 64%, 82%));
+  --rangeOutlineColor: var(--ne-range-outline-color, hsl(233, 64%, 85%));
   --rangeOutlineWidth: var(--ne-range-outline-width, 0.2rem);
 
   width: 100%;
@@ -101,6 +101,7 @@ input[type='range'] {
     background-repeat: no-repeat;
     cursor: pointer;
     box-shadow: var(--rangeThumbShadow);
+    transition: box-shadow 0.1s ease-out, background-color 0.1s ease-out;
 
     &:hover {
       cursor: grab;
