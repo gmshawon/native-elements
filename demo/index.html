@@ -81,82 +81,82 @@
 
     <h2>Progress</h2>
     <p>
-      <progress value="50" max="100">progress</progress>
+      <progress ne-progress value="50" max="100">progress</progress>
     </p>
     <p>
-      <progress></progress>
+      <progress ne-progress></progress>
     </p>
 
     <h2>Meter</h2>
-    <input type="password" value="342567rt">
-    <meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
-    <meter min="0" max="100" low="25" high="75" optimum="100" value="50"></meter>
-    <meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
+    <input ne-textfield type="password" value="342567rt">
+    <meter ne-meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
+    <meter ne-meter min="0" max="100" low="25" high="75" optimum="100" value="50"></meter>
+    <meter ne-meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
 
     <h2>Checkboxes & Radio</h2>
     <label>
-      <input type="checkbox">
+      <input ne-checkradio type="checkbox">
       Label
     </label>
     <label>
-      <input type="radio">
+      <input ne-checkradio type="radio">
       Label
     </label>
 
     <h2>Range</h2>
-    <input type="range" id="range" name="range" min="100" max="500" step="10">
-    <input disabled type="range" id="range" name="range" min="100" max="500" step="10">
+    <input ne-range type="range" id="range" name="range" min="100" max="500" step="10">
+    <input ne-range disabled type="range" id="range" name="range" min="100" max="500" step="10">
 
     <h2>Text fields</h2>
     <p>
-      <input type="text" placeholder="Text">
+      <input ne-textfield type="text" placeholder="Text">
     </p>
     <p>
-      <input type="text" disabled value="I'm disabled" placeholder="Text">
+      <input ne-textfield type="text" disabled value="I'm disabled" placeholder="Text">
     </p>
     <p>
-      <input type="text" readonly value="I'm readonly" placeholder="Readonly text">
+      <input ne-textfield type="text" readonly value="I'm readonly" placeholder="Readonly text">
     </p>
     <p>
-      <input type="password" placeholder="Password">
+      <input ne-textfield type="password" placeholder="Password">
     </p>
     <p>
-      <input type="url" placeholder="Url">
+      <input ne-textfield type="url" placeholder="Url">
     </p>
     <p>
-      <input type="email" placeholder="Email">
+      <input ne-textfield type="email" placeholder="Email">
     </p>
     <p>
-      <input type="tel" placeholder="Tel">
+      <input ne-textfield type="tel" placeholder="Tel">
     </p>
     <p>
-      <input type="search" placeholder="Search">
+      <input ne-textfield type="search" placeholder="Search">
     </p>
     <p>
-      <input type="number" valid required placeholder="Number">
+      <input ne-textfield type="number" valid required placeholder="Number">
     </p>
     <p>
-      <input type="date" invalid required placeholder="Date">
+      <input ne-textfield type="date" invalid required placeholder="Date">
     </p>
     <p>
-      <input type="time" placeholder="Time">
+      <input ne-textfield type="time" placeholder="Time">
     </p>
     <p>
-      <input type="month" placeholder="Month">
+      <input ne-textfield type="month" placeholder="Month">
     </p>
     <p>
-      <input type="week" placeholder="Week">
+      <input ne-textfield type="week" placeholder="Week">
     </p>
     <p>
-      <input type="datetime-local" placeholder="Datetime Local">
+      <input ne-textfield type="datetime-local" placeholder="Datetime Local">
     </p>
     <p>
-      <textarea></textarea>
+      <textarea ne-textfield></textarea>
     </p>
 
 
     <h2>Datalist</h2>
-    <input list="options" id="datalist" name="datalist" placeholder="Enter option">
+    <input ne-textfield list="options" id="datalist" name="datalist" placeholder="Enter option">
     <datalist id="options">
       <option value="Option 1"></option>
       <option value="Option 2"></option>
