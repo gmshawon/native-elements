@@ -1,7 +1,7 @@
 # Text fields - Native Elements
 > by [Native Elements](https://github.com/equinusocio/native-elements)
 
-Native HTML `<input ...>` elements with **CSS API** that give you superpowers. 🕶
+Native HTML `<input ...>` and `<textarea>` elements with **CSS API** that give you superpowers. 🕶
 
 <!-- TOC -->
 
@@ -24,6 +24,7 @@ Native HTML `<input ...>` elements with **CSS API** that give you superpowers. �
   <input type="url">
   <input type="email">
   <input type="tel">
+  <input type="search">
   <input type="number">
   <input type="date">
   <input type="time">
@@ -49,6 +50,38 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
 
 ```css
 * {
+/* Border API */
+  --textfieldBorder: var(--ne-textfield-border, 1px solid hsl(0, 0%, 89%));
+  --textfieldHoverBorder: var(--ne-textfield-hover-border, 1px solid hsl(0, 0%, 89%));
+  --textfieldFocusBorder: var(--ne-textfield-focus-border, 1px solid hsl(233, 64%, 85%));
+  --textfieldDisabledBorder: var(--ne-textfield-disabled-border, 1px solid hsl(220, 10%, 95%));
+
+  /* Background API */
+  --textfieldBackground: var(--ne-textfield-background, #FFF);
+  --textfieldHoverBackground: var(--ne-textfield-hover-background, #FFF);
+  --textfieldFocusBackground: var(--ne-textfield-focus-background, #FFF);
+  --textfieldDisabledBackground: var(--ne-textfield-disabled-background, hsl(220, 10%, 95%));
+
+  /* Foreground API */
+  --textfieldColor: var(--ne-textfield-color, hsl(0, 0%, 13%));
+  --textfieldHoverColor: var(--ne-textfield-hover-color, hsl(0, 0%, 13%));
+  --textfieldFocusColor: var(--ne-textfield-focus-color, hsl(0, 0%, 13%));
+  --textfieldDisabledColor: var(--ne-textfield-disabled-color, hsl(220, 10%, 60%));
+  --textfieldReadonlyColor: var(--ne-textfield-readonly-color, hsl(0, 0%, 13%));
+  --textfieldPlaceholderColor: var(--ne-textfield-placeholder-color, hsl(0, 0%, 85%));
+  --textfieldHoverPlaceholderColor: var(--ne-textfield-hover-placeholder-color, hsl(0, 0%, 89%));
+  --textfieldFocusPlaceholderColor: var(--ne-textfield-focus-placeholder-color, hsl(0, 0%, 89%));
+  --textfieldDisabledPlaceholderColor: var(--ne-textfield-disabled-placeholder-color, hsl(0, 0%, 80%));
+
+  /* Misc API */
+  --textfieldBorderRadius: var(--ne-textfield-radius, 5px);
+  --textfieldHeight: var(--ne-textfield-height, 2.5rem);
+  --textfieldPadding: var(--ne-textfield-y-padding, 0.5rem) var(--ne-textfield-x-padding, 0.75rem);
+  --textfieldOutlineColor: var(--ne-textfield-outline-color, hsl(233, 64%, 85%));
+  --textfieldOutlineWidth: var(--ne-textfield-outline-width, 0.2rem);
+  --textfieldSelectionBackground: var(--ne-textfield-selection-background, hsl(233, 64%, 90%));
+  --textfieldSelectionForeground: var(--ne-textfield-selection-background, hsl(0, 0%, 13%));
+  --textfieldResize: var(--ne-textfield-resize, vertical);
 }
 ```
 
