@@ -1,18 +1,6 @@
 @import './../../ne-utils/src/textfield.pcss';
 
-input[type='text'],
-input[type='password'],
-input[type='url'],
-input[type='email'],
-input[type='tel'],
-input[type='search'],
-input[type='number'],
-input[type='date'],
-input[type='time'],
-input[type='month'],
-input[type='week'],
-input[type='datetime-local'],
-textarea {
+[ne-textfield] {
   /* Border API */
   --textfieldBorder: var(--ne-textfield-border, 1px solid hsl(0, 0%, 89%));
   --textfieldHoverBorder: var(--ne-textfield-hover-border, 1px solid hsl(0, 0%, 89%));
@@ -78,7 +66,7 @@ textarea {
   appearance: none;
 }
 
-textarea {
+textarea[ne-textfield] {
   @mixin input;
 
   height: auto;
