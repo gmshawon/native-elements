@@ -6,7 +6,7 @@ module.exports = () => ({
     'postcss-nesting': {},
     'postcss-custom-media': {},
     'postcss-selector-not': {},
-    'autoprefixer': {},
+    'autoprefixer': { browsers: ['last 1 versions', 'not ie <= 11'] },
     'cssnano': { preset: 'default' }
   }
 });
