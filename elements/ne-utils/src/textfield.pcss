@@ -49,7 +49,7 @@
 
   &:disabled,
   &[aria-disabled],
-  &[readonly] {
+  &:read-only {
     border: var(--textfieldDisabledBorder);
     background: var(--textfieldDisabledBackground);
     color: var(--textfieldDisabledColor);
@@ -59,7 +59,7 @@
     }
   }
 
-  &[readonly] {
+  &:read-only {
     color: var(--textfieldReadonlyColor);
 
     &::placeholder {
@@ -69,5 +69,27 @@
 
   &:disabled {
     cursor: not-allowed;
+  }
+
+  &:required {
+    &:valid {
+      color: var(--textfieldValidColor);
+      background: var(--textfieldValidBackground);
+      border: var(--textfieldValidBorder);
+
+      &:focus {
+        box-shadow: 0 0 0 var(--textfieldOutlineWidth) var(--textfieldValidOutlineColor);
+      }
+    }
+
+    &:invalid {
+      color: var(--textfieldInvalidColor);
+      background: var(--textfieldInvalidBackground);
+      border: var(--textfieldInvalidBorder);
+
+      &:focus {
+        box-shadow: 0 0 0 var(--textfieldOutlineWidth) var(--textfieldInvalidOutlineColor);
+      }
+    }
   }
 }
