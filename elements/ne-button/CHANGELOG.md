@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.1.2...@native-elements/ne-button@1.1.3) (2017-12-23)
+
+
+### Bug Fixes
+
+* **ne-button:** Fix --buttonActiveForeground name to --buttonActiveColor ([0988e31](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/0988e31))
+* **ne-button:** Remove internal custom properties dependencies ([112b2fa](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/112b2fa))
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.1.1...@native-elements/ne-button@1.1.2) (2017-12-21)
 
