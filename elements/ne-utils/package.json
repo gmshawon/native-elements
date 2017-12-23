@@ -5,7 +5,7 @@
   "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-utils",
   "main": "src/ne-utils.pcss",
   "files": [
-    "src"
+    "src/"
   ],
   "author": {
     "name": "Equinusocio",
