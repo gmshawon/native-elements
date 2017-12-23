@@ -56,7 +56,7 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
   --ne-textfield-focus-border: 1px solid hsl(233, 64%, 62%); /* border */
   --ne-textfield-disabled-border: 1px solid hsl(220, 10%, 95%); /* border */
   --ne-textfield-vaild-border: 1px solid hsl(67, 78%, 52%); /* border */
-  --ne-textfield-vaild-border: 1px solid hsl(354, 100%, 65%); /* border */
+  --ne-textfield-invaild-border: 1px solid hsl(354, 100%, 65%); /* border */
 
   /* Background API */
   --ne-textfield-background: #FFF; /* background */
@@ -64,7 +64,7 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
   --ne-textfield-focus-background: #FFF; /* background */
   --ne-textfield-disabled-background: hsl(220, 10%, 95%); /* background */
   --ne-textfield-valid-background: #FFF; /* background */
-  --ne-textfield-valid-background: #FFF; /* background */
+  --ne-textfield-invalid-background: #FFF; /* background */
 
   /* Foreground API */
   --ne-textfield-color: hsl(0, 0%, 13%); /* color */
@@ -73,7 +73,7 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
   --ne-textfield-disabled-color: hsl(220, 10%, 60%); /* color */
   --ne-textfield-readonly-color: hsl(0, 0%, 13%); /* color */
   --ne-textfield-valid-color: hsl(0, 0%, 13%); /* color */
-  --ne-textfield-valid-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-invalid-color: hsl(0, 0%, 13%); /* color */
   --ne-textfield-placeholder-color: hsl(0, 0%, 85%); /* color */
   --ne-textfield-hover-placeholder-color: hsl(0, 0%, 89%); /* color */
   --ne-textfield-focus-placeholder-color: hsl(0, 0%, 89%); /* color */
@@ -85,8 +85,8 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
   --ne-textfield-y-padding: 0.5rem;
   --ne-textfield-x-padding: 0.75rem;
   --ne-textfield-outline-color: hsl(233, 64%, 85%);
-  --ne-textfield-outline-color: hsl(67, 78%, 90%);
-  --ne-textfield-outline-color: hsl(354, 100%, 90%);
+  --ne-textfield-valid-outline-color: hsl(67, 78%, 90%);
+  --ne-textfield-invalid-outline-color: hsl(354, 100%, 90%);
   --ne-textfield-outline-width: 0.2rem;
   --ne-textfield-selection-background: hsl(233, 64%, 90%);
   --ne-textfield-selection-foreground: hsl(0, 0%, 13%);
