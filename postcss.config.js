@@ -7,6 +7,6 @@ module.exports = () => ({
     'postcss-custom-media': {},
     'postcss-selector-not': {},
     'autoprefixer': { browsers: ['last 1 versions', 'not ie <= 11'] },
-    'cssnano': { preset: 'default' }
+    'cssnano': { preset: 'advanced' }
   }
 });
