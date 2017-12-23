@@ -60,7 +60,8 @@
   }
 
   &:disabled,
-  &[aria-disabled] {
+  &[aria-disabled],
+  &[readonly] {
     border: var(--textfieldDisabledBorder);
     background: var(--textfieldDisabledBackground);
     color: var(--textfieldDisabledColor);
