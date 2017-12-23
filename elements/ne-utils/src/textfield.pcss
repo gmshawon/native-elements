@@ -12,6 +12,18 @@
   outline: none;
   transition: border-color 0.1s ease-out, color 0.1s ease-out, box-shadow 0.1s ease-out, background-color 0.1s ease-out;
 
+  &::-webkit-datetime-edit-text {
+    opacity: 0.3;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    color: var(--textfieldColor);
+  }
+
+  &::-webkit-calendar-picker-indicator:hover {
+    background-color: transparent;
+  }
+
   &::selection {
     background-color: var(--textfieldSelectionBackground);
     color: var(--textfieldSelectionForeground);
@@ -48,8 +60,7 @@
   }
 
   &:disabled,
-  &[aria-disabled],
-  &:read-only {
+  &[aria-disabled] {
     border: var(--textfieldDisabledBorder);
     background: var(--textfieldDisabledBackground);
     color: var(--textfieldDisabledColor);
@@ -59,7 +70,7 @@
     }
   }
 
-  &:read-only {
+  &[readonly] {
     color: var(--textfieldReadonlyColor);
 
     &::placeholder {

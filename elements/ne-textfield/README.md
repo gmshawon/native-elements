@@ -31,7 +31,7 @@ Native HTML `<input ...>` and `<textarea>` elements with **CSS API** that give y
   <input type="month">
   <input type="week">
   <input type="datetime-local">
-  <textarea>
+  <textarea></textarea>
 ```
 
 ```css
@@ -50,38 +50,47 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
 
 ```css
 * {
-/* Border API */
-  --textfieldBorder: var(--ne-textfield-border, 1px solid hsl(0, 0%, 89%));
-  --textfieldHoverBorder: var(--ne-textfield-hover-border, 1px solid hsl(0, 0%, 89%));
-  --textfieldFocusBorder: var(--ne-textfield-focus-border, 1px solid hsl(233, 64%, 85%));
-  --textfieldDisabledBorder: var(--ne-textfield-disabled-border, 1px solid hsl(220, 10%, 95%));
+  /* Border API */
+  --ne-textfield-border: 1px solid hsl(0, 0%, 89%); /* border */
+  --ne-textfield-hover-border: 1px solid hsl(0, 0%, 89%); /* border */
+  --ne-textfield-focus-border: 1px solid hsl(233, 64%, 62%); /* border */
+  --ne-textfield-disabled-border: 1px solid hsl(220, 10%, 95%); /* border */
+  --ne-textfield-vaild-border: 1px solid hsl(67, 78%, 52%); /* border */
+  --ne-textfield-vaild-border: 1px solid hsl(354, 100%, 65%); /* border */
 
   /* Background API */
-  --textfieldBackground: var(--ne-textfield-background, #FFF);
-  --textfieldHoverBackground: var(--ne-textfield-hover-background, #FFF);
-  --textfieldFocusBackground: var(--ne-textfield-focus-background, #FFF);
-  --textfieldDisabledBackground: var(--ne-textfield-disabled-background, hsl(220, 10%, 95%));
+  --ne-textfield-background: #FFF; /* background */
+  --ne-textfield-hover-background: #FFF; /* background */
+  --ne-textfield-focus-background: #FFF; /* background */
+  --ne-textfield-disabled-background: hsl(220, 10%, 95%); /* background */
+  --ne-textfield-valid-background: #FFF; /* background */
+  --ne-textfield-valid-background: #FFF; /* background */
 
   /* Foreground API */
-  --textfieldColor: var(--ne-textfield-color, hsl(0, 0%, 13%));
-  --textfieldHoverColor: var(--ne-textfield-hover-color, hsl(0, 0%, 13%));
-  --textfieldFocusColor: var(--ne-textfield-focus-color, hsl(0, 0%, 13%));
-  --textfieldDisabledColor: var(--ne-textfield-disabled-color, hsl(220, 10%, 60%));
-  --textfieldReadonlyColor: var(--ne-textfield-readonly-color, hsl(0, 0%, 13%));
-  --textfieldPlaceholderColor: var(--ne-textfield-placeholder-color, hsl(0, 0%, 85%));
-  --textfieldHoverPlaceholderColor: var(--ne-textfield-hover-placeholder-color, hsl(0, 0%, 89%));
-  --textfieldFocusPlaceholderColor: var(--ne-textfield-focus-placeholder-color, hsl(0, 0%, 89%));
-  --textfieldDisabledPlaceholderColor: var(--ne-textfield-disabled-placeholder-color, hsl(0, 0%, 80%));
+  --ne-textfield-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-hover-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-focus-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-disabled-color: hsl(220, 10%, 60%); /* color */
+  --ne-textfield-readonly-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-valid-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-valid-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-placeholder-color: hsl(0, 0%, 85%); /* color */
+  --ne-textfield-hover-placeholder-color: hsl(0, 0%, 89%); /* color */
+  --ne-textfield-focus-placeholder-color: hsl(0, 0%, 89%); /* color */
+  --ne-textfield-disabled-placeholder-color: hsl(0, 0%, 80%); /* color */
 
   /* Misc API */
-  --textfieldBorderRadius: var(--ne-textfield-radius, 5px);
-  --textfieldHeight: var(--ne-textfield-height, 2.5rem);
-  --textfieldPadding: var(--ne-textfield-y-padding, 0.5rem) var(--ne-textfield-x-padding, 0.75rem);
-  --textfieldOutlineColor: var(--ne-textfield-outline-color, hsl(233, 64%, 85%));
-  --textfieldOutlineWidth: var(--ne-textfield-outline-width, 0.2rem);
-  --textfieldSelectionBackground: var(--ne-textfield-selection-background, hsl(233, 64%, 90%));
-  --textfieldSelectionForeground: var(--ne-textfield-selection-background, hsl(0, 0%, 13%));
-  --textfieldResize: var(--ne-textfield-resize, vertical);
+  --ne-textfield-radius: 5px;
+  --ne-textfield-height: 2.5rem;
+  --ne-textfield-y-padding: 0.5rem;
+  --ne-textfield-x-padding: 0.75rem;
+  --ne-textfield-outline-color: hsl(233, 64%, 85%);
+  --ne-textfield-outline-color: hsl(67, 78%, 90%);
+  --ne-textfield-outline-color: hsl(354, 100%, 90%);
+  --ne-textfield-outline-width: 0.2rem;
+  --ne-textfield-selection-background: hsl(233, 64%, 90%);
+  --ne-textfield-selection-foreground: hsl(0, 0%, 13%);
+  --ne-textfield-resize: vertical;
 }
 ```
 
