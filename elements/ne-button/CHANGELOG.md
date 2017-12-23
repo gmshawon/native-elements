@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.1.3...@native-elements/ne-button@1.1.4) (2017-12-23)
+
+
+### Bug Fixes
+
+* **ne-button:** switch to ne-* attribute ([39090c3](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/39090c3))
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.1.2...@native-elements/ne-button@1.1.3) (2017-12-23)
 

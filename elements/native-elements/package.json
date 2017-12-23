@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/native-elements",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Native HTML Elements with CSS superpowers.",
   "main": "src/native-elements.pcss",
   "repository": "https://github.com/equinusocio/native-elements",
@@ -13,11 +13,11 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@native-elements/ne-button": "^1.1.3",
-    "@native-elements/ne-checkradio": "^1.0.8",
-    "@native-elements/ne-meter": "^1.0.6",
-    "@native-elements/ne-progress": "^1.0.5",
-    "@native-elements/ne-range": "^0.0.9",
-    "@native-elements/ne-textfield": "^0.0.6"
+    "@native-elements/ne-button": "^1.1.4",
+    "@native-elements/ne-checkradio": "^1.0.9",
+    "@native-elements/ne-meter": "^1.0.7",
+    "@native-elements/ne-progress": "^1.0.6",
+    "@native-elements/ne-range": "^0.0.10",
+    "@native-elements/ne-textfield": "^0.0.7"
   }
 }

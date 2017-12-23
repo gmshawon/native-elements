@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/ne-button",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Button element from Native Elements",
   "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-button",
   "main": "src/ne-button.pcss",
