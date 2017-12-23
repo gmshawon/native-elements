@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/ne-textfield",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Text fields elements from Native Elements",
   "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield",
   "main": "src/ne-textfield.pcss",
@@ -13,6 +13,6 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@native-elements/ne-utils": "^0.1.0"
+    "@native-elements/ne-utils": "^0.1.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/ne-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utilities mixins from Native Elements",
   "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-utils",
   "main": "src/ne-utils.pcss",
