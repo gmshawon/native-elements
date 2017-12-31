@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-checkradio/compare/@native-elements/ne-checkradio@1.0.9...@native-elements/ne-checkradio@1.1.0) (2017-12-31)
+
+
+### Features
+
+* **ne-checkradio:** Refactor structure ([f3d6f26](https://github.com/equinusocio/native-elements/tree/master/elements/ne-checkradio/commit/f3d6f26))
+
+
+
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/equinusocio/native-elements/tree/master/elements/ne-checkradio/compare/@native-elements/ne-checkradio@1.0.8...@native-elements/ne-checkradio@1.0.9) (2017-12-23)
 

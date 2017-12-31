@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-meter/compare/@native-elements/ne-meter@1.0.7...@native-elements/ne-meter@1.1.0) (2017-12-31)
+
+
+### Features
+
+* **ne-meter:** Refactor structure ([ef059f2](https://github.com/equinusocio/native-elements/tree/master/elements/ne-meter/commit/ef059f2))
+
+
+
+
 <a name="1.0.7"></a>
 ## [1.0.7](https://github.com/equinusocio/native-elements/tree/master/elements/ne-meter/compare/@native-elements/ne-meter@1.0.6...@native-elements/ne-meter@1.0.7) (2017-12-23)
 

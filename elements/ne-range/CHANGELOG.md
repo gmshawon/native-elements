@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.0.10...@native-elements/ne-range@0.1.0) (2017-12-31)
+
+
+### Features
+
+* **ne-range:** Refactor structure ([f196f1c](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/f196f1c))
+
+
+
+
 <a name="0.0.10"></a>
 ## [0.0.10](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.0.9...@native-elements/ne-range@0.0.10) (2017-12-23)
 
