@@ -14,7 +14,7 @@ const IS_DEV = process.argv.find(arg => arg.includes('watch'));
 const elementArg = process.argv.find(arg => arg.includes('element='));
 const element = elementArg ? elementArg.replace('element=', '') : null;
 
-const FOLDER = element ? `${paths.elements}/${element}/**/*.pcss` : `${paths.elements}/**/*.pcss`;
+const FOLDER = element ? `${paths.elements}/${element}/**/!(_*).pcss` : `${paths.elements}/**/!(_*).pcss`;
 
 const _process = async file => {
   const cssFile = file.replace('pcss', 'css').replace('src', 'dist');
