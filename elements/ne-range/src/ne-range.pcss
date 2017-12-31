@@ -12,20 +12,10 @@
 
   &::-webkit-slider-runnable-track {
     @mixin track;
-
-    border-radius: var(--rangeBorderRadius);
-    background: var(--rangeBackground);
   }
 
   &::-moz-range-track {
     @mixin track;
-
-    border-radius: var(--rangeBorderRadius);
-    background: var(--rangeBackground);
-  }
-
-  &::-moz-focus-outer {
-    border: 0;
   }
 
   &::-ms-track {
@@ -35,6 +25,10 @@
     border-color: transparent;
     background-color: transparent;
     border-width: var(--rangeThumbHeight);
+  }
+
+  &::-moz-focus-outer {
+    border: 0;
   }
 
   &::-ms-fill-upper {
