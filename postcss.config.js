@@ -1,6 +1,6 @@
 module.exports = () => ({
   plugins: {
-    'postcss-easy-import': { extensions: '.pcss', prefix: '_' },
+    'postcss-easy-import': { extensions: '.pcss' },
     'stylelint': { configFile: '.stylelintrc' },
     'postcss-mixins': {},
     'postcss-nesting': {},
