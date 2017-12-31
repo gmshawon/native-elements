@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.0.18"></a>
+## [0.0.18](https://github.com/equinusocio/native-elements/compare/@native-elements/native-elements@0.0.17...@native-elements/native-elements@0.0.18) (2017-12-31)
+
+
+
+
+**Note:** Version bump only for package @native-elements/native-elements
+
 <a name="0.0.17"></a>
 ## [0.0.17](https://github.com/equinusocio/native-elements/compare/@native-elements/native-elements@0.0.16...@native-elements/native-elements@0.0.17) (2017-12-31)
 

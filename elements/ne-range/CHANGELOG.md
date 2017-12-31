@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.1.0...@native-elements/ne-range@0.1.1) (2017-12-31)
+
+
+### Bug Fixes
+
+* **ne-range:** Fix grab lines and thumb position ([165c5df](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/165c5df))
+* **ne-range:** Fix track style ([28783d5](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/28783d5))
+
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.0.10...@native-elements/ne-range@0.1.0) (2017-12-31)
 
