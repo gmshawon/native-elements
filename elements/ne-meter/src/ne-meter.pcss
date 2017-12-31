@@ -1,45 +1,16 @@
+@import './config.pcss';
+@import './mixins.pcss';
+
 [ne-meter] {
-  /* Border API */
-  --meterBorderColor: var(--ne-meter-border-color, hsl(0, 0%, 89%));
-
-  /* Background API */
-  --meterBackground: var(--ne-meter-background, hsl(0, 0%, 97%));
-  --meterFilledColorStrong: var(--ne-meter-filled-color-strong, hsl(67, 78%, 52%));
-  --meterFilledColorGood: var(--ne-meter-filled-color-good, hsl(41, 100%, 60%));
-  --meterFilledColorWeak: var(--ne-meter-filled-color-weak, hsl(354, 100%, 65%));
-
-  /* Misc API */
-  --meterBorderRadius: var(--ne-meter-radius, 5px);
-  --meterWidth: var(--ne-meter-width, 30px);
-  --meterHeight: var(--ne-meter-height, 3px);
+  @mixin config;
 
   width: var(--meterWidth);
   height: var(--meterHeight);
   vertical-align: middle;
-
-  @define-mixin progress {
-    background: var(--meterBackground);
-    box-shadow: inset 0 0 0 1px var(--meterBorderColor);
-    border-radius: var(--meterBorderRadius);
-    overflow: hidden;
-  }
-
   @mixin progress;
 
   &::-webkit-meter-bar {
     @mixin progress;
-  }
-
-  @define-mixin meter-strong {
-    background: var(--meterFilledColorStrong);
-  }
-
-  @define-mixin meter-good {
-    background: var(--meterFilledColorGood);
-  }
-
-  @define-mixin meter-weak {
-    background: var(--meterFilledColorWeak);
   }
 
   /* Low value */
