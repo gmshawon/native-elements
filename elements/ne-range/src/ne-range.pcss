@@ -78,67 +78,45 @@
   }
 
   &:active::-ms-thumb {
-    transform: scale(1.1);
     background-color: var(--rangeThumbActiveBackground);
   }
 
   &:not(:active):focus::-webkit-slider-thumb {
-    background-color: var(--rangeThumbActiveBackground);
-    box-shadow: 0 0 0 var(--rangeOutlineWidth) var(--rangeOutlineColor);
+    @mixin focus-thumb;
   }
 
   &:not(:active):focus::-moz-range-thumb {
-    background-color: var(--rangeThumbActiveBackground);
-    box-shadow: 0 0 0 var(--rangeOutlineWidth) var(--rangeOutlineColor);
+    @mixin focus-thumb;
   }
 
   &:not(:active):focus::-ms-thumb {
-    background-color: var(--rangeThumbActiveBackground);
-    box-shadow: 0 0 0 var(--rangeOutlineWidth) var(--rangeOutlineColor);
+    @mixin focus-thumb;
   }
 
   &:disabled,
   &[aria-disabled] {
     &::-webkit-slider-runnable-track {
-      background-color: var(--rangeDisabledBackground);
-      box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
-      cursor: not-allowed;
+      @mixin disabled-track;
     }
 
     &::-moz-range-track {
-      background-color: var(--rangeDisabledBackground);
-      box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
-      cursor: not-allowed;
+      @mixin disabled-track;
     }
 
-    &::-ms-fill-lower {
-      background-color: var(--rangeDisabledBackground);
-      box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
-      cursor: not-allowed;
-    }
-
-    &::-ms-fill-upper {
-      background-color: var(--rangeDisabledBackground);
-      box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
-      cursor: not-allowed;
+    &::-ms-track {
+      @mixin disabled-track;
     }
 
     &::-webkit-slider-thumb {
-      background-color: var(--rangeThumbDisabledBackground);
-      background-image: none;
-      cursor: not-allowed;
+      @mixin disabled-thumb;
     }
 
     &::-moz-range-thumb {
-      background-color: var(--rangeThumbDisabledBackground);
-      background-image: none;
-      cursor: not-allowed;
+      @mixin disabled-thumb;
     }
 
     &::-ms-thumb {
-      background-color: var(--rangeThumbDisabledBackground);
-      background-image: none;
-      cursor: not-allowed;
+      @mixin disabled-thumb;
     }
   }
 }
