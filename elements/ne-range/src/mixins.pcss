@@ -1,0 +1,30 @@
+@define-mixin track {
+  width: 100%;
+  height: var(--rangeHeight);
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeBorderColor);
+}
+
+@define-mixin thumb {
+  width: var(--rangeThumbWidth);
+  height: var(--rangeThumbHeight);
+  border-color: transparent;
+  border-radius: var(--rangeThumbRadius);
+  background-color: var(--rangeThumbBackground);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgNyAxMCI+ICA8cGF0aCBmaWxsLW9wYWNpdHk9Ii4xNzMiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLDUuNTA5NjQ5NTIgQzExLDUuMjI4MTc3ODYgMTEuMjMxOTMzNiw1IDExLjUsNSBDMTEuNzc2MTQyNCw1IDEyLDUuMjI3NjUyNzkgMTIsNS41MDk2NDk1MiBMMTIsMTQuNDkwMzUwNSBDMTIsMTQuNzcxODIyMSAxMS43NjgwNjY0LDE1IDExLjUsMTUgQzExLjIyMzg1NzYsMTUgMTEsMTQuNzcyMzQ3MiAxMSwxNC40OTAzNTA1IEwxMSw1LjUwOTY0OTUyIEwxMSw1LjUwOTY0OTUyIFogTTgsNS41MDk2NDk1MiBDOCw1LjIyODE3Nzg2IDguMjMxOTMzNTksNSA4LjUsNSBDOC43NzYxNDIzNyw1IDksNS4yMjc2NTI3OSA5LDUuNTA5NjQ5NTIgTDksMTQuNDkwMzUwNSBDOSwxNC43NzE4MjIxIDguNzY4MDY2NDEsMTUgOC41LDE1IEM4LjIyMzg1NzYzLDE1IDgsMTQuNzcyMzQ3MiA4LDE0LjQ5MDM1MDUgTDgsNS41MDk2NDk1MiBMOCw1LjUwOTY0OTUyIFogTTUsNS41MDk2NDk1MiBDNSw1LjIyODE3Nzg2IDUuMjMxOTMzNTksNSA1LjUsNSBDNS43NzYxNDIzNyw1IDYsNS4yMjc2NTI3OSA2LDUuNTA5NjQ5NTIgTDYsMTQuNDkwMzUwNSBDNiwxNC43NzE4MjIxIDUuNzY4MDY2NDEsMTUgNS41LDE1IEM1LjIyMzg1NzYzLDE1IDUsMTQuNzcyMzQ3MiA1LDE0LjQ5MDM1MDUgTDUsNS41MDk2NDk1MiBMNSw1LjUwOTY0OTUyIFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01IC01KSIvPjwvc3ZnPg==);
+  background-size: 40%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: var(--rangeThumbShadow);
+  transition: box-shadow 0.1s ease-out, background-color 0.1s ease-out;
+
+  &:hover {
+    cursor: grab;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+}
