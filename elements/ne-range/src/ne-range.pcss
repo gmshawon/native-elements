@@ -58,17 +58,15 @@
   &::-webkit-slider-thumb {
     @mixin thumb;
 
-    margin-top: -0.5rem;
-    appearance: none;
-    position: relative;
+    margin-top: calc(0.6 * calc(var(--rangeHeight) - var(--rangeThumbHeight)));
   }
 
   &::-moz-range-thumb {
     @mixin thumb;
+  }
 
-    margin-top: -0.5rem;
-    appearance: none;
-    position: relative;
+  &::-ms-thumb {
+    @mixin thumb;
   }
 
   &:active::-webkit-slider-thumb {
@@ -97,10 +95,6 @@
   &:not(:active):focus::-ms-thumb {
     background-color: var(--rangeThumbActiveBackground);
     box-shadow: 0 0 0 var(--rangeOutlineWidth) var(--rangeOutlineColor);
-  }
-
-  &::-ms-thumb {
-    @mixin thumb;
   }
 
   &:disabled,
