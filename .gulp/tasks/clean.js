@@ -1,18 +1,18 @@
-'use strict';
-
 /*
  * > Clean
  */
 
 import gulp from 'gulp';
-import infos from '../../package.json';
+import pkg from '~/package.json';
 import chalk from 'chalk';
 import del from 'del';
 
-const paths = infos.paths;
 
-gulp.task('clean', () => {
-  del(`${paths.elements}/**/dist`).then(paths => {
-    console.log(chalk.green('✔  Dist files cleaned\n'));
+export const clean = (done) => {
+  del([`${pkg.paths.elements}/**/dist`]).then(() => {
+    console.log(chalk.green('\n✔  Dist files cleaned\n'));
   });
-});
+  done();
+}
+
+gulp.task('clean', clean);

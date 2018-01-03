@@ -8,11 +8,6 @@
   "bugs": {
     "url": "https://github.com/equinusocio/native-elements/issues"
   },
-  "paths": {
-    "elements": "./elements",
-    "scripts": "./scripts",
-    "demo": "./demo"
-  },
   "homepage": "https://github.com/equinusocio/native-elements",
   "author": {
     "name": "Equinusocio",
@@ -20,6 +15,11 @@
   },
   "engines": {
     "node": ">=8"
+  },
+  "paths": {
+    "elements": "./elements",
+    "scripts": "./scripts",
+    "demo": "./demo"
   },
   "scripts": {
     "prebuild": "yarn clean && yarn lint",
@@ -47,24 +47,21 @@
   "devDependencies": {
     "autoprefixer": "7.2.1",
     "babel-core": "6.26.0",
+    "babel-plugin-root-import": "5.1.0",
     "babel-preset-env": "1.6.1",
-    "babel-root-import": "4.1.8",
     "chalk": "2.3.0",
     "cssnano": "3.10.0",
     "del": "3.0.0",
-    "gulp": "3.9.1",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-postcss": "7.0.1",
     "gulp-stats": "0.0.4",
     "husky": "0.14.3",
     "lerna": "2.5.1",
-    "postcss": "6.0.14",
     "postcss-cli": "4.1.1",
     "postcss-custom-media": "6.0.0",
     "postcss-easy-import": "3.0.0",
-    "postcss-load-config": "1.2.0",
-    "postcss-load-plugins": "2.3.0",
     "postcss-mixins": "6.2.0",
     "postcss-nesting": "4.2.1",
-    "postcss-plugin": "1.0.0",
     "postcss-selector-not": "3.0.1",
     "stylelint": "8.3.1",
     "stylelint-config-standard": "18.0.0"

@@ -1,9 +1,11 @@
 import gulp from 'gulp';
 import gulpStats from 'gulp-stats';
-import tasks from './.gulp/tasks';
+import clean from './.gulp/tasks/clean';
+import postcss from './.gulp/tasks/postcss';
+import build from './.gulp/tasks/build';
 
 // Use gulp-stats
-gulpStats(gulp);
+// gulpStats(gulp);
 
 // set default task
-gulp.task('default', tasks);
+export default build;
