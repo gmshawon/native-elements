@@ -54,6 +54,7 @@
     "del": "3.0.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-postcss": "7.0.1",
+    "gulp-rename": "1.2.2",
     "gulp-stats": "0.0.4",
     "husky": "0.14.3",
     "lerna": "2.5.1",
