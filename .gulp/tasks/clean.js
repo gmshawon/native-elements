@@ -13,6 +13,6 @@ const paths = infos.paths;
 
 gulp.task('clean', () => {
   del(`${paths.elements}/**/dist`).then(paths => {
-    console.log(chalk.yellow('⚙️  Deleting dist folders\n'));
+    console.log(chalk.green('✔  Dist files cleaned\n'));
   });
 });
