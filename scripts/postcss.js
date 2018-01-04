@@ -2,6 +2,7 @@ const {resolve, dirname} = require('path');
 const fs = require('fs-extra');
 const chokidar = require('chokidar');
 const chalk = require('chalk');
+const ora = require('ora');
 
 const readProcess = require('./_read-process.js');
 const package = require('../package.json');
@@ -16,6 +17,8 @@ const element = elementArg ? elementArg.replace('element=', '') : null;
 
 const FOLDER = element ? `${paths.elements}/${element}/**/!(_*).pcss` : `${paths.elements}/**/!(_*).pcss`;
 
+const spinner = ora('ciao');
+
 const _process = async file => {
   const cssFile = file.replace('pcss', 'css').replace('src', 'dist');
   const fileContent = await fs.readFile(file, 'utf8');
@@ -25,7 +28,7 @@ const _process = async file => {
   await fs.ensureDir(dirname(cssFile));
   await fs.remove(cssFile);
   await fs.writeFile(cssFile, res.css);
-  return chalk.green('[ updated ]');
+  return true;
 };
 
 /** dev command */
@@ -40,10 +43,10 @@ const dev = folder => {
   });
 
   return watcher
-    .on('add', sourcePath => console.log('→', sourcePath, chalk.green('[ added ]')))
+    .on('add', sourcePath => console.log(chalk.green('[ added ]'), sourcePath))
     .on('change', async sourcePath => {
-      console.log('→', sourcePath, await _process(sourcePath))
-      console.log('→', 'native-elements.css', await _process(`${paths.elements}/${package.name}/src/native-elements.pcss`))
+      console.log(chalk.green('[ updated ]'), sourcePath, await _process(sourcePath))
+      console.log(chalk.green('[ updated ]'), 'native-elements.css', await _process(`${paths.elements}/${package.name}/src/native-elements.pcss`))
     })
     .on('unlink', sourcePath => console.log('→', sourcePath, chalk.red('[ removed ]')));
 };
