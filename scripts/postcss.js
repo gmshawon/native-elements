@@ -15,9 +15,9 @@ const IS_DEV = process.argv.find(arg => arg.includes('watch'));
 const elementArg = process.argv.find(arg => arg.includes('element='));
 const element = elementArg ? elementArg.replace('element=', '') : null;
 
-const FOLDER = element ? `${paths.elements}/${element}/**/!(_*).pcss` : `${paths.elements}/**/!(_*).pcss`;
+const FOLDER = element ? paths.elements + '/' + element + '/**/!(_*).pcss' : paths.elements + '/**/!(_*).pcss';
 
-const spinner = ora('ciao');
+const spinner = ora(chalk.bold('Waiting for changes...'));
 
 const _process = async file => {
   const cssFile = file.replace('pcss', 'css').replace('src', 'dist');
@@ -28,7 +28,7 @@ const _process = async file => {
   await fs.ensureDir(dirname(cssFile));
   await fs.remove(cssFile);
   await fs.writeFile(cssFile, res.css);
-  return true;
+  return '';
 };
 
 /** dev command */
@@ -42,11 +42,13 @@ const dev = folder => {
     }
   });
 
+  spinner.start();
+
   return watcher
-    .on('add', sourcePath => console.log(chalk.green('[ added ]'), sourcePath))
+    .on('add', sourcePath => console.log(chalk.green('✔'), sourcePath.replace('elements/native-elements/node_modules/', '')))
     .on('change', async sourcePath => {
-      console.log(chalk.green('[ updated ]'), sourcePath, await _process(sourcePath))
-      console.log(chalk.green('[ updated ]'), 'native-elements.css', await _process(`${paths.elements}/${package.name}/src/native-elements.pcss`))
+      console.log(chalk.green('⎆'), sourcePath, await _process(sourcePath))
+      console.log(chalk.green('⎆'), 'native-elements.css', await _process(paths.elements + '/' + package.name + '/src/native-elements.pcss'))
     })
     .on('unlink', sourcePath => console.log('→', sourcePath, chalk.red('[ removed ]')));
 };
