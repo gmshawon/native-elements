@@ -10,9 +10,7 @@ import chalk from 'chalk';
 import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 
-
 export const pcss = (done) => {
-
   return gulp.src(`${pkg.paths.elements}/**/src/!(_*).pcss`, {base: process.cwd()})
     .pipe(postcss())
     .pipe(rename(function (path, file) {
