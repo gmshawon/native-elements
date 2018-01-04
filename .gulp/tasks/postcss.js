@@ -13,10 +13,11 @@ import rename from 'gulp-rename';
 
 export const pcss = (done) => {
 
-  return gulp.src(`${pkg.paths.elements}/**/!(_*).pcss`, {base: process.cwd()})
+  return gulp.src(`${pkg.paths.elements}/**/src/!(_*).pcss`, {base: process.cwd()})
     .pipe(postcss())
     .pipe(rename(function (path, file) {
-      path.extname = '.css'
+      path.dirname += '/../dist';
+      path.extname = '.css';
     }))
     .pipe(gulp.dest('./'));
   done();
