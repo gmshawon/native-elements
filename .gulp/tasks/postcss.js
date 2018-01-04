@@ -16,10 +16,9 @@ export const pcss = (done) => {
   return gulp.src(`${pkg.paths.elements}/**/!(_*).pcss`, {base: process.cwd()})
     .pipe(postcss())
     .pipe(rename(function (path, file) {
-      path.dirname = `/elements/${file}/dist/`
       path.extname = '.css'
     }))
-    .pipe(gulp.dest('.'));
+    .pipe(gulp.dest('./'));
   done();
 }
 
