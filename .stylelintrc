@@ -8,6 +8,8 @@
     "no-missing-end-of-source-newline": true,
     "no-descending-specificity": null,
     "selector-type-no-unknown": null,
+    "at-rule-empty-line-before": null,
+    "rule-empty-line-before": null,
     "string-quotes": "single",
     "at-rule-no-unknown": null,
     "property-no-vendor-prefix": true,
