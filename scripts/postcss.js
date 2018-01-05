@@ -46,7 +46,7 @@ const dev = folder => {
   return watcher
     .on('add', sourcePath => console.log(chalk.green('✔'), sourcePath.replace('elements/native-elements/node_modules/', '')))
     .on('change', async sourcePath => {
-      console.log(chalk.green('⎆'), sourcePath, await _process(sourcePath))
+      console.log(chalk.green('⎆'), sourcePath, await _process(sourcePath), '')
       console.log(chalk.green('⎆'), 'native-elements.css', await _process(paths.elements + '/' + pkg.name + '/src/native-elements.pcss'))
     })
     .on('unlink', sourcePath => console.log('→', sourcePath, chalk.red('[ removed ]')));
