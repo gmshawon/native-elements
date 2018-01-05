@@ -1,4 +1,4 @@
-module.exports = () => ({
+module.exports = (ctx) => ({
   plugins: {
     'postcss-easy-import': { extensions: '.pcss' },
     'stylelint': { configFile: '.stylelintrc' },
@@ -10,4 +10,4 @@ module.exports = () => ({
     'cssnano': { preset: 'advanced' },
     'postcss-reporter': { clearReportedMessages: true }
   }
-});
+})
