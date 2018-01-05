@@ -1,28 +1,8 @@
-input[type='range'] {
-  /* Border API */
-  --rangeBorderColor: var(--ne-range-border-color, rgba(0, 0, 0, 0.1));
-  --rangeDisabledBorderColor: var(--ne-range-disabled-border-color, rgba(0, 0, 0, 0));
-  --rangeBorderWidth: var(--ne-range-border-width, 1px);
+@import './_config.pcss';
+@import './_mixins.pcss';
 
-  /* Background API */
-  --rangeBackground: var(--ne-range-background, hsl(0, 0%, 97%));
-  --rangeDisabledBackground: var(--ne-range-disabled-background, hsl(0, 0%, 97%));
-  --rangeFocusBackground: var(--ne-range-focus-background, hsl(0, 0%, 97%));
-
-  /* Thumb API */
-  --rangeThumbBackground: var(--ne-range-thumb-background, #FFF);
-  --rangeThumbActiveBackground: var(--ne-range-thumb-active-background, hsl(233, 64%, 62%));
-  --rangeThumbDisabledBackground: var(--ne-range-thumb-disabled-background, hsl(0, 0%, 98%));
-  --rangeThumbShadow: var(--ne-range-thumb-shadow, 0 1px 2px 0 rgba(0, 0, 0, 0.16));
-  --rangeThumbWidth: var(--ne-range-thumb-width, 1rem);
-  --rangeThumbHeight: var(--ne-range-thumb-height, 1.2rem);
-  --rangeThumbRadius: var(--ne-range-thumb-radius, 5px);
-
-  /* Misc API */
-  --rangeHeight: var(--ne-range-height, 5px);
-  --rangeBorderRadius: var(--ne-range-radius, 10px);
-  --rangeOutlineColor: var(--ne-range-outline-color, hsl(233, 64%, 85%));
-  --rangeOutlineWidth: var(--ne-range-outline-width, 0.2rem);
+[ne-range] {
+  @mixin range-config;
 
   width: 100%;
   background: transparent;
@@ -30,30 +10,12 @@ input[type='range'] {
   margin: 0;
   appearance: none;
 
-  @define-mixin track {
-    width: 100%;
-    height: var(--rangeHeight);
-    transition: background-color 0.2s ease-out;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeBorderColor);
-  }
-
   &::-webkit-slider-runnable-track {
     @mixin track;
-
-    border-radius: var(--rangeBorderRadius);
-    background: var(--rangeBackground);
   }
 
   &::-moz-range-track {
     @mixin track;
-
-    border-radius: var(--rangeBorderRadius);
-    background: var(--rangeBackground);
-  }
-
-  &::-moz-focus-outer {
-    border: 0;
   }
 
   &::-ms-track {
@@ -63,6 +25,10 @@ input[type='range'] {
     border-color: transparent;
     background-color: transparent;
     border-width: var(--rangeThumbHeight);
+  }
+
+  &::-moz-focus-outer {
+    border: 0;
   }
 
   &::-ms-fill-upper {
@@ -89,43 +55,18 @@ input[type='range'] {
     background: var(--rangeFocusBackground);
   }
 
-  @define-mixin thumb {
-    width: var(--rangeThumbWidth);
-    height: var(--rangeThumbHeight);
-    border-color: transparent;
-    border-radius: var(--rangeThumbRadius);
-    background-color: var(--rangeThumbBackground);
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgNyAxMCI+ICA8cGF0aCBmaWxsLW9wYWNpdHk9Ii4xNzMiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLDUuNTA5NjQ5NTIgQzExLDUuMjI4MTc3ODYgMTEuMjMxOTMzNiw1IDExLjUsNSBDMTEuNzc2MTQyNCw1IDEyLDUuMjI3NjUyNzkgMTIsNS41MDk2NDk1MiBMMTIsMTQuNDkwMzUwNSBDMTIsMTQuNzcxODIyMSAxMS43NjgwNjY0LDE1IDExLjUsMTUgQzExLjIyMzg1NzYsMTUgMTEsMTQuNzcyMzQ3MiAxMSwxNC40OTAzNTA1IEwxMSw1LjUwOTY0OTUyIEwxMSw1LjUwOTY0OTUyIFogTTgsNS41MDk2NDk1MiBDOCw1LjIyODE3Nzg2IDguMjMxOTMzNTksNSA4LjUsNSBDOC43NzYxNDIzNyw1IDksNS4yMjc2NTI3OSA5LDUuNTA5NjQ5NTIgTDksMTQuNDkwMzUwNSBDOSwxNC43NzE4MjIxIDguNzY4MDY2NDEsMTUgOC41LDE1IEM4LjIyMzg1NzYzLDE1IDgsMTQuNzcyMzQ3MiA4LDE0LjQ5MDM1MDUgTDgsNS41MDk2NDk1MiBMOCw1LjUwOTY0OTUyIFogTTUsNS41MDk2NDk1MiBDNSw1LjIyODE3Nzg2IDUuMjMxOTMzNTksNSA1LjUsNSBDNS43NzYxNDIzNyw1IDYsNS4yMjc2NTI3OSA2LDUuNTA5NjQ5NTIgTDYsMTQuNDkwMzUwNSBDNiwxNC43NzE4MjIxIDUuNzY4MDY2NDEsMTUgNS41LDE1IEM1LjIyMzg1NzYzLDE1IDUsMTQuNzcyMzQ3MiA1LDE0LjQ5MDM1MDUgTDUsNS41MDk2NDk1MiBMNSw1LjUwOTY0OTUyIFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01IC01KSIvPjwvc3ZnPg==);
-    background-size: 40%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    box-shadow: var(--rangeThumbShadow);
-    transition: box-shadow 0.1s ease-out, background-color 0.1s ease-out;
-
-    &:hover {
-      cursor: grab;
-    }
-
-    &:active {
-      cursor: grabbing;
-    }
-  }
-
   &::-webkit-slider-thumb {
     @mixin thumb;
 
-    margin-top: -0.5rem;
-    appearance: none;
-    position: relative;
+    margin-top: calc(0.6 * calc(var(--rangeHeight) - var(--rangeThumbHeight)));
   }
 
   &::-moz-range-thumb {
     @mixin thumb;
+  }
 
-    margin-top: -0.5rem;
-    appearance: none;
-    position: relative;
+  &::-ms-thumb {
+    @mixin thumb;
   }
 
   &:active::-webkit-slider-thumb {
@@ -137,71 +78,45 @@ input[type='range'] {
   }
 
   &:active::-ms-thumb {
-    transform: scale(1.1);
     background-color: var(--rangeThumbActiveBackground);
   }
 
   &:not(:active):focus::-webkit-slider-thumb {
-    background-color: var(--rangeThumbActiveBackground);
-    box-shadow: 0 0 0 var(--rangeOutlineWidth) var(--rangeOutlineColor);
+    @mixin focus-thumb;
   }
 
   &:not(:active):focus::-moz-range-thumb {
-    background-color: var(--rangeThumbActiveBackground);
-    box-shadow: 0 0 0 var(--rangeOutlineWidth) var(--rangeOutlineColor);
+    @mixin focus-thumb;
   }
 
   &:not(:active):focus::-ms-thumb {
-    background-color: var(--rangeThumbActiveBackground);
-    box-shadow: 0 0 0 var(--rangeOutlineWidth) var(--rangeOutlineColor);
-  }
-
-  &::-ms-thumb {
-    @mixin thumb;
+    @mixin focus-thumb;
   }
 
   &:disabled,
   &[aria-disabled] {
     &::-webkit-slider-runnable-track {
-      background-color: var(--rangeDisabledBackground);
-      box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
-      cursor: not-allowed;
+      @mixin disabled-track;
     }
 
     &::-moz-range-track {
-      background-color: var(--rangeDisabledBackground);
-      box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
-      cursor: not-allowed;
+      @mixin disabled-track;
     }
 
-    &::-ms-fill-lower {
-      background-color: var(--rangeDisabledBackground);
-      box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
-      cursor: not-allowed;
-    }
-
-    &::-ms-fill-upper {
-      background-color: var(--rangeDisabledBackground);
-      box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
-      cursor: not-allowed;
+    &::-ms-track {
+      @mixin disabled-track;
     }
 
     &::-webkit-slider-thumb {
-      background-color: var(--rangeThumbDisabledBackground);
-      background-image: none;
-      cursor: not-allowed;
+      @mixin disabled-thumb;
     }
 
     &::-moz-range-thumb {
-      background-color: var(--rangeThumbDisabledBackground);
-      background-image: none;
-      cursor: not-allowed;
+      @mixin disabled-thumb;
     }
 
     &::-ms-thumb {
-      background-color: var(--rangeThumbDisabledBackground);
-      background-image: none;
-      cursor: not-allowed;
+      @mixin disabled-thumb;
     }
   }
 }

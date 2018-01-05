@@ -1,39 +1,7 @@
-button,
-[role='button'] {
-  /* Border API */
-  --buttonBorder: var(--ne-button-border, 0);
-  --buttonHoverBorder: var(--ne-button-hover-border, 0);
-  --buttonFocusBorder: var(--ne-button-focus-border, 0);
-  --buttonActiveBorder: var(--ne-button-active-border, 0);
-  --buttonDisabledBorder: var(--ne-button-disabled-border, 0);
+@import './_config.pcss';
 
-  /* Background API */
-  --buttonBackground: var(--ne-button-background, hsl(233, 64%, 62%));
-  --buttonHoverBackground: var(--ne-button-hover-background, hsl(233, 64%, 52%));
-  --buttonFocusBackground: var(--ne-button-focus-background, hsl(233, 64%, 52%));
-  --buttonActiveBackground: var(--ne-button-active-background, hsl(233, 64%, 32%));
-  --buttonDisabledBackground: var(--ne-button-disabled-background, hsl(220, 10%, 95%));
-
-  /* Foreground API */
-  --buttonColor: var(--ne-button-color, #FFF);
-  --buttonHoverColor: var(--ne-button-hover-color, #FFF);
-  --buttonFocusColor: var(--ne-button-focus-color, #FFF);
-  --buttonActiveColor: var(--ne-button-active-color, #FFF);
-  --buttonDisabledColor: var(--ne-button-disabled-color, hsl(220, 10%, 60%));
-
-  /* Icon API */
-  --buttonIconMargin: var(--ne-button-icon-margin, calc(2rem / 2.2));
-  --buttonIconSeparator: var(--ne-button-icon-separator, rgba(255, 255, 255, 0.3));
-  --buttonDisabledIconSeparator: var(--ne-button-disabled-icon-separator, rgba(143, 150, 163, 0.3));
-
-  /* Misc API */
-  --buttonBorderRadius: var(--ne-button-radius, 5px);
-  --buttonFontWeight: var(--ne-button-font-weight, 700);
-  --buttonFontSize: var(--ne-button-font-size, inherit);
-  --buttonPadding: var(--ne-button-y-padding, 1rem) var(--ne-button-x-padding, 2rem);
-  --buttonOutlineColor: var(--ne-button-outline-color, hsl(233, 64%, 85%));
-  --buttonOutlineWidth: var(--ne-button-outline-width, 0.2rem);
-  --buttonShadow: var(--ne-button-shadow, 0 1px 2px rgba(0, 0, 0, 0.16));
+[ne-button] {
+  @mixin button-config;
 
   box-sizing: border-box;
   appearance: button;

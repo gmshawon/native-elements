@@ -1,0 +1,15 @@
+{
+  "name": "@native-elements/ne-core",
+  "version": "0.0.2",
+  "description": "Core styles from Native Elements",
+  "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-core",
+  "main": "src/ne-core.pcss",
+  "author": {
+    "name": "Equinusocio",
+    "url": "http://equinsuocha.io"
+  },
+  "bugs": {
+    "url": "https://github.com/equinusocio/native-elements/issues"
+  },
+  "license": "Apache-2.0"
+}

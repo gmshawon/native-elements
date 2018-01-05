@@ -1,0 +1,16 @@
+@define-mixin progress-config {
+  /* Border API */
+  --progressBorderColor: var(--ne-progress-border-color, hsl(0, 0%, 89%));
+
+  /* Background API */
+  --progressBackground: var(--ne-progress-background, hsl(0, 0%, 97%));
+  --progressFilledColor: var(--ne-progress-filled-color, hsl(0, 0%, 89%));
+
+  /* Stripes API */
+  --progressStripesSize: var(--ne-progress-stripe-size, 1rem);
+  --progressStripesColor: var(--ne-progress-stripe-colors, rgba(255, 255, 255, 0.4));
+
+  /* Misc API */
+  --progressHeight: var(--ne-progress-height, 5px);
+  --progressBorderRadius: var(--ne-progress-radius, 10px);
+}

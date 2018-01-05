@@ -1,7 +1,7 @@
-input[type='checkbox'],
-input[type='radio'] {
-  --checkradioShadow: var(--ne-checkradio-shadow, 0 1px 1px rgba(0, 0, 0, 0.2));
-  --checkradioAnimationDuration: var(--ne-checkradio-animation-duration, 0.8s);
+@import './_config.pcss';
+
+[ne-checkradio] {
+  @mixin checkradio-config;
 
   will-change: transform;
   margin: 0;

@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.1.0...@native-elements/ne-textfield@0.1.1) (2017-12-31)
+
+
+
+
+**Note:** Version bump only for package @native-elements/ne-textfield
+
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.0.7...@native-elements/ne-textfield@0.1.0) (2017-12-31)
+
+
+### Features
+
+* **ne-textfield:** Refactor strcuture ([5a05e6e](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/commit/5a05e6e))
+
+
+
+
+<a name="0.0.7"></a>
+## [0.0.7](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.0.6...@native-elements/ne-textfield@0.0.7) (2017-12-23)
+
+
+### Bug Fixes
+
+* **ne-textfield:** switch to ne-* attribute ([cdc1935](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/commit/cdc1935))
+
+
+
+
 <a name="0.0.6"></a>
 ## [0.0.6](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.0.5...@native-elements/ne-textfield@0.0.6) (2017-12-23)
 
