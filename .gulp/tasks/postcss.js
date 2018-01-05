@@ -15,7 +15,10 @@ const spinner = ora(chalk.bold('Processing postcss files...'));
 
 export const prepare = (done) => {
   spinner.start();
-  return gulp.src(pkg.paths.elements + '/**!(node_modules)/src/!(_*).pcss', {base: process.cwd(), since: gulp.lastRun(prepare)})
+  return gulp.src([
+      pkg.paths.elements + '/native-elements/src/native-elements.pcss',
+      pkg.paths.elements + '/**!(node_modules)/src/!(_*).pcss'
+    ], {base: process.cwd()})
     .pipe(postcss())
     .pipe(rename(function (path, file) {
       path.dirname += '/../dist';
@@ -24,6 +27,7 @@ export const prepare = (done) => {
     .pipe(gulp.dest('./'));
   done();
 }
+
 
 gulp.task('postcss', gulp.series(prepare, done => {
   spinner.succeed(chalk.bold('Postcss builded'));

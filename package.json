@@ -23,7 +23,7 @@
   },
   "scripts": {
     "build": "yarn gulp --silent",
-    "dev": "node scripts/postcss watch",
+    "dev": "yarn gulp watch",
     "clean": "yarn gulp clean",
     "release": "git pull && yarn build && lerna publish --conventional-commits",
     "releas-nonpm": "git pull && yarn build && lerna publish --skip-npm --conventional-commits"
@@ -46,6 +46,7 @@
     "babel-core": "6.26.0",
     "babel-plugin-root-import": "5.1.0",
     "babel-preset-env": "1.6.1",
+    "beautiful-log": "2.0.0-3",
     "chalk": "2.3.0",
     "cssnano": "3.10.0",
     "del": "3.0.0",
