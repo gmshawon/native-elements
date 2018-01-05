@@ -22,6 +22,8 @@
     "demo": "./demo"
   },
   "scripts": {
+    "lint": "stylelint elements/**/*.pcss",
+    "precommit": "yarn lint && yarn build",
     "build": "yarn gulp --silent",
     "dev": "yarn gulp watch",
     "clean": "yarn gulp clean",
