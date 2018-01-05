@@ -6,10 +6,15 @@
  */
 
 import gulp from 'gulp';
-import infos from '../../package.json';
+import pkg from '~/package.json';
 
-const paths = infos.paths;
-
-gulp.task('watch', gulp.series('build', () => {
-  gulp.watch([`${paths.elements}/**/*.pcss`, 'postcss.config.js'], ['build']);
+gulp.task('watch', gulp.series('postcss', () => {
+  gulp.watch([pkg.paths.elements + '/ne-**/*.pcss', 'postcss.config.js'], gulp.series('postcss'))
+    .on('change', (path, stats) => {
+        console.log(path);
+    })
+    .on('unlink', (path, stats) => {
+        console.log(path);
+        // code to execute on delete
+    });
 }));
