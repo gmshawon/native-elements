@@ -11,9 +11,11 @@ import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
 import ora from 'ora';
 
+
 const spinner = ora(chalk.bold('Processing postcss files...'));
 
 export const prepare = (done) => {
+  console.log();
   spinner.start();
   return gulp.src([
       pkg.paths.elements + '/native-elements/src/native-elements.pcss',
@@ -30,6 +32,8 @@ export const prepare = (done) => {
 
 
 gulp.task('postcss', gulp.series(prepare, done => {
+  console.log();
   spinner.succeed(chalk.bold('Postcss builded'));
+  console.log();
   done();
 }));
