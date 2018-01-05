@@ -24,7 +24,6 @@
   "scripts": {
     "prebuild": "yarn clean",
     "build": "node scripts/postcss",
-    "postbuild": "node scripts/minify",
     "dev": "node scripts/postcss watch",
     "clean": "node scripts/clean",
     "release": "git pull && yarn build && lerna publish --conventional-commits",
