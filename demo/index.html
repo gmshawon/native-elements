@@ -94,14 +94,26 @@
     <meter ne-meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
 
     <h2>Checkboxes & Radio</h2>
-    <fieldset>
-      <label>
+    <fieldset ne-form>
+      <legend ne-form>Fieldset legend</legend>
+      <label ne-form>
         <input ne-checkradio type="checkbox">
         Label
       </label>
-      <label>
-        <input ne-checkradio type="radio">
+      <label ne-form>
+        <input ne-checkradio type="checkbox">
+        Label 2
+      </label>
+    </fieldset>
+    <fieldset ne-form>
+      <legend ne-form>Fieldset legend</legend>
+      <label ne-form>
+        <input ne-checkradio name="group" type="radio">
         Label
+      </label>
+      <label ne-form>
+        <input ne-checkradio name="group" type="radio">
+        Label 2
       </label>
     </fieldset>
 

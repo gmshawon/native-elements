@@ -1,11 +1,11 @@
-# Check & Radio - Native Elements
+# Form - Native Elements
 > by [Native Elements](https://github.com/equinusocio/native-elements)
 
-Native HTML `<input type="checkbox">` & `<input type="radio">` elements with **CSS API** that give you superpowers. 🕶
+Native HTML `<fieldset>, <legend>, <label>, <output>` form elements with **CSS API** that give you superpowers. 🕶
 
 <!-- TOC -->
 
-- [Check & Radio - Native Elements](#check--radio---native-elements)
+- [Form - Native Elements](#form---native-elements)
   - [Example](#example)
   - [CSS API](#css-api)
   - [Install](#install)
@@ -19,8 +19,17 @@ Native HTML `<input type="checkbox">` & `<input type="radio">` elements with **C
 ## Example
 
 ```html
-  <input type="checkbox">
-  <input type="radio" class="SpecialInput">
+  <fieldset ne-form>
+    <legend ne-form>Fieldset legend</legend>
+    <label ne-form>
+      <input ne-checkradio type="checkbox">
+      Label
+    </label>
+    <label ne-form>
+      <input ne-checkradio type="checkbox">
+      Label 2
+    </label>
+  </fieldset>
 ```
 
 ```css
@@ -40,8 +49,11 @@ Check the [live demo](https://ne-checkradio.stackblitz.io/)
 
 ```css
 * {
-  --ne-checkradio-shadow: 1px 1px rgba(0, 0, 0, 0.2); /* shadow */
-  --ne-checkradio-animation-duration: 0.8s; /* time */
+  /* Foreground API */
+  --ne-form-legend-weight: 600;
+
+  /* Misc API */
+  --ne-form-legend-margin: 0 0 0.5rem;
 }
 ```
 
