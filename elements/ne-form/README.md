@@ -42,7 +42,7 @@ input {
 }
 ```
 
-Check the [live demo](https://ne-checkradio.stackblitz.io/)
+Check the [live demo](https://ne-form.stackblitz.io/)
 
 
 ## CSS API
@@ -50,10 +50,10 @@ Check the [live demo](https://ne-checkradio.stackblitz.io/)
 ```css
 * {
   /* Foreground API */
-  --ne-form-legend-weight: 600;
+  --ne-form-legend-weight: 600; /* font-weight */
 
   /* Misc API */
-  --ne-form-legend-margin: 0 0 0.5rem;
+  --ne-form-legend-margin: 0 0 0.5rem; /* margin */
 }
 ```
 
@@ -61,20 +61,20 @@ Check the [live demo](https://ne-checkradio.stackblitz.io/)
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-checkradio
+yarn add @native-elements/ne-form
 ```
 
 
 ## Usage
 Just import the css from your **node_modules** inside your project.
 ```css
-@import 'node_modules/ne-checkradio/dist/ne-checkradio.css';
+@import 'node_modules/ne-form/dist/ne-form.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/ne-checkradio/src/ne-checkradio.pcss';
+@import 'node_modules/ne-form/src/ne-form.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._
