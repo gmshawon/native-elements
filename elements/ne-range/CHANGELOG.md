@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# 0.1.0 (2018-01-08)
+
+
+### Bug Fixes
+
+* **ne-range:** Fix grab lines and thumb position ([165c5df](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/165c5df))
+* **ne-range:** Fix outline and background transition ([46cb6f7](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/46cb6f7))
+* **ne-range:** Fix scaling when thumb is active ([09be45e](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/09be45e))
+* **ne-range:** Fix thumb default size ([cafd44f](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/cafd44f))
+* **ne-range:** Fix track style ([28783d5](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/28783d5))
+* **ne-range:** switch to ne-* attribute ([e6cd6bb](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/e6cd6bb))
+* **ne-range:** Update thumb grab lines svg ([7e515ff](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/7e515ff))
+* Fix config mixin name ([1e254fc](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/1e254fc))
+
+
+### Features
+
+* **ne-range:** Refactor structure ([f196f1c](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/f196f1c))
+
+
+
+
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.1.1...@native-elements/ne-range@0.1.2) (2018-01-05)
+
+
+### Bug Fixes
+
+* Fix config mixin name ([1e254fc](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/1e254fc))
+
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.1.0...@native-elements/ne-range@0.1.1) (2017-12-31)
 

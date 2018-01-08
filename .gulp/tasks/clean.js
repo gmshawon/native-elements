@@ -1,3 +1,6 @@
+
+'use strict';
+
 /*
  * > Clean
  */
@@ -8,9 +11,10 @@ import chalk from 'chalk';
 import del from 'del';
 
 export const clean = (done) => {
-  del([`${pkg.paths.elements}/**/dist`]).then(() => {
-    //console.log(chalk.green('\n\n✔  Dist files cleaned\n'));
-  });
+  console.log(
+    '\n', chalk.cyan('🗂  Cleaning dist files...'), '\n'
+  );
+  del([`${pkg.paths.elements}/**/dist`]);
   done();
 }
 

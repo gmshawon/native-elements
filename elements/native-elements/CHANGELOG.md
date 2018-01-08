@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# 0.1.0 (2018-01-08)
+
+
+### Bug Fixes
+
+* **ne-checkradio:** Fix animation scale ([90b0c66](https://github.com/equinusocio/native-elements/commit/90b0c66))
+* Fix config mixin name ([1e254fc](https://github.com/equinusocio/native-elements/commit/1e254fc))
+* Fix ne-checkradio element animation scale ([f9204f8](https://github.com/equinusocio/native-elements/commit/f9204f8))
+
+
+### Features
+
+* Add ne-meter element ([1d2fbd8](https://github.com/equinusocio/native-elements/commit/1d2fbd8))
+
+
+
+
+<a name="0.0.20"></a>
+## [0.0.20](https://github.com/equinusocio/native-elements/compare/@native-elements/native-elements@0.0.19...@native-elements/native-elements@0.0.20) (2018-01-05)
+
+
+### Bug Fixes
+
+* Fix config mixin name ([1e254fc](https://github.com/equinusocio/native-elements/commit/1e254fc))
+
+
+
+
 <a name="0.0.19"></a>
 ## [0.0.19](https://github.com/equinusocio/native-elements/compare/@native-elements/native-elements@0.0.18...@native-elements/native-elements@0.0.19) (2017-12-31)
 

@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# 0.1.0 (2018-01-08)
+
+
+### Bug Fixes
+
+* **ne-button:** Add live demo to README ([49bf89a](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/49bf89a))
+* **ne-button:** Fix --buttonActiveForeground name to --buttonActiveColor ([0988e31](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/0988e31))
+* **ne-button:** Fix default custom properties inheritance ([dbd9345](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/dbd9345))
+* Fix config mixin name ([1e254fc](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/1e254fc))
+* **ne-button:** Release 1.0.3 ([3761e09](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/3761e09))
+* **ne-button:** Remove dotted inner border on firefox ([951aca7](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/951aca7))
+* **ne-button:** Remove internal custom properties dependencies ([112b2fa](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/112b2fa))
+* **ne-button:** Remove line-height inheritance ([25a5886](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/25a5886))
+* **ne-button:** Rename all foreground API from *-foreground to *-color ([ea71a7a](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/ea71a7a))
+* **ne-button:** switch to ne-* attribute ([39090c3](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/39090c3))
+* **ne-button:** Update README ([2a2119e](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/2a2119e))
+
+
+### Features
+
+* **ne-button:** Add --ne-button-outline-width CSS api ([fff3bf4](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/fff3bf4))
+* **ne-button:** Refactor structure ([be317ff](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/be317ff))
+
+
+
+
+<a name="1.2.2"></a>
+## [1.2.2](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.2.1...@native-elements/ne-button@1.2.2) (2018-01-05)
+
+
+### Bug Fixes
+
+* Fix config mixin name ([1e254fc](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/1e254fc))
+
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@1.2.0...@native-elements/ne-button@1.2.1) (2017-12-31)
 
