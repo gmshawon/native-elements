@@ -21,24 +21,19 @@ Native HTML `<fieldset>, <legend>, <label>, <output>` form elements with **CSS A
 ```html
   <fieldset ne-form>
     <legend ne-form>Fieldset legend</legend>
-    <label ne-form>
-      <input ne-checkradio type="checkbox">
-      Label
-    </label>
-    <label ne-form>
-      <input ne-checkradio type="checkbox">
-      Label 2
-    </label>
+
+    <label ne-form>Label</label>
+    <label ne-form>Label 2</label>
   </fieldset>
 ```
 
 ```css
-input {
-  --ne-checkradio-shadow: none;
+[ne-form] {
+  --ne-form-legend-margin: none;
 }
 
-.SpecialInput {
-  --ne-checkradio-animation-duration: 0;
+.SpecialFieldset {
+  --ne-form-legend-weight: 300;
 }
 ```
 
