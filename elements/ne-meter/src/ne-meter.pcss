@@ -3,12 +3,11 @@
 
 [ne-meter] {
   @mixin meter-config;
+  @mixin progress;
 
   width: var(--meterWidth);
   height: var(--meterHeight);
   vertical-align: middle;
-
-  @mixin progress;
 
   &::-webkit-meter-bar {
     @mixin progress;
