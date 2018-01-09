@@ -19,12 +19,12 @@ Native HTML `<input type="checkbox">` & `<input type="radio">` elements with **C
 ## Example
 
 ```html
-  <input type="checkbox">
-  <input type="radio" class="SpecialInput">
+  <input ne-checkradio type="checkbox">
+  <input ne-checkradio type="radio" class="SpecialInput">
 ```
 
 ```css
-input {
+[ne-checkradio] {
   --ne-checkradio-shadow: none;
 }
 
