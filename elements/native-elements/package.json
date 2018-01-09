@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/native-elements",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Native HTML Elements with CSS superpowers.",
   "main": "src/native-elements.pcss",
   "repository": "https://github.com/equinusocio/native-elements",
@@ -18,7 +18,7 @@
     "@native-elements/ne-core": "^0.0.2",
     "@native-elements/ne-meter": "^1.1.2",
     "@native-elements/ne-progress": "^1.1.2",
-    "@native-elements/ne-range": "^0.1.2",
+    "@native-elements/ne-range": "^0.1.4",
     "@native-elements/ne-textfield": "^0.1.4"
   }
 }
