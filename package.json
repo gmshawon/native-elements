@@ -23,8 +23,8 @@
   },
   "scripts": {
     "lint": "stylelint elements/**/*.pcss",
-    "precommit": "yarn lint && yarn build",
-    "build": "yarn gulp --silent",
+    "precommit": "yarn lint",
+    "build": "yarn lint && yarn gulp --silent",
     "dev": "yarn gulp dev",
     "clean": "yarn gulp clean",
     "release": "git pull && yarn build && lerna publish --conventional-commits",

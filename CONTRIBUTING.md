@@ -10,7 +10,7 @@ yarn dev
 ```
 
 ## Build
-You can build all the packages by running this command. This command is runned automatically before each commit to ensure that there are not linter issues.
+You can build all the packages by running this command.
 
 ```bash
 yarn build
