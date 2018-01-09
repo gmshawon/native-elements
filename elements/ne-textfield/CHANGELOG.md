@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.1.0...@native-elements/ne-textfield@0.1.1) (2018-01-09)
+
+
+### Bug Fixes
+
+* **ne-textfield:** Add textfield width api --ne-textfield-width ([8d3d0ae](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/commit/8d3d0ae))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2018-01-08)
 
