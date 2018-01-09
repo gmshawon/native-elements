@@ -9,23 +9,23 @@
 
   /* Background API */
   --textfieldBackground: var(--ne-textfield-background, #FFF);
-  --textfieldHoverBackground: var(--ne-textfield-hover-background, #FFF);
-  --textfieldFocusBackground: var(--ne-textfield-focus-background, #FFF);
-  --textfieldDisabledBackground: var(--ne-textfield-disabled-background, hsl(220, 10%, 95%));
-  --textfieldValidBackground: var(--ne-textfield-valid-background, #FFF);
-  --textfieldInvalidBackground: var(--ne-textfield-invalid-background, #FFF);
+  --textfieldHoverBackground: var(--ne-textfield-hover-background, var(--textfieldBackground));
+  --textfieldFocusBackground: var(--ne-textfield-focus-background, var(--textfieldBackground));
+  --textfieldDisabledBackground: var(--ne-textfield-disabled-background, var(--textfieldBackground));
+  --textfieldValidBackground: var(--ne-textfield-valid-background, var(--textfieldBackground));
+  --textfieldInvalidBackground: var(--ne-textfield-invalid-background, var(--textfieldBackground));
 
   /* Foreground API */
   --textfieldColor: var(--ne-textfield-color, hsl(0, 0%, 13%));
-  --textfieldHoverColor: var(--ne-textfield-hover-color, hsl(0, 0%, 13%));
-  --textfieldFocusColor: var(--ne-textfield-focus-color, hsl(0, 0%, 13%));
+  --textfieldHoverColor: var(--ne-textfield-hover-color, var(--textfieldColor));
+  --textfieldFocusColor: var(--ne-textfield-focus-color, var(--textfieldColor));
   --textfieldDisabledColor: var(--ne-textfield-disabled-color, hsl(220, 10%, 60%));
-  --textfieldReadonlyColor: var(--ne-textfield-readonly-color, hsl(0, 0%, 13%));
-  --textfieldValidColor: var(--ne-textfield-valid-color, hsl(0, 0%, 13%));
-  --textfieldInvalidColor: var(--ne-textfield-valid-color, hsl(0, 0%, 13%));
+  --textfieldReadonlyColor: var(--ne-textfield-readonly-color, var(--textfieldColor));
+  --textfieldValidColor: var(--ne-textfield-valid-color, var(--textfieldColor));
+  --textfieldInvalidColor: var(--ne-textfield-valid-color, var(--textfieldColor));
   --textfieldPlaceholderColor: var(--ne-textfield-placeholder-color, hsl(0, 0%, 85%));
   --textfieldHoverPlaceholderColor: var(--ne-textfield-hover-placeholder-color, hsl(0, 0%, 89%));
-  --textfieldFocusPlaceholderColor: var(--ne-textfield-focus-placeholder-color, hsl(0, 0%, 89%));
+  --textfieldFocusPlaceholderColor: var(--ne-textfield-focus-placeholder-color, var(--textfieldHoverPlaceholderColor));
   --textfieldDisabledPlaceholderColor: var(--ne-textfield-disabled-placeholder-color, hsl(0, 0%, 80%));
 
   /* Misc API */

@@ -19,27 +19,28 @@ Native HTML `<input ...>` and `<textarea>` elements with **CSS API** that give y
 ## Example
 
 ```html
-  <input type="text">
-  <input type="password">
-  <input type="url">
-  <input type="email">
-  <input type="tel">
-  <input type="search">
-  <input type="number">
-  <input type="date">
-  <input type="time">
-  <input type="month">
-  <input type="week">
-  <input type="datetime-local">
-  <textarea></textarea>
+  <input ne-textfield type="text">
+  <input ne-textfield type="password">
+  <input ne-textfield type="url">
+  <input ne-textfield type="email">
+  <input ne-textfield type="tel">
+  <input ne-textfield type="search">
+  <input ne-textfield type="number">
+  <input ne-textfield type="date">
+  <input ne-textfield type="time">
+  <input ne-textfield type="month">
+  <input ne-textfield type="week">
+  <input ne-textfield type="datetime-local">
+  <textarea ne-textfield class="SpecialTextfield"></textarea>
 ```
 
 ```css
-input {
+[ne-textfield] {
+  --ne-textfield-background: pink;
 }
 
-.SpecialInput {
-
+.SpecialTextfield {
+  --ne-textfield-background: cyan;
 }
 ```
 
@@ -60,23 +61,23 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
 
   /* Background API */
   --ne-textfield-background: #FFF; /* background */
-  --ne-textfield-hover-background: #FFF; /* background */
-  --ne-textfield-focus-background: #FFF; /* background */
+  --ne-textfield-hover-background: var(--ne-textfield-background); /* background */
+  --ne-textfield-focus-background: var(--ne-textfield-background); /* background */
   --ne-textfield-disabled-background: hsl(220, 10%, 95%); /* background */
-  --ne-textfield-valid-background: #FFF; /* background */
-  --ne-textfield-invalid-background: #FFF; /* background */
+  --ne-textfield-valid-background: var(--ne-textfield-background); /* background */
+  --ne-textfield-invalid-background: var(--ne-textfield-background); /* background */
 
   /* Foreground API */
   --ne-textfield-color: hsl(0, 0%, 13%); /* color */
-  --ne-textfield-hover-color: hsl(0, 0%, 13%); /* color */
-  --ne-textfield-focus-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-hover-color: var(--ne-textfield-color); /* color */
+  --ne-textfield-focus-color: var(--ne-textfield-color); /* color */
   --ne-textfield-disabled-color: hsl(220, 10%, 60%); /* color */
-  --ne-textfield-readonly-color: hsl(0, 0%, 13%); /* color */
-  --ne-textfield-valid-color: hsl(0, 0%, 13%); /* color */
-  --ne-textfield-invalid-color: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-readonly-color: var(--ne-textfield-color); /* color */
+  --ne-textfield-valid-color: var(--ne-textfield-color); /* color */
+  --ne-textfield-invalid-color: var(--ne-textfield-color); /* color */
   --ne-textfield-placeholder-color: hsl(0, 0%, 85%); /* color */
   --ne-textfield-hover-placeholder-color: hsl(0, 0%, 89%); /* color */
-  --ne-textfield-focus-placeholder-color: hsl(0, 0%, 89%); /* color */
+  --ne-textfield-focus-placeholder-color: var(--ne-textfield-hover-placeholder-color); /* color */
   --ne-textfield-disabled-placeholder-color: hsl(0, 0%, 80%); /* color */
 
   /* Misc API */
