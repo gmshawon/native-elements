@@ -1,23 +1,23 @@
 @define-mixin button-config {
   /* Border API */
   --buttonBorder: var(--ne-button-border, 0);
-  --buttonHoverBorder: var(--ne-button-hover-border, 0);
-  --buttonFocusBorder: var(--ne-button-focus-border, 0);
-  --buttonActiveBorder: var(--ne-button-active-border, 0);
-  --buttonDisabledBorder: var(--ne-button-disabled-border, 0);
+  --buttonHoverBorder: var(--ne-button-hover-border, var(--buttonBorder));
+  --buttonFocusBorder: var(--ne-button-focus-border, var(--buttonBorder));
+  --buttonActiveBorder: var(--ne-button-active-border, var(--buttonBorder));
+  --buttonDisabledBorder: var(--ne-button-disabled-border, var(--buttonBorder));
 
   /* Background API */
   --buttonBackground: var(--ne-button-background, hsl(233, 64%, 62%));
   --buttonHoverBackground: var(--ne-button-hover-background, hsl(233, 64%, 52%));
-  --buttonFocusBackground: var(--ne-button-focus-background, hsl(233, 64%, 52%));
+  --buttonFocusBackground: var(--ne-button-focus-background, var(--buttonHoverBackground));
   --buttonActiveBackground: var(--ne-button-active-background, hsl(233, 64%, 32%));
   --buttonDisabledBackground: var(--ne-button-disabled-background, hsl(220, 10%, 95%));
 
   /* Foreground API */
   --buttonColor: var(--ne-button-color, #FFF);
-  --buttonHoverColor: var(--ne-button-hover-color, #FFF);
-  --buttonFocusColor: var(--ne-button-focus-color, #FFF);
-  --buttonActiveColor: var(--ne-button-active-color, #FFF);
+  --buttonHoverColor: var(--ne-button-hover-color, var(--buttonColor));
+  --buttonFocusColor: var(--ne-button-focus-color, var(--buttonColor));
+  --buttonActiveColor: var(--ne-button-active-color, var(--buttonColor));
   --buttonDisabledColor: var(--ne-button-disabled-color, hsl(220, 10%, 60%));
 
   /* Icon API */
