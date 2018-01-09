@@ -80,17 +80,18 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
   --ne-textfield-disabled-placeholder-color: hsl(0, 0%, 80%); /* color */
 
   /* Misc API */
-  --ne-textfield-radius: 5px;
-  --ne-textfield-height: 2.5rem;
-  --ne-textfield-y-padding: 0.5rem;
-  --ne-textfield-x-padding: 0.75rem;
-  --ne-textfield-outline-color: hsl(233, 64%, 85%);
-  --ne-textfield-valid-outline-color: hsl(67, 78%, 90%);
-  --ne-textfield-invalid-outline-color: hsl(354, 100%, 90%);
-  --ne-textfield-outline-width: 0.2rem;
-  --ne-textfield-selection-background: hsl(233, 64%, 90%);
-  --ne-textfield-selection-foreground: hsl(0, 0%, 13%);
-  --ne-textfield-resize: vertical;
+  --ne-textfield-radius: 5px; /* border-radius */
+  --ne-textfield-width: auto; /* width */
+  --ne-textfield-height: 2.5rem; /* height */
+  --ne-textfield-y-padding: 0.5rem; /* unit */
+  --ne-textfield-x-padding: 0.75rem; /* unit */
+  --ne-textfield-outline-color: hsl(233, 64%, 85%); /* color */
+  --ne-textfield-valid-outline-color: hsl(67, 78%, 90%); /* color */
+  --ne-textfield-invalid-outline-color: hsl(354, 100%, 90%);/* color */
+  --ne-textfield-outline-width: 0.2rem; /* unit */
+  --ne-textfield-selection-background: hsl(233, 64%, 90%); /* color */
+  --ne-textfield-selection-foreground: hsl(0, 0%, 13%); /* color */
+  --ne-textfield-resize: vertical; /* resize */
 }
 ```
 
