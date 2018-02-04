@@ -66,7 +66,7 @@ yarn add @native-elements/ne-progress
 
 
 ## Usage
-Just import the css from your **node_modules** inside your project.
+Just import the css inside your project from the **node_modules**.
 ```css
 @import 'node_modules/ne-progress/dist/ne-progress.css';
 ```
