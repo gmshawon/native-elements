@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../elements/native-elements/dist/native-elements.css">
+
+  <style>
+    html {
+      font-size: 100%;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.5;
+      background: #FFF;
+      overflow: auto;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    h2 {
+      font-weight: 400;
+      margin-top: 100px;
+    }
+
+    main {
+      margin: 0 auto;
+      width: 85vw;
+      max-width: 800px;
+      min-width: 300px;
+      padding: 0 100px 100px 100px;
+      box-sizing: border-box;
+    }
+
+    .SecondButton {
+      --ne-button-radius: 3px;
+      --ne-button-y-padding: 0.8rem;
+      --ne-button-x-padding: 1.4rem;
+    }
+
+    .ThirdButton {
+      --ne-button-radius: 100px;
+      --ne-button-y-padding: 0.5rem;
+      --ne-button-x-padding: 1.5rem;
+    }
+
+    .FullRound {
+      --ne-button-radius: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Elements bundle will be imported by webpack during development.
+      Just add elements for testing -->
+  <main>
+    <h2>Buttons</h2>
+    <button ne-button name="puppo" tabindex="2" autofocus>Button</button>
+    <button ne-button class="SecondButton">Button</button>
+    <button ne-button class="ThirdButton">Button</button>
+
+    <button ne-button disabled>Button</button>
+
+    <h2>Buttons & icon</h2>
+    <button ne-button>
+      <i>←</i>
+      Button
+    </button>
+    <button ne-button ne-icon-right class="FullRound">
+      Button
+      <i>→</i>
+    </button>
+
+    <button ne-button disabled>
+      <i>←</i>
+      Button
+    </button>
+
+    <h2>Progress</h2>
+    <p>
+      <progress ne-progress value="50" max="100">progress</progress>
+    </p>
+    <p>
+      <progress ne-progress></progress>
+    </p>
+
+    <h2>Meter</h2>
+    <input ne-textfield type="password" value="342567rt">
+    <meter ne-meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
+    <meter ne-meter min="0" max="100" low="25" high="75" optimum="100" value="50"></meter>
+    <meter ne-meter min="0" max="100" low="25" high="75" optimum="100" value="80"></meter>
+
+    <h2>Checkboxes & Radio</h2>
+    <fieldset ne-form>
+      <legend ne-form>Fieldset legend</legend>
+      <label ne-form>
+        <input ne-checkradio type="checkbox">
+        Label
+      </label>
+      <label ne-form>
+        <input ne-checkradio type="checkbox">
+        Label 2
+      </label>
+    </fieldset>
+    <fieldset ne-form>
+      <legend ne-form>Fieldset legend</legend>
+      <label ne-form>
+        <input ne-checkradio name="group" type="radio">
+        Label
+      </label>
+      <label ne-form>
+        <input ne-checkradio name="group" type="radio">
+        Label 2
+      </label>
+    </fieldset>
+
+    <h2>Range</h2>
+    <input ne-range type="range" id="range" name="range" min="100" max="500" step="10">
+    <input ne-range disabled type="range" id="range" name="range" min="100" max="500" step="10">
+
+    <h2>Text fields</h2>
+    <p>
+      <input ne-textfield type="text" placeholder="Text">
+    </p>
+    <p>
+      <input ne-textfield type="text" disabled value="I'm disabled" placeholder="Text">
+    </p>
+    <p>
+      <input ne-textfield type="text" readonly value="I'm readonly" placeholder="Readonly text">
+    </p>
+    <p>
+      <input ne-textfield type="password" placeholder="Password">
+    </p>
+    <p>
+      <input ne-textfield type="url" placeholder="Url">
+    </p>
+    <p>
+      <input ne-textfield type="email" placeholder="Email">
+    </p>
+    <p>
+      <input ne-textfield type="tel" placeholder="Tel">
+    </p>
+    <p>
+      <input ne-textfield type="search" placeholder="Search">
+    </p>
+    <p>
+      <input ne-textfield type="number" valid required placeholder="Number">
+    </p>
+    <p>
+      <input ne-textfield type="date" invalid required placeholder="Date">
+    </p>
+    <p>
+      <input ne-textfield type="time" placeholder="Time">
+    </p>
+    <p>
+      <input ne-textfield type="month" placeholder="Month">
+    </p>
+    <p>
+      <input ne-textfield type="week" placeholder="Week">
+    </p>
+    <p>
+      <input ne-textfield type="datetime-local" placeholder="Datetime Local">
+    </p>
+    <p>
+      <textarea ne-textfield></textarea>
+    </p>
+
+
+    <h2>Datalist</h2>
+    <input ne-textfield list="options" id="datalist" name="datalist" placeholder="Enter option">
+    <datalist id="options">
+      <option value="Option 1"></option>
+      <option value="Option 2"></option>
+      <option value="Option 3"></option>
+    </datalist>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+@define-mixin track {
+  width: 100%;
+  height: var(--rangeHeight);
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeBorderColor);
+  border-radius: var(--rangeBorderRadius);
+  background: var(--rangeBackground);
+}
+
+@define-mixin disabled-track {
+  background-color: var(--rangeDisabledBackground);
+  box-shadow: inset 0 0 0 var(--rangeBorderWidth) var(--rangeDisabledBorderColor);
+  cursor: not-allowed;
+}
+
+@define-mixin thumb {
+  width: var(--rangeThumbWidth);
+  height: var(--rangeThumbHeight);
+  border-color: transparent;
+  border-radius: var(--rangeThumbRadius);
+  background-color: var(--rangeThumbBackground);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgNyAxMCI+ICA8cGF0aCBmaWxsPSIjRTNFM0UzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSw1LjUwOTY0OTUyIEMxMSw1LjIyODE3Nzg2IDExLjIzMTkzMzYsNSAxMS41LDUgQzExLjc3NjE0MjQsNSAxMiw1LjIyNzY1Mjc5IDEyLDUuNTA5NjQ5NTIgTDEyLDE0LjQ5MDM1MDUgQzEyLDE0Ljc3MTgyMjEgMTEuNzY4MDY2NCwxNSAxMS41LDE1IEMxMS4yMjM4NTc2LDE1IDExLDE0Ljc3MjM0NzIgMTEsMTQuNDkwMzUwNSBMMTEsNS41MDk2NDk1MiBMMTEsNS41MDk2NDk1MiBaIE04LDUuNTA5NjQ5NTIgQzgsNS4yMjgxNzc4NiA4LjIzMTkzMzU5LDUgOC41LDUgQzguNzc2MTQyMzcsNSA5LDUuMjI3NjUyNzkgOSw1LjUwOTY0OTUyIEw5LDE0LjQ5MDM1MDUgQzksMTQuNzcxODIyMSA4Ljc2ODA2NjQxLDE1IDguNSwxNSBDOC4yMjM4NTc2MywxNSA4LDE0Ljc3MjM0NzIgOCwxNC40OTAzNTA1IEw4LDUuNTA5NjQ5NTIgTDgsNS41MDk2NDk1MiBaIE01LDUuNTA5NjQ5NTIgQzUsNS4yMjgxNzc4NiA1LjIzMTkzMzU5LDUgNS41LDUgQzUuNzc2MTQyMzcsNSA2LDUuMjI3NjUyNzkgNiw1LjUwOTY0OTUyIEw2LDE0LjQ5MDM1MDUgQzYsMTQuNzcxODIyMSA1Ljc2ODA2NjQxLDE1IDUuNSwxNSBDNS4yMjM4NTc2MywxNSA1LDE0Ljc3MjM0NzIgNSwxNC40OTAzNTA1IEw1LDUuNTA5NjQ5NTIgTDUsNS41MDk2NDk1MiBaIiBvcGFjaXR5PSIuNzAxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNSAtNSkiLz48L3N2Zz4=);
+  background-size: 40%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: var(--rangeThumbShadow);
+  transition: box-shadow 0.1s ease-out, background-color 0.1s ease-out;
+  appearance: none;
+
+  &:hover {
+    cursor: grab;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+@define-mixin disabled-thumb {
+  background-color: var(--rangeThumbDisabledBackground);
+  background-image: none;
+  cursor: not-allowed;
+}
+
+@define-mixin focus-thumb {
+  background-color: var(--rangeThumbActiveBackground);
+  box-shadow: 0 0 0 var(--rangeOutlineWidth) var(--rangeOutlineColor);
+}

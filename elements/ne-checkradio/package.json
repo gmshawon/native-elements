@@ -1,0 +1,15 @@
+{
+  "name": "@native-elements/ne-checkradio",
+  "version": "0.1.1",
+  "description": "Progress element from Native Elements",
+  "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-checkradio",
+  "main": "src/ne-checkradio.pcss",
+  "author": {
+    "name": "Equinusocio",
+    "url": "http://equinsuocha.io"
+  },
+  "bugs": {
+    "url": "https://github.com/equinusocio/native-elements/issues"
+  },
+  "license": "Apache-2.0"
+}

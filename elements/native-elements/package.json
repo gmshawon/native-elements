@@ -1,0 +1,24 @@
+{
+  "name": "@native-elements/native-elements",
+  "version": "0.1.2",
+  "description": "Native HTML Elements with CSS superpowers.",
+  "main": "src/native-elements.pcss",
+  "repository": "https://github.com/equinusocio/native-elements",
+  "author": {
+    "name": "Equinusocio",
+    "url": "http://equinsuocha.io"
+  },
+  "bugs": {
+    "url": "https://github.com/equinusocio/native-elements/issues"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@native-elements/ne-button": "^1.2.2",
+    "@native-elements/ne-checkradio": "^1.1.2",
+    "@native-elements/ne-core": "^0.0.2",
+    "@native-elements/ne-meter": "^1.1.2",
+    "@native-elements/ne-progress": "^1.1.2",
+    "@native-elements/ne-range": "^0.1.4",
+    "@native-elements/ne-textfield": "^0.1.4"
+  }
+}

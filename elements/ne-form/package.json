@@ -1,0 +1,15 @@
+{
+  "name": "@native-elements/ne-form",
+  "version": "0.0.3",
+  "description": "Form elements styles from Native Elements",
+  "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-form",
+  "main": "src/ne-form.pcss",
+  "author": {
+    "name": "Equinusocio",
+    "url": "http://equinsuocha.io"
+  },
+  "bugs": {
+    "url": "https://github.com/equinusocio/native-elements/issues"
+  },
+  "license": "Apache-2.0"
+}
