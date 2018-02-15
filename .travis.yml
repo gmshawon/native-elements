@@ -6,6 +6,6 @@ node_js:
 before_install:
   - npm update -g npm  
 install:
-  - yarn install
+  - npm install
 script:
-  - yarn build
+  - npm run build
