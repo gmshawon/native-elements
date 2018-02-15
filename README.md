@@ -7,5 +7,3 @@
 Native HTML elements with CSS superpowers.
 
 ### [Live Demo](https://native-elements.stackblitz.io/)
-
-
