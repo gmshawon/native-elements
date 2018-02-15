@@ -19,12 +19,12 @@ Native HTML `<input type="checkbox">` & `<input type="radio">` elements with **C
 ## Example
 
 ```html
-  <input type="checkbox">
-  <input type="radio" class="SpecialInput">
+  <input ne-checkradio type="checkbox">
+  <input ne-checkradio type="radio" class="SpecialInput">
 ```
 
 ```css
-input {
+[ne-checkradio] {
   --ne-checkradio-shadow: none;
 }
 
@@ -54,7 +54,7 @@ yarn add @native-elements/ne-checkradio
 
 
 ## Usage
-Just import the css from your **node_modules** inside your project.
+Just import the css inside your project from the **node_modules**.
 ```css
 @import 'node_modules/ne-checkradio/dist/ne-checkradio.css';
 ```

@@ -6,8 +6,8 @@
 
   /* Background API */
   --rangeBackground: var(--ne-range-background, hsl(0, 0%, 97%));
-  --rangeDisabledBackground: var(--ne-range-disabled-background, hsl(0, 0%, 97%));
-  --rangeFocusBackground: var(--ne-range-focus-background, hsl(0, 0%, 97%));
+  --rangeDisabledBackground: var(--ne-range-disabled-background, var(--rangeBackground));
+  --rangeFocusBackground: var(--ne-range-focus-background, var(--rangeBackground));
 
   /* Thumb API */
   --rangeThumbBackground: var(--ne-range-thumb-background, #FFF);

@@ -20,12 +20,17 @@ Native HTML `<meter>` element with **CSS API** that give you superpowers. 🕶
 
 ```html
   <input type="password" value="342567rt">
-  <meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
+  <meter ne-meter min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
+  <meter ne-meter class="SpecialMeter" min="0" max="100" low="25" high="75" optimum="100" value="10"></meter>
 ```
 
 ```css
-meter {
+[ne-meter] {
   --ne-meter-border-color: transparent;
+}
+
+.SpecialMeter {
+  --ne-meter-border-color: green;
 }
 ```
 
@@ -61,7 +66,7 @@ yarn add @native-elements/ne-meter
 
 
 ## Usage
-Just import the css from your **node_modules** inside your project.
+Just import the css inside your project from the **node_modules**.
 ```css
 @import 'node_modules/ne-meter/dist/ne-meter.css';
 ```

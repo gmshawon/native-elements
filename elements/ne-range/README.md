@@ -19,12 +19,12 @@ Native HTML `<input type="range">` element with **CSS API** that give you superp
 ## Example
 
 ```html
-  <input type="range">
-  <input type="range" class="SpecialRange">
+  <input ne-range type="range">
+  <input ne-range type="range" class="SpecialRange">
 ```
 
 ```css
-range {
+[ne-range] {
   --ne-range-background: #000;
 }
 
@@ -48,8 +48,8 @@ Check the [live demo](https://ne-range.stackblitz.io/)
 
   /* Background API */
   --ne-range-background: hsl(0, 0%, 97%); /* color */
-  --ne-range-active-background: hsl(0, 0%, 97%); /* color */
-  --ne-range-focus-background: hsl(0, 0%, 97%); /* color */
+  --ne-range-active-background: var(--ne-range-background); /* color */
+  --ne-range-focus-background: var(--ne-range-background); /* color */
 
   /* Thumb API */
   --ne-range-thumb-background: #FFF; /* color */
@@ -77,7 +77,7 @@ yarn add @native-elements/ne-range
 
 
 ## Usage
-Just import the css from your **node_modules** inside your project.
+Just import the css inside your project from the **node_modules**.
 ```css
 @import 'node_modules/ne-range/dist/ne-range.css';
 ```

@@ -19,18 +19,15 @@ Native HTML `<button>` element with **CSS API** that give you superpowers. 🕶
 
 ## Example
 ```html
-<!-- Black bg button with white text -->
-<button>Text</button>
-
-<!-- Rebeccapurple bg button with white text and 4px radius -->
-<button class="SpecialButton">
+<button ne-button>Text</button>
+<button ne-button class="SpecialButton">
    <i>←</i>
    Text
 </button>
 ```
 
 ```css
-button {
+[ne-button] {
   --ne-button-background: #000;
   --ne-button-color: #FFF;
 }
@@ -50,23 +47,23 @@ Check the [live demo](https://ne-button.stackblitz.io/)
 * {
   /* Border API */
   --ne-button-border: 0; /*  border */
-  --ne-button-hover-border: 0; /*  border */
-  --ne-button-focus-border: 0; /*  border */
-  --ne-button-active-border: 0; /*  border */
-  --ne-button-disabled-border: 0; /*  border */
+  --ne-button-hover-border: var(--ne-button-border); /*  border */
+  --ne-button-focus-border: var(--ne-button-border); /*  border */
+  --ne-button-active-border: var(--ne-button-border); /*  border */
+  --ne-button-disabled-border: var(--ne-button-border); /*  border */
 
   /* Background API */
   --ne-button-background: hsl(233, 64%, 62%); /*  background  */
   --ne-button-hover-background: hsl(233, 64%, 52%); /*  background  */
-  --ne-button-focus-background: hsl(233, 64%, 52%); /*  background  */
+  --ne-button-focus-background: var(--ne-button-hover-background); /*  background  */
   --ne-button-active-background: hsl(233, 64%, 32%); /*  background  */
   --ne-button-disabled-background: hsl(220, 10%, 95%); /*  background  */
 
   /* Foreground API */
   --ne-button-color: #FFF; /*  color */
-  --ne-button-hover-color: #FFF; /*  color */
-  --ne-button-focus-color: #FFF; /*  color */
-  --ne-button-active-color: #FFF; /*  color */
+  --ne-button-hover-color: var(--ne-button-color); /*  color */
+  --ne-button-focus-color: var(--ne-button-color); /*  color */
+  --ne-button-active-color: var(--ne-button-color); /*  color */
   --ne-button-disabled-color: hsl(220, 10%, 60%); /*  color */
 
   /* Icon API */
@@ -100,7 +97,7 @@ yarn add @native-elements/ne-button
 
 
 ## Usage
-Just import the css from your **node_modules** inside your project.
+Just import the css inside your project from the **node_modules**.
 ```css
 @import 'node_modules/ne-button/dist/ne-button.css';
 ```

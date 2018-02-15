@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-meter/compare/@native-elements/ne-meter@0.1.0...@native-elements/ne-meter@0.1.1) (2018-01-09)
+
+
+### Bug Fixes
+
+* **ne-meter:** Improve README ([c2d23a1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-meter/commit/c2d23a1))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2018-01-08)
 
