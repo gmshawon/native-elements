@@ -102,13 +102,13 @@ yarn add @native-elements/ne-select
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/ne-progress/dist/ne-select.css';
+@import 'node_modules/ne-select/dist/ne-select.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/ne-progress/src/ne-select.pcss';
+@import 'node_modules/ne-select/src/ne-select.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._
