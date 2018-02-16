@@ -1,11 +1,11 @@
-# Progress - Native Elements
+# Select - Native Elements
 > by [Native Elements](https://github.com/equinusocio/native-elements)
 
-Native HTML `<progress>` element with **CSS API** that give you superpowers. 🕶
+Native HTML `<select>` element with **CSS API** that give you superpowers. 🕶
 
 <!-- TOC -->
 
-- [Progress - Native Elements](#progress---native-elements)
+- [Select - Native Elements](#select---native-elements)
   - [Example](#example)
   - [CSS API](#css-api)
   - [Install](#install)
@@ -45,12 +45,12 @@ html {
   --ne-select-border-color: #000;
 }
 
-.SpecialProgress {
+.SpecialSelect {
   --ne-select-padding: 10px;
 }
 ```
 
-Check the [live demo](https://ne-progress.stackblitz.io/)
+Check the [live demo](https://ne-select.stackblitz.io/)
 
 
 ## CSS API
@@ -58,19 +58,36 @@ Check the [live demo](https://ne-progress.stackblitz.io/)
 ```css
 * {
   /* Border API */
-  --ne-progress-border-color: hsl(0, 0%, 89%); /* color */
+  --ne-select-border: 1px solid hsl(0, 0%, 89%); /* border */
+  --ne-select-hover-border: 1px solid hsl(0, 0%, 89%); /* border */
+  --ne-select-focus-border: 1px solid hsl(233, 64%, 62%); /* border */
+  --ne-select-disabled-border: 1px solid hsl(220, 10%, 95%); /* border */
 
   /* Background API */
-  --ne-progress-background: hsl(0, 0%, 97%); /* color */
-  --ne-progress-filled-color: var(--ne-progress-border-color); /* color */
+  --ne-select-background: #FFF; /* background */
+  --ne-select-hover-background: var(--ne-select-background); /* background */
+  --ne-select-focus-background: var(--ne-select-background); /* background */
+  --ne-select-disabled-background: var(--ne-select-background); /* background */
+  --ne-select-option-checked-background: hsl(233, 64%, 62%); /* background */
 
-  /* Stripes API */
-  --ne-progress-stripe-size: 1rem; /* unit */
-  --ne-progress-stripe-colors: rgba(255, 255, 255, 0.4); /* color */
+  /* Foreground API */
+  --ne-select-color: hsl(0, 0%, 13%); /* color */
+  --ne-select-hover-color: var(--ne-select-color); /* color */
+  --ne-select-focus-color: var(--ne-select-color); /* color */
+  --ne-select-disabled-color: hsl(220, 10%, 55%); /* color */
+  --ne-select-option-checked-color: #FFF; /* color */
 
   /* Misc API */
-  --ne-progress-height: 5px; /* unit */
-  --ne-progress-radius: 10px; /* border-radius */
+  --ne-select-radius: 5px; /* unit */
+  --ne-select-width: auto; /* unit */
+  --ne-select-height: 2.5rem; /* unit */
+  --ne-select-padding: 0.75rem; /* unit */
+  --ne-select-outline-color: hsl(233, 64%, 85%); /* color */
+  --ne-select-outline-width: 0.2rem; /* unit */
+  --ne-select-selection-background: hsl(233, 64%, 90%); /* color */
+  --ne-select-selection-foreground: hsl(0, 0%, 13%); /* color */
+  --ne-arrow-icon: BASE64_IMAGE; /* background */
+  --ne-arrow-size: 0.9rem; /* unit */
 }
 ```
 
@@ -78,20 +95,20 @@ Check the [live demo](https://ne-progress.stackblitz.io/)
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-progress
+yarn add @native-elements/ne-select
 ```
 
 
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/ne-progress/dist/ne-progress.css';
+@import 'node_modules/ne-progress/dist/ne-select.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/ne-progress/src/ne-progress.pcss';
+@import 'node_modules/ne-progress/src/ne-select.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._
