@@ -1,12 +1,15 @@
 {
   "name": "@native-elements/ne-textfield",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Text fields elements from Native Elements",
   "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield",
   "main": "src/ne-textfield.pcss",
   "author": {
     "name": "Equinusocio",
     "url": "http://equinsuocha.io"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bugs": {
     "url": "https://github.com/equinusocio/native-elements/issues"

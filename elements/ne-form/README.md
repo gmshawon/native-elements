@@ -28,7 +28,7 @@ Native HTML `<fieldset>, <legend>, <label>, <output>` form elements with **CSS A
 ```
 
 ```css
-[ne-form] {
+html {
   --ne-form-legend-margin: none;
 }
 
@@ -63,13 +63,13 @@ yarn add @native-elements/ne-form
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/ne-form/dist/ne-form.css';
+@import 'node_modules/@native-elements/ne-form/dist/ne-form.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/ne-form/src/ne-form.pcss';
+@import 'node_modules/@native-elements/ne-form/src/ne-form.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._

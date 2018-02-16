@@ -35,7 +35,7 @@ Native HTML `<input ...>` and `<textarea>` elements with **CSS API** that give y
 ```
 
 ```css
-[ne-textfield] {
+html {
   --ne-textfield-background: pink;
 }
 
@@ -71,14 +71,14 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
   --ne-textfield-color: hsl(0, 0%, 13%); /* color */
   --ne-textfield-hover-color: var(--ne-textfield-color); /* color */
   --ne-textfield-focus-color: var(--ne-textfield-color); /* color */
-  --ne-textfield-disabled-color: hsl(220, 10%, 60%); /* color */
+  --ne-textfield-disabled-color: hsl(220, 10%, 55%); /* color */
   --ne-textfield-readonly-color: var(--ne-textfield-color); /* color */
   --ne-textfield-valid-color: var(--ne-textfield-color); /* color */
   --ne-textfield-invalid-color: var(--ne-textfield-color); /* color */
   --ne-textfield-placeholder-color: hsl(0, 0%, 85%); /* color */
-  --ne-textfield-hover-placeholder-color: hsl(0, 0%, 89%); /* color */
+  --ne-textfield-hover-placeholder-color: var(--ne-textfield-placeholder-color); /* color */
   --ne-textfield-focus-placeholder-color: var(--ne-textfield-hover-placeholder-color); /* color */
-  --ne-textfield-disabled-placeholder-color: hsl(0, 0%, 80%); /* color */
+  --ne-textfield-disabled-placeholder-color: hsl(0, 0%, 85%); /* color */
 
   /* Misc API */
   --ne-textfield-radius: 5px; /* border-radius */
@@ -107,13 +107,13 @@ yarn add @native-elements/ne-textfield
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/ne-textfield/dist/ne-textfield.css';
+@import 'node_modules/@native-elements/ne-textfield/dist/ne-textfield.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/ne-textfield/src/ne-textfield.pcss';
+@import 'node_modules/@native-elements/ne-textfield/src/ne-textfield.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._

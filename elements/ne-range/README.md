@@ -40,7 +40,7 @@ Check the [live demo](https://ne-range.stackblitz.io/)
 ## CSS API
 
 ```css
-* {
+html {
   /* Border API */
   --ne-range-border-color: rgba(0, 0, 0, 0.1); /* color */
   --ne-range-disabled-border-color: rgba(0, 0, 0, 0); /* color */
@@ -79,13 +79,13 @@ yarn add @native-elements/ne-range
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/ne-range/dist/ne-range.css';
+@import 'node_modules/@native-elements/ne-range/dist/ne-range.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/ne-range/src/ne-range.pcss';
+@import 'node_modules/@native-elements/ne-range/src/ne-range.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._
