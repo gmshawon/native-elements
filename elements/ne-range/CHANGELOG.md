@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.1.5...@native-elements/ne-range@0.1.6) (2018-02-16)
+
+
+
+
+**Note:** Version bump only for package @native-elements/ne-range
+
 <a name="0.1.5"></a>
 ## [0.1.5](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.1.4...@native-elements/ne-range@0.1.5) (2018-02-16)
 
