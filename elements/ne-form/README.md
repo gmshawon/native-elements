@@ -28,7 +28,7 @@ Native HTML `<fieldset>, <legend>, <label>, <output>` form elements with **CSS A
 ```
 
 ```css
-[ne-form] {
+html {
   --ne-form-legend-margin: none;
 }
 

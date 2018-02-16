@@ -35,7 +35,7 @@ Native HTML `<input ...>` and `<textarea>` elements with **CSS API** that give y
 ```
 
 ```css
-[ne-textfield] {
+html {
   --ne-textfield-background: pink;
 }
 

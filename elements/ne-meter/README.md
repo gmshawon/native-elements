@@ -25,7 +25,7 @@ Native HTML `<meter>` element with **CSS API** that give you superpowers. 🕶
 ```
 
 ```css
-[ne-meter] {
+html {
   --ne-meter-border-color: transparent;
 }
 

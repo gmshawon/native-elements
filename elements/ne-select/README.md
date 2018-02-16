@@ -41,12 +41,12 @@ Native HTML `<progress>` element with **CSS API** that give you superpowers. ðŸ•
 ```
 
 ```css
-[ne-select] {
+html {
   --ne-select-border-color: #000;
 }
 
 .SpecialProgress {
-  --ne-progress-height: 10px;
+  --ne-select-padding: 10px;
 }
 ```
 
