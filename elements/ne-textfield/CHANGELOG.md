@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.1.4...@native-elements/ne-textfield@0.1.5) (2018-02-16)
+
+
+### Bug Fixes
+
+* Fix placeholder color and update the value color when disabled ([8d35518](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/commit/8d35518))
+* **ne-datalist:** Fix cursor for disabled and readonly inputs ([6e59613](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/commit/6e59613))
+* **ne-textfield:** Fix placeholder color on hover and readme ([81447d0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/commit/81447d0))
+* **ne-textfield:** Improve mixin code and duplication ([61c3019](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/commit/61c3019))
+
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.1.2...@native-elements/ne-textfield@0.1.4) (2018-01-09)
 
