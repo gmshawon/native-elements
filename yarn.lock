@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@contactlab/stylelint-config-uxd@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@contactlab/stylelint-config-uxd/-/stylelint-config-uxd-1.1.2.tgz#ab972a027994b105e1379adc728ff311bc1142ae"
+  dependencies:
+    stylelint "8.4.0"
+    stylelint-config-standard "18.0.0"
+
 "@native-elements/ne-button@^1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@native-elements/ne-button/-/ne-button-1.2.2.tgz#51cbacf00a5feef609d8f8837660716d753c1999"
@@ -5712,8 +5719,8 @@ style-search@^0.1.0:
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
 
 stylelint-config-recommended@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.0.0.tgz#560a028e81ea3ca8894b9a8eef4c0e05ac60e090"
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.0.1.tgz#4746119ec85f5f4663c7b5107c05c13ed0e2ab0d"
 
 stylelint-config-standard@18.0.0:
   version "18.0.0"
