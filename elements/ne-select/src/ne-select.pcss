@@ -1,6 +1,6 @@
 @import './_config.pcss';
 
-[ne-select] {
+select {
   @mixin select-config;
 
   margin: 0;
@@ -19,31 +19,13 @@
   display: block;
   width: var(--selectWidth);
   height: var(--selectHeight);
-  padding: var(--selectPadding);
+  padding: 0 var(--selectPadding);
   box-sizing: border-box;
-
-  &::selection {
-    background-color: var(--selectSelectionBackground);
-    color: var(--selectSelectionForeground);
-  }
-
-  &::-moz-selection {
-    background-color: var(--selectSelectionBackground);
-    color: var(--selectSelectionForeground);
-  }
-
-  &::placeholder {
-    color: var(--selectPlaceholderColor);
-  }
 
   &:hover {
     border: var(--selectHoverBorder);
     background: var(--selectHoverBackground);
     color: var(--selectHoverColor);
-
-    &::placeholder {
-      color: var(--selectHoverPlaceholderColor);
-    }
   }
 
   &:focus {
@@ -51,63 +33,46 @@
     background: var(--selectFocusBackground);
     box-shadow: 0 0 0 var(--selectOutlineWidth) var(--selectOutlineColor);
     color: var(--selectFocusColor);
-
-    &::placeholder {
-      color: var(--selectFocusPlaceholderColor);
-    }
   }
 
   &:disabled,
-  &[aria-disabled],
-  &[readonly] {
+  &[aria-disabled] {
     border: var(--selectDisabledBorder);
     background: var(--selectDisabledBackground);
     color: var(--selectDisabledColor);
-
-    &::placeholder {
-      color: var(--selectDisabledPlaceholderColor);
-    }
-  }
-
-  &[readonly] {
-    color: var(--selectReadonlyColor);
-    cursor: default;
-
-    &::placeholder {
-      color: var(--selectDisabledPlaceholderColor);
-    }
   }
 
   &:disabled {
     cursor: not-allowed;
   }
 
-  &:required {
-    &:valid {
-      color: var(--selectValidColor);
-      background: var(--selectValidBackground);
-      border: var(--selectValidBorder);
+  &:not([multiple]) {
+    /* if select does not have `multiple` attribute it receives a caret on the right-hand side */
+    background-image: var(--selectArrowIcon);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: var(--selectArrowSize);
+  }
 
-      &:focus {
-        box-shadow: 0 0 0 var(--selectOutlineWidth) var(--selectValidOutlineColor);
-      }
-    }
+  &[multiple] {
+    height: auto;
+    padding: var(--selectPadding) var(--selectPadding) calc(var(--selectPadding) / 16) var(--selectPadding);
 
-    &:invalid {
-      color: var(--selectInvalidColor);
-      background: var(--selectInvalidBackground);
-      border: var(--selectInvalidBorder);
+    & option {
+      padding: 0.5rem 0.5rem;
 
-      &:focus {
-        box-shadow: 0 0 0 var(--selectOutlineWidth) var(--selectInvalidOutlineColor);
+      &:checked {
+        color: var(--selectOptionCheckedColor);
+        background: var(--selectOptionCheckedBackground) -webkit-linear-gradient(bottom, var(--selectOptionCheckedBackground) 0%, var(--selectOptionCheckedBackground) 100%);
+        background-color: var(--selectOptionCheckedBackground);
       }
     }
   }
-}
 
-optgroup {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  & optgroup {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
 }

@@ -1,9 +1,9 @@
 {
-  "name": "@native-elements/ne-progress",
-  "version": "0.1.2",
-  "description": "Progress element from Native Elements",
-  "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-progress",
-  "main": "src/ne-progress.pcss",
+  "name": "@native-elements/ne-select",
+  "version": "0.0.1",
+  "description": "Select element from Native Elements",
+  "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-select",
+  "main": "src/ne-select.pcss",
   "author": {
     "name": "Equinusocio",
     "url": "http://equinsuocha.io"
