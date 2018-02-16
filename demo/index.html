@@ -9,6 +9,9 @@
   <style>
     html {
       font-size: 100%;
+
+      --ne-select-width: 100%;
+      --ne-textfield-width: 100%;
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -171,22 +174,41 @@
 
     <h2>Select</h2>
     <p>
-      <label ne-form for="select">Select</label>
+      <label for="select">Select</label>
       <select ne-select id="select" name="select">
-          <optgroup label="Option Group">
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-          </optgroup>
+        <option selected hidden>Pick an option</option>
+        <optgroup label="Option Group">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </optgroup>
       </select>
     </p>
 
     <p>
-      <label ne-form for="multi-select">Multi-select</label>
+      <label for="select">Disabled Select</label>
+      <select ne-select id="select" name="select" disabled>
+        <optgroup label="Option Group">
+          <option selected>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p>
+      <label for="multi-select">Multi-select</label>
       <select ne-select multiple id="multi-select">
-        <option>Option 1</option>
-        <option>Option 2</option>
-        <option>Option 3</option>
+        <optgroup label="Option Group">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </optgroup>
+        <optgroup label="Option Group 2">
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+        </optgroup>
       </select>
     </p>
   </main>

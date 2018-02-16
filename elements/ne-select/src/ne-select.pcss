@@ -1,6 +1,6 @@
 @import './_config.pcss';
 
-select {
+[ne-select] {
   @mixin select-config;
 
   margin: 0;
@@ -19,7 +19,7 @@ select {
   display: block;
   width: var(--selectWidth);
   height: var(--selectHeight);
-  padding: 0 var(--selectPadding);
+  padding: 0 calc((var(--selectPadding) * 2) + var(--selectArrowSize)) 0 var(--selectPadding);
   box-sizing: border-box;
 
   &:hover {
@@ -50,7 +50,7 @@ select {
     /* if select does not have `multiple` attribute it receives a caret on the right-hand side */
     background-image: var(--selectArrowIcon);
     background-repeat: no-repeat;
-    background-position: right 1rem center;
+    background-position: right var(--selectPadding) center;
     background-size: var(--selectArrowSize);
   }
 
@@ -70,7 +70,7 @@ select {
   }
 
   & optgroup {
-    margin: 0;
+    margin: 0 0 1rem 0;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;

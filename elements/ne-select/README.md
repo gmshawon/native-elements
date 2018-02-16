@@ -19,13 +19,30 @@ Native HTML `<progress>` element with **CSS API** that give you superpowers. ðŸ•
 ## Example
 
 ```html
-<progress value="50" max="100">Text</progress>
-<progress class="SpecialProgress" value="50" max="100">progress</progress>
+<select ne-select name="select">
+  <option selected hidden>Pick an option</option>
+  <optgroup label="Option Group">
+    <option selected>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </optgroup>
+</select>
+
+<select ne-select multiple id="multi-select">
+  <optgroup label="Option Group">
+    <option>Option 1</option>
+    <option>Option 2</option>
+  </optgroup>
+  <optgroup label="Option Group 2">
+    <option>Option 3</option>
+    <option>Option 4</option>
+  </optgroup>
+</select>
 ```
 
 ```css
-progress {
-  --ne-progress-border-color: #000;
+[ne-select] {
+  --ne-select-border-color: #000;
 }
 
 .SpecialProgress {
