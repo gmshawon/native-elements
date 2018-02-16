@@ -99,13 +99,13 @@ yarn add @native-elements/ne-button
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/ne-button/dist/ne-button.css';
+@import 'node_modules/@native-elements/ne-button/dist/ne-button.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your build process:
 ```css
-@import 'node_modules/ne-button/src/ne-button.pcss';
+@import 'node_modules/@native-elements/ne-button/src/ne-button.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._

@@ -68,13 +68,13 @@ yarn add @native-elements/ne-progress
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/ne-progress/dist/ne-progress.css';
+@import 'node_modules/@native-elements/ne-progress/dist/ne-progress.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/ne-progress/src/ne-progress.pcss';
+@import 'node_modules/@native-elements/ne-progress/src/ne-progress.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._
