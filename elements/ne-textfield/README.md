@@ -76,13 +76,13 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
   --ne-textfield-valid-color: var(--ne-textfield-color); /* color */
   --ne-textfield-invalid-color: var(--ne-textfield-color); /* color */
   --ne-textfield-placeholder-color: hsl(0, 0%, 85%); /* color */
-  --ne-textfield-hover-placeholder-color: hsl(0, 0%, 89%); /* color */
+  --ne-textfield-hover-placeholder-color: var(--ne-textfield-placeholder-color); /* color */
   --ne-textfield-focus-placeholder-color: var(--ne-textfield-hover-placeholder-color); /* color */
   --ne-textfield-disabled-placeholder-color: hsl(0, 0%, 85%); /* color */
 
   /* Misc API */
   --ne-textfield-radius: 5px; /* border-radius */
-  --ne-textfield-width: 100%; /* width */
+  --ne-textfield-width: auto; /* width */
   --ne-textfield-height: 2.5rem; /* height */
   --ne-textfield-y-padding: 0.5rem; /* unit */
   --ne-textfield-x-padding: 0.75rem; /* unit */
