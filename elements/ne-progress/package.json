@@ -8,6 +8,9 @@
     "name": "Equinusocio",
     "url": "http://equinsuocha.io"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/equinusocio/native-elements/issues"
   },
