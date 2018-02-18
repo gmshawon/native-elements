@@ -107,6 +107,10 @@
         <input ne-checkradio type="checkbox">
         Label 2
       </label>
+      <label ne-form>
+        <input ne-checkradio type="checkbox" disabled>
+        Label 3
+      </label>
     </fieldset>
     <fieldset ne-form>
       <legend ne-form>Fieldset legend</legend>
@@ -117,6 +121,10 @@
       <label ne-form>
         <input ne-checkradio name="group" type="radio">
         Label 2
+      </label>
+      <label ne-form>
+        <input ne-checkradio name="group" disabled type="radio">
+        Label 3
       </label>
     </fieldset>
 
@@ -210,6 +218,34 @@
           <option>Option 6</option>
         </optgroup>
       </select>
+    </p>
+
+    <h2>Pre and Code</h2>
+    <p>
+      <strong>pre</strong>
+      <pre ne-code>P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~ </pre>
+    </p>
+
+    <p>
+    <strong>pre + code</strong>
+    <pre ne-code><code>ReactDOM.render(
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;,
+    document.getElementById('root')
+);</code></pre>
+
+    </p>
+    <p>
+      <strong>code</strong>
+    <code ne-code>ReactDOM.render(
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;,
+    document.getElementById('root')
+);</code>
     </p>
   </main>
 
