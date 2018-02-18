@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0"></a>
+# 0.1.0 (2018-02-18)
+
+
+### Features
+
+* Add ne-code ([e89b909](https://github.com/equinusocio/native-elements/tree/master/elements/ne-code/commit/e89b909))
+
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/compare/@native-elements/ne-select@0.1.2...@native-elements/ne-select@0.1.3) (2018-02-16)
 
