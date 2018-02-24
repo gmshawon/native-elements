@@ -1,0 +1,18 @@
+{
+  "name": "@native-elements/ne-folding",
+  "version": "0.0.1",
+  "description": "Folding element from Native Elements",
+  "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-folding",
+  "main": "src/ne-folding.pcss",
+  "author": {
+    "name": "Equinusocio",
+    "url": "http://equinsuocha.io"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/equinusocio/native-elements/issues"
+  },
+  "license": "Apache-2.0"
+}
