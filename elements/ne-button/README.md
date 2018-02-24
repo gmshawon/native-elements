@@ -92,7 +92,7 @@ Fix the icon style when is positioned after the text.
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-button
+yarn add -D @native-elements/ne-button
 ```
 
 

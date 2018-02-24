@@ -75,7 +75,7 @@ Check the [live demo](https://ne-code.stackblitz.io/)
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-code
+yarn add -D @native-elements/ne-code
 ```
 
 

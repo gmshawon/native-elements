@@ -95,7 +95,7 @@ Check the [live demo](https://ne-select.stackblitz.io/)
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-select
+yarn add -D @native-elements/ne-select
 ```
 
 

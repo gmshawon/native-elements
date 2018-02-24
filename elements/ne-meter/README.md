@@ -61,7 +61,7 @@ Check the [live demo](https://ne-meter.stackblitz.io/)
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-meter
+yarn add -D @native-elements/ne-meter
 ```
 
 

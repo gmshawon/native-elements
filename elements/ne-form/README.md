@@ -56,7 +56,7 @@ Check the [live demo](https://ne-form.stackblitz.io/)
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-form
+yarn add -D @native-elements/ne-form
 ```
 
 

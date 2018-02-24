@@ -100,7 +100,7 @@ Check the [live demo](https://ne-textfield.stackblitz.io/)
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-textfield
+yarn add -D @native-elements/ne-textfield
 ```
 
 

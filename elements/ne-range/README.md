@@ -72,7 +72,7 @@ html {
 
 You can just install it with **npm** by running:
 ```
-yarn add @native-elements/ne-range
+yarn add -D @native-elements/ne-range
 ```
 
 
