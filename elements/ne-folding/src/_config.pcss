@@ -1,0 +1,17 @@
+@define-mixin folding-config {
+  /* Border API */
+
+  /* Background API */
+  --foldingBackground: var(--ne-folding-background, #FFF);
+  --summaryBacgrkound: var(--content-folding-summary-background, transparent);
+
+  /* Foreground API */
+
+  /* Misc API */
+  --foldingMaxHeight: var(--ne-folding-max-height, 300px);
+  --foldingOutlineColor: var(--ne-button-outline-color, hsl(233, 64%, 85%));
+  --foldingOutlineWidth: var(--ne-button-outline-width, 0.2rem);
+  --summaryPadding: var(--content-folding-summary-padding, 16px);
+  --summaryBorderRadius: var(--content-folding-border-radius, 4px);
+  --contentPadding: var(--content-folding-content-padding, 32px);
+}
