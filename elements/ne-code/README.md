@@ -40,9 +40,11 @@ p q r s t u v w x y z { | } ~ </pre>
 
 ```css
 html {
+  --ne-code-background: pink;
 }
 
 .SpecialCode {
+  --ne-code-background: tomato;
 }
 ```
 
