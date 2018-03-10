@@ -1,17 +1,19 @@
 @define-mixin folding-config {
   /* Border API */
+  --foldingSeparator: var(--ne-folding-separator, 1px solid rgba(0, 0, 0, 0.05));
 
   /* Background API */
   --foldingBackground: var(--ne-folding-background, #FFF);
-  --summaryBacgrkound: var(--content-folding-summary-background, transparent);
+  --foldingSummaryBacgrkound: var(--ne-folding-summary-background, #FFF);
 
   /* Foreground API */
+  --foldingSummaryFontSize: var(--ne-folding-summary-font-size, initial);
+  --foldingSummaryFontWeight: var(--ne-folding-summary-font-weight, 700);
+  --foldingSummaryOpenColor: var(--ne-folding-summary-open-color, hsl(233, 64%, 62%));
 
   /* Misc API */
   --foldingMaxHeight: var(--ne-folding-max-height, 300px);
-  --foldingOutlineColor: var(--ne-button-outline-color, hsl(233, 64%, 85%));
-  --foldingOutlineWidth: var(--ne-button-outline-width, 0.2rem);
-  --summaryPadding: var(--content-folding-summary-padding, 16px);
-  --summaryBorderRadius: var(--content-folding-border-radius, 4px);
-  --contentPadding: var(--content-folding-content-padding, 32px);
+  --foldingBorderRadius: var(--ne-folding-border-radius, 4px);
+  --foldingSummaryPadding: var(--ne-folding-summary-padding, 16px);
+  --foldingShadow: var(--ne-folding-shadow, 0 1px 2px rgba(0, 0, 0, 0.16));
 }

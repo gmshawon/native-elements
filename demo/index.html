@@ -31,10 +31,9 @@
 
     main {
       margin: 0 auto;
-      width: 85vw;
       max-width: 800px;
       min-width: 300px;
-      padding: 0 100px 100px 100px;
+      padding: 0 30px;
       box-sizing: border-box;
     }
 
@@ -53,6 +52,11 @@
     .FullRound {
       --ne-button-radius: 100px;
     }
+
+    [ne-folding] p {
+      padding: 0 32px;
+    }
+
   </style>
 </head>
 
@@ -251,9 +255,32 @@ p q r s t u v w x y z { | } ~ </pre>
     <h2>Folding</h2>
     <p>
       <details ne-folding>
-        <summary>Summary (click for details)</summary>
-        <p>Details</p>
+        <summary>My details title</summary>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
       </details>
+    </p>
+
+    <h2>Folding group</h2>
+    <p>
+      <section>
+        <details ne-folding>
+          <summary>My details title</summary>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
+        </details>
+        <details ne-folding>
+          <summary>My folding title</summary>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
+        </details>
+        <details ne-folding>
+          <summary>My folding title</summary>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
+        </details>
+      </section>
     </p>
   </main>
 

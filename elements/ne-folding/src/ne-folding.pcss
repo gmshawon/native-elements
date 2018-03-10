@@ -8,30 +8,50 @@
   overflow: auto;
   max-height: var(--foldingMaxHeight);
   position: relative;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
+  box-shadow: var(--foldingShadow);
+  border-radius: var(--foldingBorderRadius);
+  -webkit-overflow-scrolling: touch;
+
+  @nest * > &:first-of-type {
+    border-radius: var(--foldingBorderRadius) var(--foldingBorderRadius) 0 0;
+  }
+
+  @nest * > &:not(:first-of-type, :last-of-type) {
+    border-bottom: var(--foldingSeparator);
+    border-top: var(--foldingSeparator);
+    border-radius: 0;
+  }
+
+  @nest * > &:last-of-type {
+    border-radius: 0 0 var(--foldingBorderRadius) var(--foldingBorderRadius);
+  }
 
   & summary {
     line-height: 1;
     display: list-item;
     touch-action: manipulation;
-    padding: var(--summaryPadding);
+    padding: var(--foldingSummaryPadding) var(--foldingSummaryPadding) var(--foldingSummaryPadding) 32px;
     box-sizing: border-box;
     outline: none;
     user-select: none;
-    background: var(--summaryBacgrkound);
+    background: var(--foldingSummaryBacgrkound);
     position: -webkit-sticky;
     position: sticky;
     z-index: 1;
     top: 0;
-    backdrop-filter: blur(10px);
-    font-weight: 700;
+    font-weight: var(--foldingSummaryFontWeight);
+    font-size: var(--foldingSummaryFontSize);
     cursor: pointer;
     background-size: 16px auto;
-    padding-left: 32px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    transition: color 200ms;
+
+    &:first-of-type {
+      list-style: none;
+      list-style-type: none;
+    }
 
     &::before {
       content: '';
@@ -39,7 +59,7 @@
       position: absolute;
       top: 50%;
       margin-top: -4px;
-      right: 12px;
+      left: 12px;
       width: 12px;
       height: 8px;
       transform: rotate(90deg);
@@ -47,7 +67,7 @@
       transform-origin: 50% center;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjEycHgiIGhlaWdodD0iNjEycHgiIHZpZXdCb3g9IjAgMCA2MTIgNjEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MTIgNjEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGcgaWQ9Il94MzlfXzMwXyI+PGc+PHBhdGggZD0iTTYwNC41MDEsNDQwLjUwOUwzMjUuMzk4LDEzNC45NTZjLTUuMzMxLTUuMzU3LTEyLjQyMy03LjYyNy0xOS4zODYtNy4yN2MtNi45ODktMC4zNTctMTQuMDU2LDEuOTEzLTE5LjM4Nyw3LjI3TDcuNDk5LDQ0MC41MDljLTkuOTk5LDEwLjAyNC05Ljk5OSwyNi4yOTgsMCwzNi4zMjNzMjYuMjIzLDEwLjAyNCwzNi4yMjIsMGwyNjIuMjkzLTI4Ny4xNjRMNTY4LjI4LDQ3Ni44MzJjOS45OTksMTAuMDI0LDI2LjIyMiwxMC4wMjQsMzYuMjIxLDBDNjE0LjUsNDY2LjgwOSw2MTQuNSw0NTAuNTM0LDYwNC41MDEsNDQwLjUwOXoiLz48L2c+PC9nPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48L3N2Zz4=');
+      background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="612" height="612"> <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"/></svg>');
     }
 
     &::-webkit-details-marker {
@@ -59,15 +79,13 @@
     }
   }
 
-  & > *:not(summary) {
-    padding-right: var(--contentPadding);
-    padding-left: var(--contentPadding);
-    -webkit-overflow-scrolling: touch;
-  }
-
   &[open] > *:not(summary) {
     animation: fadeInDown 600ms;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  &[open] summary {
+    color: var(--foldingSummaryOpenColor);
   }
 
   &[open] summary::before {
@@ -78,7 +96,7 @@
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-5px);
   }
   100% {
     opacity: 1;
