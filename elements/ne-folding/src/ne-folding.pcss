@@ -12,7 +12,7 @@
   border-radius: var(--foldingBorderRadius);
   -webkit-overflow-scrolling: touch;
 
-  @nest * > &:first-of-type {
+  @nest * > &:first-of-type:not(:only-of-type) {
     border-radius: var(--foldingBorderRadius) var(--foldingBorderRadius) 0 0;
   }
 
@@ -22,7 +22,7 @@
     border-radius: 0;
   }
 
-  @nest * > &:last-of-type {
+  @nest * > &:last-of-type:not(:only-of-type) {
     border-radius: 0 0 var(--foldingBorderRadius) var(--foldingBorderRadius);
   }
 
