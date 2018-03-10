@@ -12,18 +12,20 @@
   border-radius: var(--foldingBorderRadius);
   -webkit-overflow-scrolling: touch;
 
-  @nest [ne-folding-group] > &:first-of-type:not(:only-of-type) {
+  @nest [ne-folding-group] > &:first-of-type {
     border-radius: var(--foldingBorderRadius) var(--foldingBorderRadius) 0 0;
   }
 
-  @nest [ne-folding-group] > &:not(:first-of-type, :last-of-type) {
-    border-bottom: var(--foldingSeparator);
-    border-top: var(--foldingSeparator);
-    border-radius: 0;
+  @nest [ne-folding-group] > &:last-of-type {
+    border-radius: 0 0 var(--foldingBorderRadius) var(--foldingBorderRadius);
   }
 
-  @nest [ne-folding-group] > &:last-of-type:not(:only-of-type) {
-    border-radius: 0 0 var(--foldingBorderRadius) var(--foldingBorderRadius);
+  @nest [ne-folding-group] > &:only-of-type {
+    border-radius: var(--foldingBorderRadius);
+  }
+
+  @nest [ne-folding-group] > &:not(:last-of-type) {
+    border-bottom: var(--foldingSeparator);
   }
 
   & summary {
@@ -35,6 +37,7 @@
     outline: none;
     user-select: none;
     background: var(--foldingSummaryBacgrkound);
+    border-radius: var(--foldingBorderRadius) var(--foldingBorderRadius) 0 0;
     position: -webkit-sticky;
     position: sticky;
     z-index: 1;
