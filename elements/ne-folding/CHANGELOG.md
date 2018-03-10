@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/equinusocio/native-elements/tree/master/elements/ne-folding/compare/@native-elements/ne-folding@0.1.1...@native-elements/ne-folding@0.1.2) (2018-03-10)
+
+
+### Bug Fixes
+
+* **ne-folding:** Add ne-folding-group attribute to handle grouped foldings ([0544e5a](https://github.com/equinusocio/native-elements/tree/master/elements/ne-folding/commit/0544e5a))
+
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-folding/compare/@native-elements/ne-folding@0.1.0...@native-elements/ne-folding@0.1.1) (2018-03-10)
 

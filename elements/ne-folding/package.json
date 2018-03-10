@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/ne-folding",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Folding element from Native Elements",
   "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-folding",
   "main": "src/ne-folding.pcss",
