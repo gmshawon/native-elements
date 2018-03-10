@@ -56,8 +56,8 @@ html {
   --ne-range-thumb-active-background: hsl(233, 64%, 62%); /* color */
   --ne-range-thumb-disabled-background: hsl(0, 0%, 98%); /* color */
   --ne-range-thumb-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16); /* box-shadow */
-  --ne-range-thumb-width: 1rem; /* unit */
-  --ne-range-thumb-height: 1.2rem; /* unit */
+  --ne-range-thumb-width: 1.2rem; /* unit */
+  --ne-range-thumb-height: 1.4rem; /* unit */
   --ne-range-thumb-radius: 5px; /* border-radius */
 
   /* Misc API */
