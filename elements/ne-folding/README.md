@@ -21,7 +21,7 @@ Native HTML `<details>` and `<summary>` elements with **CSS API** that give you 
   </details>
 
   <!-- Grouped folding -->
-  <section>
+  <section ne-folding-group>
     <details ne-folding>
       <summary>My folding summary</summary>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>

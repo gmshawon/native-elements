@@ -12,17 +12,17 @@
   border-radius: var(--foldingBorderRadius);
   -webkit-overflow-scrolling: touch;
 
-  @nest * > &:first-of-type:not(:only-of-type) {
+  @nest [ne-folding-group] > &:first-of-type:not(:only-of-type) {
     border-radius: var(--foldingBorderRadius) var(--foldingBorderRadius) 0 0;
   }
 
-  @nest * > &:not(:first-of-type, :last-of-type) {
+  @nest [ne-folding-group] > &:not(:first-of-type, :last-of-type) {
     border-bottom: var(--foldingSeparator);
     border-top: var(--foldingSeparator);
     border-radius: 0;
   }
 
-  @nest * > &:last-of-type:not(:only-of-type) {
+  @nest [ne-folding-group] > &:last-of-type:not(:only-of-type) {
     border-radius: 0 0 var(--foldingBorderRadius) var(--foldingBorderRadius);
   }
 
