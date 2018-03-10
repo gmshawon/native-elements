@@ -58,6 +58,10 @@
     height: auto;
     padding: var(--selectPadding) var(--selectPadding) calc(var(--selectPadding) / 16) var(--selectPadding);
 
+    @supports (padding-left: env(safe-area-inset-left)) {
+      padding: var(--selectPadding);
+    }
+
     & option {
       padding: 0.5rem 0.5rem;
 
