@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.0.6"></a>
+## [0.0.6](https://github.com/equinusocio/native-elements/tree/master/elements/ne-form/compare/@native-elements/ne-form@0.0.5...@native-elements/ne-form@0.0.6) (2018-03-10)
+
+
+### Bug Fixes
+
+* Update readme files ([d2f7c8b](https://github.com/equinusocio/native-elements/tree/master/elements/ne-form/commit/d2f7c8b))
+
+
+
+
 <a name="0.0.5"></a>
 ## [0.0.5](https://github.com/equinusocio/native-elements/tree/master/elements/ne-form/compare/@native-elements/ne-form@0.0.4...@native-elements/ne-form@0.0.5) (2018-02-16)
 

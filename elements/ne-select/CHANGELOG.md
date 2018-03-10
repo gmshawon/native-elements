@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/compare/@native-elements/ne-select@0.1.3...@native-elements/ne-select@0.2.0) (2018-03-10)
+
+
+### Bug Fixes
+
+* Update readme files ([d2f7c8b](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/commit/d2f7c8b))
+* **ne-select:** Fix bottom padding calc on Safari ([a412ba6](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/commit/a412ba6))
+* **ne-select:** Use svg code instead of base64 for the icon ([7858b4a](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/commit/7858b4a))
+
+
+### Features
+
+* Add ne-code ([e89b909](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/commit/e89b909))
+* **ne-select:** New --ne-select-shadow api to shadows ([36236ae](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/commit/36236ae))
+
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/compare/@native-elements/ne-select@0.1.2...@native-elements/ne-select@0.1.3) (2018-02-16)
 
