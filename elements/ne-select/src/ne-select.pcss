@@ -21,6 +21,7 @@
   height: var(--selectHeight);
   padding: 0 calc((var(--selectPadding) * 2) + var(--selectArrowSize)) 0 var(--selectPadding);
   box-sizing: border-box;
+  box-shadow: var(--selectShadow);
 
   &:hover {
     border: var(--selectHoverBorder);
@@ -40,6 +41,7 @@
     border: var(--selectDisabledBorder);
     background: var(--selectDisabledBackground);
     color: var(--selectDisabledColor);
+    box-shadow: none;
   }
 
   &:disabled {

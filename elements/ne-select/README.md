@@ -88,6 +88,7 @@ Check the [live demo](https://ne-select.stackblitz.io/)
   --ne-select-selection-foreground: hsl(0, 0%, 13%); /* color */
   --ne-select-arrow-icon: <svg...></svg>; /* background */
   --ne-select-arrow-size: 0.9rem; /* unit */
+  --ne-select-shadow: 0 1px 2px rgba(0, 0, 0, 0.06); /* box-shadow */
 }
 ```
 
