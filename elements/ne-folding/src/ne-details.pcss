@@ -1,49 +1,49 @@
 @import './_config.pcss';
 
-[ne-folding] {
+[ne-details] {
   @mixin folding-config;
 
   display: block;
-  background: var(--foldingBackground);
+  background: var(--detailsBackground);
   overflow: auto;
-  max-height: var(--foldingMaxHeight);
+  max-height: var(--detailsMaxHeight);
   position: relative;
-  box-shadow: var(--foldingShadow);
-  border-radius: var(--foldingBorderRadius);
+  box-shadow: var(--detailsShadow);
+  border-radius: var(--detailsBorderRadius);
   -webkit-overflow-scrolling: touch;
 
-  @nest [ne-folding-group] > &:first-of-type {
-    border-radius: var(--foldingBorderRadius) var(--foldingBorderRadius) 0 0;
+  @nest [ne-details-group] > &:first-of-type {
+    border-radius: var(--detailsBorderRadius) var(--detailsBorderRadius) 0 0;
   }
 
-  @nest [ne-folding-group] > &:last-of-type {
-    border-radius: 0 0 var(--foldingBorderRadius) var(--foldingBorderRadius);
+  @nest [ne-details-group] > &:last-of-type {
+    border-radius: 0 0 var(--detailsBorderRadius) var(--detailsBorderRadius);
   }
 
-  @nest [ne-folding-group] > &:only-of-type {
-    border-radius: var(--foldingBorderRadius);
+  @nest [ne-details-group] > &:only-of-type {
+    border-radius: var(--detailsBorderRadius);
   }
 
-  @nest [ne-folding-group] > &:not(:last-of-type) {
-    border-bottom: var(--foldingSeparator);
+  @nest [ne-details-group] > &:not(:last-of-type) {
+    border-bottom: var(--detailsSeparator);
   }
 
   & summary {
     line-height: 1;
     display: list-item;
     touch-action: manipulation;
-    padding: var(--foldingSummaryPadding) var(--foldingSummaryPadding) var(--foldingSummaryPadding) 32px;
+    padding: var(--detailsSummaryPadding) var(--detailsSummaryPadding) var(--detailsSummaryPadding) 32px;
     box-sizing: border-box;
     outline: none;
     user-select: none;
-    background: var(--foldingSummaryBacgrkound);
-    border-radius: var(--foldingBorderRadius) var(--foldingBorderRadius) 0 0;
+    background: var(--detailsSummaryBacgrkound);
+    border-radius: var(--detailsBorderRadius) var(--detailsBorderRadius) 0 0;
     position: -webkit-sticky;
     position: sticky;
     z-index: 1;
     top: 0;
-    font-weight: var(--foldingSummaryFontWeight);
-    font-size: var(--foldingSummaryFontSize);
+    font-weight: var(--detailsSummaryFontWeight);
+    font-size: var(--detailsSummaryFontSize);
     cursor: pointer;
     background-size: 16px auto;
     text-overflow: ellipsis;
@@ -88,7 +88,7 @@
   }
 
   &[open] summary {
-    color: var(--foldingSummaryOpenColor);
+    color: var(--detailsSummaryOpenColor);
   }
 
   &[open] summary::before {

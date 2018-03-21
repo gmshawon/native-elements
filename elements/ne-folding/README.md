@@ -15,18 +15,18 @@ Native HTML `<details>` and `<summary>` elements with **CSS API** that give you 
 ## Example
 
 ```html
-  <details ne-folding>
+  <details ne-details>
     <summary>My folding summary</summary>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
   </details>
 
   <!-- Grouped folding -->
-  <section ne-folding-group>
-    <details ne-folding>
+  <section ne-details-group>
+    <details ne-details>
       <summary>My folding summary</summary>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
     </details>
-    <details ne-folding>
+    <details ne-details>
       <summary>My folding summary</summary>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident saepe deserunt veritatis? Totam, corrupti. Dolor quos, numquam totam quae ea enim maiores sequi et? Optio harum adipisci neque nemo.</p>
     </details>
@@ -35,15 +35,15 @@ Native HTML `<details>` and `<summary>` elements with **CSS API** that give you 
 
 ```css
 html {
-  --ne-folding-background: deeppink;
+  --ne-details-background: deeppink;
 }
 
 .SpecialFolding {
-  --ne-folding-summary-font-weight: 400;
+  --ne-details-summary-font-weight: 400;
 }
 ```
 
-Check the [live demo](https://ne-folding.stackblitz.io/)
+Check the [live demo](https://ne-details.stackblitz.io/)
 
 
 ## CSS API
@@ -51,22 +51,22 @@ Check the [live demo](https://ne-folding.stackblitz.io/)
 ```css
 * {
   /* Border API */
-  --ne-folding-separator: 1px solid rgba(0, 0, 0, 0.05); /* border */
+  --ne-details-separator: 1px solid rgba(0, 0, 0, 0.05); /* border */
 
   /* Background API */
-  ---ne-folding-background: #FFF; /* background */
-  ---ne-folding-summary-background: #FFF; /* background */
+  ---ne-details-background: #FFF; /* background */
+  ---ne-details-summary-background: #FFF; /* background */
 
   /* Foreground API */
-  --ne-folding-summary-font-size: initial; /* font-size */
-  --ne-folding-summary-font-weight: 700; /* font-weight */
-  --ne-folding-summary-open-color: hsl(233, 64%, 62%); /* color */
+  --ne-details-summary-font-size: initial; /* font-size */
+  --ne-details-summary-font-weight: 700; /* font-weight */
+  --ne-details-summary-open-color: hsl(233, 64%, 62%); /* color */
 
   /* Misc API */
-  --ne-folding-max-height: 300px; /* height */
-  --ne-folding-border-radius: 4px; /* border-radius */
-  --ne-folding-summary-padding: 16px; /* padding */
-  --ne-folding-shadow: 0 1px 2px rgba(0, 0, 0, 0.16); /* box-shadow */
+  --ne-details-max-height: 300px; /* height */
+  --ne-details-border-radius: 4px; /* border-radius */
+  --ne-details-summary-padding: 16px; /* padding */
+  --ne-details-shadow: 0 1px 2px rgba(0, 0, 0, 0.16); /* box-shadow */
 }
 ```
 
@@ -74,20 +74,20 @@ Check the [live demo](https://ne-folding.stackblitz.io/)
 
 You can just install it with **npm** by running:
 ```
-yarn add -D @native-elements/ne-folding
+yarn add -D @native-elements/ne-details
 ```
 
 
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/@native-elements/ne-folding/dist/ne-folding.css';
+@import 'node_modules/@native-elements/ne-details/dist/ne-details.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/@native-elements/ne-folding/src/ne-folding.pcss';
+@import 'node_modules/@native-elements/ne-details/src/ne-details.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._
