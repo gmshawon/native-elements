@@ -1,4 +1,4 @@
-# Folding - Native Elements
+# Details - Native Elements
 > by [Native Elements](https://github.com/equinusocio/native-elements)
 
 Native HTML `<details>` and `<summary>` elements with **CSS API** that give you superpowers. 🕶
