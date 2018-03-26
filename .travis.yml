@@ -18,6 +18,6 @@ workflows:
           requires:
             - lockfile
 install:
-  - yarn install
+  - yarn install -W
 script:
   - yarn build
