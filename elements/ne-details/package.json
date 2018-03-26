@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/ne-details",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Details element from Native Elements",
   "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-details",
   "main": "src/ne-details.pcss",
