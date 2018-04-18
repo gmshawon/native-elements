@@ -7,12 +7,9 @@ branches:
   - develop
   - /^greenkeeper/.*$/
 before_install:
-  # Repo for Yarn
   - npm install -g greenkeeper-lockfile@1
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
-cache:
-  yarn: true
 workflows:
   version: 2
   workflow_name:
