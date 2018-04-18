@@ -13,9 +13,6 @@
     "name": "Equinusocio",
     "url": "http://equinsuocha.io"
   },
-  "workspaces": [
-    "elements/*"
-  ],
   "engines": {
     "node": ">=8"
   },
