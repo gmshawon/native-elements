@@ -17,8 +17,7 @@
     "elements/*"
   ],
   "engines": {
-    "node": ">=8",
-    "yarn": ">= 1.5.x"
+    "node": ">=8"
   },
   "paths": {
     "elements": "./elements",
