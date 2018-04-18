@@ -6,7 +6,9 @@ branches:
   only:
   - develop
   - /^greenkeeper/.*$/
-before_install: yarn global add greenkeeper-lockfile@1
+before_install:
+ - curl -o- -L https://yarnpkg.com/install.sh
+ - yarn global add greenkeeper-lockfile@1
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
 workflows:
