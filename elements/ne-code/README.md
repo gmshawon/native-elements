@@ -82,13 +82,13 @@ yarn add -D @native-elements/ne-code
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/@native-elements/ne-code/dist/ne-code.css';
+@import '@native-elements/ne-code/dist/ne-code.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/@native-elements/ne-code/src/ne-code.pcss';
+@import '@native-elements/ne-code/src/ne-code.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._

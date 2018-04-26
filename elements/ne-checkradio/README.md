@@ -56,13 +56,13 @@ yarn add -D @native-elements/ne-checkradio
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/@native-elements/ne-checkradio/dist/ne-checkradio.css';
+@import '@native-elements/ne-checkradio/dist/ne-checkradio.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/@native-elements/ne-checkradio/src/ne-checkradio.pcss';
+@import '@native-elements/ne-checkradio/src/ne-checkradio.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._
