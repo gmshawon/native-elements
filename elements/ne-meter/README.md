@@ -68,13 +68,13 @@ yarn add -D @native-elements/ne-meter
 ## Usage
 Just import the css inside your project from the **node_modules**.
 ```css
-@import 'node_modules/@native-elements/ne-meter/dist/ne-meter.css';
+@import '@native-elements/ne-meter/dist/ne-meter.css';
 ```
 
 ### PostCSS
 If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your buil process:
 ```css
-@import 'node_modules/@native-elements/ne-meter/src/ne-meter.pcss';
+@import '@native-elements/ne-meter/src/ne-meter.pcss';
 ```
 
 _**NOTE:** You need some PostCSS plugins to build Native Elements components._
