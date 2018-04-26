@@ -23,12 +23,12 @@
   },
   "scripts": {
     "lint": "stylelint elements/**/*.pcss",
-    "precommit": "yarn lint",
-    "build": "yarn lint && yarn gulp --silent",
-    "dev": "yarn gulp dev",
-    "clean": "yarn gulp clean",
-    "release": "git pull && yarn build && lerna publish --conventional-commits",
-    "releas-nonpm": "git pull && yarn build && lerna publish --skip-npm --conventional-commits"
+    "precommit": "npm run lint",
+    "build": "npm run lint && ./node_modules/gulp/bin/gulp.js --silent",
+    "dev": "./node_modules/gulp/bin/gulp.js dev",
+    "clean": "./node_modules/gulp/bin/gulp.js clean",
+    "release": "git pull && npm run build && lerna publish --conventional-commits",
+    "releas-nonpm": "git pull && npm run build && lerna publish --skip-npm --conventional-commits"
   },
   "files": [
     "elements"
@@ -53,7 +53,7 @@
     "chalk": "2.4.1",
     "cssnano": "3.10.0",
     "del": "3.0.0",
-    "gulp": "gulpjs/gulp#4.0",
+    "gulp": "github:gulpjs/gulp",
     "gulp-postcss": "7.0.1",
     "gulp-rename": "1.2.2",
     "gulp-stats": "0.0.4",
