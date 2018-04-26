@@ -3,8 +3,7 @@
   "packages": [
     "elements/*"
   ],
-  "npmClient": "yarn",
-  "useWorkspaces": true,
+  "useWorkspaces": false,
   "version": "independent",
   "publishConfig": {
     "access": "private"

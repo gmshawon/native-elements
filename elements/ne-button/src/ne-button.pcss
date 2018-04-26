@@ -1,69 +1,9 @@
 @import './_config.pcss';
+@import './_mixins.pcss';
 
 [ne-button] {
   @mixin button-config;
-
-  box-sizing: border-box;
-  appearance: button;
-  user-select: none;
-  -webkit-touch-callout: none;
-  margin: 0;
-  cursor: pointer;
-  font-family: inherit;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  text-decoration: none;
-  outline: none;
-  white-space: nowrap;
-  border: var(--buttonBorder);
-  background: var(--buttonBackground);
-  border-radius: var(--buttonBorderRadius);
-  font-weight: var(--buttonFontWeight);
-  color: var(--buttonColor);
-  padding: var(--buttonPadding);
-  font-size: var(--buttonFontSize);
-  box-shadow: var(--buttonShadow);
-  transition: box-shadow 0.1s ease-out, background-color 0.1s ease-out;
-
-  &::-moz-focus-inner {
-    border: 0;
-  }
-
-  &:hover {
-    border-color: var(--buttonHoverBorder);
-    background: var(--buttonHoverBackground);
-    color: var(--buttonHoverColor);
-  }
-
-  /* Simulate focus outline with box-shadow */
-  &:focus,
-  &:active {
-    box-shadow: 0 0 0 var(--buttonOutlineWidth) var(--buttonOutlineColor);
-  }
-
-  &:focus {
-    border: var(--buttonFocusBorder);
-    background: var(--buttonFocusBackground);
-    color: var(--buttonFocusColor);
-  }
-
-  &:disabled,
-  &[aria-disabled] {
-    cursor: not-allowed;
-    box-shadow: none;
-    border: var(--buttonDisabledBorder);
-    background: var(--buttonDisabledBackground);
-    color: var(--buttonDisabledColor);
-  }
-
-  &:not(:disabled, [aria-disabled]):active {
-    transform: translateY(1px);
-    border: var(--buttonActiveBorder);
-    background: var(--buttonActiveBackground);
-    color: var(--buttonActiveColor);
-  }
+  @mixin button;
 
   & i {
     color: inherit;
@@ -86,5 +26,14 @@
 
   &[disabled] i {
     border-right: 1px solid var(--buttonDisabledIconSeparator);
+  }
+}
+
+input[type='file'] {
+  font: inherit;
+
+  &::-webkit-file-upload-button {
+    @mixin button-config;
+    @mixin button;
   }
 }

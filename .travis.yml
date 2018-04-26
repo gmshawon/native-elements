@@ -6,7 +6,8 @@ branches:
   only:
   - develop
   - /^greenkeeper/.*$/
-before_install: yarn global add greenkeeper-lockfile@1
+before_install:
+  - npm install -g greenkeeper-lockfile@1
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
 workflows:
@@ -18,6 +19,6 @@ workflows:
           requires:
             - lockfile
 install:
-  - yarn install
+  - npm install
 script:
-  - yarn build
+  - npm run build
