@@ -53,6 +53,7 @@
     "chalk": "2.4.1",
     "cssnano": "3.10.0",
     "del": "3.0.0",
+    "eslint": "4.19.1",
     "gulp": "github:gulpjs/gulp",
     "gulp-postcss": "7.0.1",
     "gulp-rename": "1.2.2",

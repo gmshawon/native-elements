@@ -18,7 +18,7 @@ export const prepare = (done) => {
   );
   return gulp.src([
       pkg.paths.elements + '/native-elements/src/native-elements.pcss',
-      pkg.paths.elements + '/**!(node_modules)/src/!(_*).pcss'
+      pkg.paths.elements + '/ne-*/src/*!(_*).pcss'
     ], {base: process.cwd()})
     .pipe(postcss())
     .pipe(rename(function (path, file) {

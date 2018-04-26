@@ -17,6 +17,7 @@ export const reload = (done) => {
 
 export const serve = (done) => {
   server.init({
+    https: true,
     server: {
       baseDir: './',
       index: "./demo/index.html"

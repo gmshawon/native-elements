@@ -10,7 +10,7 @@ import pkg from '~/package.json';
 import chalk from 'chalk';
 
 gulp.task('dev', gulp.parallel('postcss', 'serve', () => {
-  gulp.watch([pkg.paths.elements + '/ne-**/*.pcss', 'postcss.config.js'], gulp.series('postcss'))
+  gulp.watch([pkg.paths.elements + '/ne-**/src/*.pcss', 'postcss.config.js'], gulp.series('postcss'))
     .on('change', (path, stats) => {
       const file = path.replace('elements/', '');
       console.log(chalk.yellow('changed:'), file);
