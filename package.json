@@ -54,7 +54,7 @@
     "cssnano": "3.10.0",
     "del": "3.0.0",
     "eslint": "4.19.1",
-    "gulp": "github:gulpjs/gulp",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-postcss": "7.0.1",
     "gulp-rename": "1.2.2",
     "gulp-stats": "0.0.4",
