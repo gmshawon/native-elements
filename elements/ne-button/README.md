@@ -24,6 +24,10 @@ Native HTML `<button>` element with **CSS API** that give you superpowers. 🕶
    <i>←</i>
    Text
 </button>
+<button ne-button dir="rtl" class="SpecialButton">
+   <i>←</i>
+   Text
+</button>
 ```
 
 ```css
@@ -84,9 +88,9 @@ Check the [live demo](https://ne-button.stackblitz.io/)
 ```
 ## HTML API
 
-> ne-icon-right
+> dir="rtl"
 
-Fix the icon style when is positioned after the text.
+Adding this html attribute the icon inside the button will change the position without changing the DOM. The style will be automatically fixed.
 
 ## Install
 
