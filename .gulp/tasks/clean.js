@@ -12,7 +12,7 @@ import del from 'del';
 
 export const clean = (done) => {
   console.log(
-    '\n', chalk.cyan('🗂  Cleaning dist files...'), '\n'
+    '\n', chalk.cyan('💣 Cleaning dist files...'), '\n'
   );
   del([`${pkg.paths.elements}/**/dist`]);
   done();
