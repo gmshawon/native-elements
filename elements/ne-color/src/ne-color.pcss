@@ -1,0 +1,27 @@
+@import './_config.pcss';
+
+[ne-color] {
+  @mixin color-config;
+
+  appearance: none;
+  border: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: transparent;
+
+  &::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+  &::-moz-color-swatch {
+    border-radius: 100%;
+    border: 0;
+  }
+
+  &::-webkit-color-swatch {
+    border-radius: 100%;
+    border: 0;
+  }
+}
