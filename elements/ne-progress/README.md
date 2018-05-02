@@ -48,7 +48,7 @@ Check the [live demo](https://ne-progress.stackblitz.io/)
   --ne-progress-filled-color: var(--ne-progress-border-color); /* color */
 
   /* Stripes API */
-  --ne-progress-stripe-size: 1rem; /* unit */
+  --ne-progress-stripe-size: 16px; /* unit */
   --ne-progress-stripe-colors: rgba(255, 255, 255, 0.4); /* color */
 
   /* Misc API */
