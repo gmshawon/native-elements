@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@0.1.5...@native-elements/ne-button@0.1.6) (2018-05-15)
+
+
+### Bug Fixes
+
+* **ne-button:** Fix default appearance ([fe0b0cc](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/fe0b0cc))
+* Fix right icon style when button is disabled ([7ded2fe](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/7ded2fe))
+* **ne-button:** Fix icon positioning using css :dir() instead of [dir] ([0920bb6](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/0920bb6))
+* **ne-button:** Handle icon position with the dir attribute ([fdc10cd](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/fdc10cd))
+* **ne-button:** Remove useless style ([d03e4f8](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/commit/d03e4f8))
+
+
+
+
 <a name="0.1.5"></a>
 ## [0.1.5](https://github.com/equinusocio/native-elements/tree/master/elements/ne-button/compare/@native-elements/ne-button@0.1.4...@native-elements/ne-button@0.1.5) (2018-03-26)
 

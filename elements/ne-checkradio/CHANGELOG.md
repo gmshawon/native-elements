@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/equinusocio/native-elements/tree/master/elements/ne-checkradio/compare/@native-elements/ne-checkradio@0.1.4...@native-elements/ne-checkradio@0.1.5) (2018-05-15)
+
+
+### Bug Fixes
+
+* **ne-checkradio:** Add pointer cursor on mouse hover ([5892354](https://github.com/equinusocio/native-elements/tree/master/elements/ne-checkradio/commit/5892354)), closes [#34](https://github.com/equinusocio/native-elements/tree/master/elements/ne-checkradio/issues/34)
+
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/equinusocio/native-elements/tree/master/elements/ne-checkradio/compare/@native-elements/ne-checkradio@0.1.3...@native-elements/ne-checkradio@0.1.4) (2018-03-10)
 
