@@ -83,7 +83,7 @@ Just import the css inside your project from the **node_modules**.
 ```
 
 ### PostCSS
-If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your build process::
+If you are inside a postCSS environment you can also import the `.pcss` source file and build it with your build process:
 ```css
 @import '@native-elements/ne-range/src/ne-range.pcss';
 ```
