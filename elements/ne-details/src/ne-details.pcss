@@ -20,6 +20,10 @@
     border-radius: 0 0 var(--detailsBorderRadius) var(--detailsBorderRadius);
   }
 
+  @nest [ne-details-group] > &:not(:first-of-type, :last-of-type) {
+    border-radius: 0;
+  }
+
   @nest [ne-details-group] > &:only-of-type {
     border-radius: var(--detailsBorderRadius);
   }
