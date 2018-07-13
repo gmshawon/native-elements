@@ -2,9 +2,7 @@ const BROWSERS_LIST = ['last 1 versions', 'not ie <= 11', 'not op_mini all', 'no
 
 module.exports = (ctx) => ({
   plugins: {
-    'stylelint': {
-      configFile: '.stylelintrc'
-    },
+    'stylelint': {},
     'postcss-easy-import': {
       extensions: '.pcss',
       plugins: [require('stylelint')()]
