@@ -67,7 +67,7 @@ Check the [live demo](https://ne-select.stackblitz.io/)
   --ne-select-background: #FFF; /* background */
   --ne-select-hover-background: var(--ne-select-background); /* background */
   --ne-select-focus-background: var(--ne-select-background); /* background */
-  --ne-select-disabled-background: var(--ne-select-background); /* background */
+  --ne-select-disabled-background: hsl(220, 10%, 95%); /* background */
   --ne-select-option-checked-background: hsl(233, 64%, 62%); /* background */
 
   /* Foreground API */
