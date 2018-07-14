@@ -53,8 +53,7 @@
   }
 
   &:disabled,
-  &[aria-disabled],
-  &[readonly] {
+  &[aria-disabled] {
     border: var(--textfieldDisabledBorder);
     background: var(--textfieldDisabledBackground);
     color: var(--textfieldDisabledColor);
@@ -65,6 +64,8 @@
   }
 
   &[readonly] {
+    border: var(--textfieldReadonlyBorder);
+    background: var(--textfieldReadonlyBackground);
     color: var(--textfieldReadonlyColor);
     cursor: default;
 
