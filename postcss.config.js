@@ -17,9 +17,7 @@ module.exports = (ctx) => ({
         'nesting-rules': require('postcss-mixins')()
       }
     },
-    'cssnano': { preset: ['advanced', {
-      mergeLonghand: false
-    }] },
+    'cssnano': { preset: 'advanced' },
     'postcss-reporter': { clearReportedMessages: true }
   }
 })
