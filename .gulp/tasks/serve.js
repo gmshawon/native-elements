@@ -18,8 +18,11 @@ export const reload = (done) => {
 export const serve = (done) => {
   server.init({
     server: {
-      baseDir: './',
-      index: "./demo/index.html"
+      baseDir: 'demo',
+      index: "index.html",
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
     },
     files: "./elements/native-elements/dist/native-elements.css"
   });

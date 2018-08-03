@@ -1,6 +1,6 @@
 import gulp from 'gulp';
-import serve from './.gulp/tasks/serve';
 import gulpStats from 'gulp-stats';
+import serve from './.gulp/tasks/serve';
 import clean from './.gulp/tasks/clean';
 import postcss from './.gulp/tasks/postcss';
 import build from './.gulp/tasks/build';
