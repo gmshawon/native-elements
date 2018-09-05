@@ -2,7 +2,7 @@
   "name": "@native-elements/native-elements",
   "version": "0.3.7",
   "description": "Native HTML Elements with CSS superpowers.",
-  "main": "src/native-elements.pcss",
+  "main": "dist/native-elements.css",
   "repository": "https://github.com/equinusocio/native-elements",
   "author": {
     "name": "Equinusocio",
