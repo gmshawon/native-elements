@@ -13,7 +13,7 @@ import rename from 'gulp-rename';
 export const prepare = (done) => {
   console.log(
     '\n',
-    chalk.cyan('📦 Building postcss...'),
+    chalk.cyan('📦  Building postcss...'),
     '\n'
   );
   return gulp.src([
