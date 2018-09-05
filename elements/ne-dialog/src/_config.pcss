@@ -1,3 +1,21 @@
 @define-mixin dialog-config {
-  --box-shadow: 0 0 0 red;
+  /* Border API */
+
+  /* Background API */
+  --dialogBackground: var(--ne-dialog-background, #FFF);
+
+  /* Foreground API */
+
+  /* Misc API */
+  --dialogBorderRadius: var(--ne-dialog-radius, 5px);
+  --dialogPadding: var(--ne-dialog-y-padding, 2rem) var(--ne-dialog-x-padding, 2rem);
+  --dialogShadow: var(--ne-dialog-shadow, 0 10px 30px rgba(0, 0, 0, 0.3));
+  --dialogIndex: var(--ne-dialog-index, 999999999999);
+  --dialogMaxWidth: var(--ne-dialog-max-width, 40rem);
+}
+
+@define-mixin dialog-backdrop-config {
+  /* Misc API */
+  --dialogBackdrop: var(--ne-dialog-backdrop, rgba(0, 0, 0, 0.3));
+  --dialogBackdropFilter: var(--ne-dialog-backdrop-filter, blur(10px));
 }

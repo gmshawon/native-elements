@@ -3,9 +3,29 @@
 [ne-dialog] {
   @mixin dialog-config;
 
-  color: red;
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(50%);
+  z-index: var(--dialogIndex);
+  border: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: var(--dialogBackground);
+  border-radius: var(--dialogBorderRadius);
+  padding: var(--dialogPadding);
+  max-width: var(--dialogMaxWidth);
 
   &::backdrop {
-    background: red;
+    @mixin dialog-backdrop-config;
+
+    background-color: var(--dialogBackdrop);
+    backdrop-filter: var(--dialogBackdropFilter);
+  }
+
+  & > header > * {
+    margin-top: 0;
+  }
+
+  & > footer {
+    margin-top: 32px;
   }
 }

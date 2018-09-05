@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="native-elements.css">
+  <link rel="stylesheet" href="https://unpkg.com/dialog-polyfill@0.4.10/dialog-polyfill.css">
 
   <style>
     html {
@@ -47,6 +48,17 @@
       --ne-button-radius: 100px;
       --ne-button-y-padding: 0.5rem;
       --ne-button-x-padding: 1.5rem;
+    }
+
+    .MutedButton {
+      --ne-button-background: transparent;
+      --ne-button-hover-background: transparent;
+      --ne-button-active-background: transparent;
+      --ne-button-shadow: none;
+      --ne-button-foreground: #000;
+      --ne-button-hover-color: var(--buttonForeground));
+      --ne-button-focus-color: var(--buttonForeground));
+      --ne-button-active-color: var(--buttonForeground));
     }
 
     .FullRound {
@@ -289,12 +301,38 @@ p q r s t u v w x y z { | } ~ </pre>
     <input ne-color type="color" value="#606fdc">
     <input ne-color type="color" value="#70e7bd">
 
-    <h2>Dialog</h2>
-    <dialog ne-dialog >
-      <p>Greetings, one and all!</p>
+    <h2>Dialog <small>(<a href="https://github.com/GoogleChrome/dialog-polyfill" target="_blank">Polyfill</a>)</small></h2>
+    <button ne-button data-modal="default-dialog" class="modalTrigger">Open default dialog</button>
+    <dialog ne-dialog data-modal-name="default-dialog">
+      <header><h1>Dialog Header</h1></header>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minus aut laborum eum, obcaecati odit accusantium enim tempore, nam suscipit cumque repellendus at. Repellendus molestias ea labore error iste dicta.</p>
+      <footer>
+        <button ne-button class="SecondButton modalClose">Yeah, confirm</button>
+        <button ne-button class="SecondButton MutedButton modalClose">Cancel</button>
+      </footer>
     </dialog>
 
   </main>
 
+  <script src="https://unpkg.com/dialog-polyfill@0.4.10/dialog-polyfill.js"></script>
+  <script>
+    let modalTriggers = document.querySelectorAll('.modalTrigger');
+    let modalClose = document.querySelectorAll('.modalClose');
+
+    [].forEach.call(modalClose, function(item) {
+      item.addEventListener('click', function(){
+        console.log(item.parentNode);
+        item.closest('dialog').close();
+      });
+    });
+
+    [].forEach.call(modalTriggers, function(item) {
+      item.addEventListener('click', function(){
+        let modal = document.querySelector('[data-modal-name="'+ item.getAttribute("data-modal") +'"]');
+        dialogPolyfill.registerDialog(modal);
+        modal.showModal();
+      });
+    });
+  </script>
 </body>
 </html>
