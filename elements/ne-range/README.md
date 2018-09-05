@@ -47,7 +47,7 @@ html {
   --ne-range-border-width: 1px; /* unit */
 
   /* Background API */
-  --ne-range-background: hsl(0, 0%, 97%); /* color */
+  --ne-range-background: hsl(220, 10%, 95%); /* color */
   --ne-range-active-background: var(--ne-range-background); /* color */
   --ne-range-focus-background: var(--ne-range-background); /* color */
 

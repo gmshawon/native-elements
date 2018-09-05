@@ -45,7 +45,7 @@ Check the [live demo](https://ne-meter.stackblitz.io/)
   --ne-meter-border-color: hsl(0, 0%, 89%); /* color */
 
   /* Background API */
-  --ne-meter-background: hsl(0, 0%, 97%); /* color */
+  --ne-meter-background: hsl(220, 10%, 95%); /* color */
   --ne-meter-filled-color-strong: hsl(67, 78%, 52%); /* color */
   --ne-meter-filled-color-good: hsl(41, 100%, 60%); /* color */
   --ne-meter-filled-color-weak: hsl(354, 100%, 65%); /* color */
