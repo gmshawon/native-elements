@@ -64,7 +64,7 @@ Check the [live demo](https://ne-button.stackblitz.io/)
   --ne-button-disabled-background: hsl(220, 10%, 95%); /*  background  */
 
   /* Foreground API */
-  --ne-button-color: #FFF; /*  color */
+  --ne-button-foreground: #FFF; /*  color */
   --ne-button-hover-color: var(--ne-button-color); /*  color */
   --ne-button-focus-color: var(--ne-button-color); /*  color */
   --ne-button-active-color: var(--ne-button-color); /*  color */
