@@ -36,6 +36,12 @@
     color: var(--selectFocusColor);
   }
 
+  &:-moz-focusring {
+    transition: none;
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
   &:disabled,
   &[aria-disabled] {
     border: var(--selectDisabledBorder);
@@ -49,7 +55,6 @@
   }
 
   &:not([multiple]) {
-    /* if select does not have `multiple` attribute it receives a caret on the right-hand side */
     background-image: var(--selectArrowIcon);
     background-repeat: no-repeat;
     background-position: right var(--selectPadding) center;
