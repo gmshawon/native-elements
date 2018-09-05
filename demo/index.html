@@ -321,7 +321,6 @@ p q r s t u v w x y z { | } ~ </pre>
 
     [].forEach.call(modalClose, function(item) {
       item.addEventListener('click', function(){
-        console.log(item.parentNode);
         item.closest('dialog').close();
       });
     });
