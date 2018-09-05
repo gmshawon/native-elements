@@ -3,7 +3,7 @@
 
 Native HTML `<details>` and `<summary>` elements with **CSS API** that give you superpowers. 🕶
 
-- [Folding - Native Elements](#folding---native-elements)
+- [Details - Native Elements](#details---native-elements)
   - [Example](#example)
   - [CSS API](#css-api)
   - [Install](#install)
@@ -65,6 +65,8 @@ Check the [live demo](https://ne-details.stackblitz.io/)
   /* Misc API */
   --ne-details-max-height: 300px; /* height */
   --ne-details-border-radius: 4px; /* border-radius */
+  --ne-details-outline-color: hsl(233, 64%, 85%); /* color */
+  --ne-details-outline-width: 0.2rem; /* unit */
   --ne-details-summary-padding: 16px; /* padding */
   --ne-details-shadow: 0 1px 2px rgba(0, 0, 0, 0.16); /* box-shadow */
 }
