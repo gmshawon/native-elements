@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/compare/@native-elements/ne-select@0.2.1...@native-elements/ne-select@0.2.3) (2018-09-06)
+
+
+### Bug Fixes
+
+* **ne-select:** Fix disabled default style and update api ([20024c1](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/commit/20024c1))
+* Remove dotted inner  border on FF ([6640720](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/commit/6640720))
+
+
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/equinusocio/native-elements/tree/master/elements/ne-select/compare/@native-elements/ne-select@0.2.1...@native-elements/ne-select@0.2.2) (2018-07-14)
 

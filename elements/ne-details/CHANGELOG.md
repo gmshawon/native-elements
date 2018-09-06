@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/equinusocio/native-elements/tree/master/elements/ne-details/compare/@native-elements/ne-details@0.2.2...@native-elements/ne-details@0.2.4) (2018-09-06)
+
+
+### Bug Fixes
+
+* **ne-details:** Remove border radius for not last and not first inside group ([3ff8cb0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-details/commit/3ff8cb0))
+* Add outline to focused summary ([dbfb4c7](https://github.com/equinusocio/native-elements/tree/master/elements/ne-details/commit/dbfb4c7))
+
+
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/equinusocio/native-elements/tree/master/elements/ne-details/compare/@native-elements/ne-details@0.2.2...@native-elements/ne-details@0.2.3) (2018-07-14)
 

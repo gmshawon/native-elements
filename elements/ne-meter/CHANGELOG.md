@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/equinusocio/native-elements/tree/master/elements/ne-meter/compare/@native-elements/ne-meter@0.1.5...@native-elements/ne-meter@0.1.7) (2018-09-06)
+
+
+### Bug Fixes
+
+* Fix color consistency ([43f6a77](https://github.com/equinusocio/native-elements/tree/master/elements/ne-meter/commit/43f6a77))
+
+
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/equinusocio/native-elements/tree/master/elements/ne-meter/compare/@native-elements/ne-meter@0.1.5...@native-elements/ne-meter@0.1.6) (2018-07-14)
 

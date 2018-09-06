@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/equinusocio/native-elements/tree/master/elements/ne-progress/compare/@native-elements/ne-progress@0.1.6...@native-elements/ne-progress@0.1.8) (2018-09-06)
+
+
+### Bug Fixes
+
+* Fix color consistency ([43f6a77](https://github.com/equinusocio/native-elements/tree/master/elements/ne-progress/commit/43f6a77))
+* Fix filled color to match palette ([a799c5f](https://github.com/equinusocio/native-elements/tree/master/elements/ne-progress/commit/a799c5f))
+
+
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/equinusocio/native-elements/tree/master/elements/ne-progress/compare/@native-elements/ne-progress@0.1.6...@native-elements/ne-progress@0.1.7) (2018-07-14)
 

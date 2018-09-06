@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.10"></a>
+## [0.1.10](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.1.8...@native-elements/ne-range@0.1.10) (2018-09-06)
+
+
+### Bug Fixes
+
+* Fix color consistency ([43f6a77](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/commit/43f6a77))
+
+
+
+
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/equinusocio/native-elements/tree/master/elements/ne-range/compare/@native-elements/ne-range@0.1.8...@native-elements/ne-range@0.1.9) (2018-07-14)
 

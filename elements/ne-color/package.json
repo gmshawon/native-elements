@@ -1,6 +1,6 @@
 {
   "name": "@native-elements/ne-color",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Input color element from Native Elements",
   "repository": "https://github.com/equinusocio/native-elements/tree/master/elements/ne-color",
   "main": "src/ne-color.pcss",
