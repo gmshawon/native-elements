@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../elements/native-elements/dist/native-elements.css">
-  <link rel="stylesheet" href="https://unpkg.com/dialog-polyfill@0.4.10/dialog-polyfill.css">
 
   <style>
     html {
@@ -144,10 +143,6 @@
       <label ne-form>
         <input ne-checkradio checked name="group" type="radio">
         Checked
-      </label>
-      <label ne-form>
-        <input ne-checkradio data-indeterminate name="group" type="radio">
-        Indeterminate
       </label>
       <label ne-form>
         <input ne-checkradio name="group" disabled type="radio">
@@ -311,19 +306,35 @@ p q r s t u v w x y z { | } ~ </pre>
 
     <h2>Dialog <small>(<a href="https://github.com/GoogleChrome/dialog-polyfill" target="_blank">Polyfill</a>)</small></h2>
     <button ne-button data-modal="default-dialog" class="modalTrigger">Open default dialog</button>
-    <dialog ne-dialog data-modal-name="default-dialog">
-      <header><h1>Dialog Header</h1></header>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minus aut laborum eum, obcaecati odit accusantium enim tempore, nam suscipit cumque repellendus at. Repellendus molestias ea labore error iste dicta.</p>
-      <footer>
-        <button ne-button class="SecondButton modalClose">Yeah, confirm</button>
-        <button ne-button class="SecondButton MutedButton modalClose">Cancel</button>
-      </footer>
-    </dialog>
+
+
+    <h2>Upload</h2>
+    <input ne-upload type="file">
 
   </main>
 
-  <script src="https://unpkg.com/dialog-polyfill@0.4.10/dialog-polyfill.js"></script>
+
+<dialog ne-dialog data-modal-name="default-dialog">
+  <header><h1>Dialog Header</h1></header>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minus aut laborum eum, obcaecati odit accusantium enim tempore, nam suscipit cumque repellendus at. Repellendus molestias ea labore error iste dicta.</p>
+  <footer>
+    <button ne-button class="SecondButton modalClose">Yeah, confirm</button>
+    <button ne-button class="SecondButton MutedButton modalClose">Cancel</button>
+  </footer>
+</dialog>
+
+
   <script>
+    let file = location.pathname.split( "/" ).pop();
+
+    var link = document.createElement( "link" );
+    link.href = file.substr( 0, file.lastIndexOf( "." ) ) + ".css";
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.media = "screen,print";
+
+    document.getElementsByTagName( "head" )[0].appendChild( link );
+
     let indeterminates = document.querySelectorAll("[data-indeterminate]");
     [].forEach.call(indeterminates, function(item) {
       item.indeterminate = true;
@@ -341,7 +352,6 @@ p q r s t u v w x y z { | } ~ </pre>
     [].forEach.call(modalTriggers, function(item) {
       item.addEventListener('click', function(){
         let modal = document.querySelector('[data-modal-name="'+ item.getAttribute("data-modal") +'"]');
-        dialogPolyfill.registerDialog(modal);
         modal.showModal();
       });
     });
