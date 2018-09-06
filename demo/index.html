@@ -120,30 +120,38 @@
       <legend ne-form>Fieldset legend</legend>
       <label ne-form>
         <input ne-checkradio type="checkbox">
-        Label
+        Default
       </label>
       <label ne-form>
-        <input ne-checkradio type="checkbox">
-        Label 2
+        <input ne-checkradio checked type="checkbox">
+        Checked
+      </label>
+      <label ne-form>
+        <input ne-checkradio data-indeterminate type="checkbox">
+        Indeterminate
       </label>
       <label ne-form>
         <input ne-checkradio type="checkbox" disabled>
-        Label 3
+        disabled
       </label>
     </fieldset>
     <fieldset ne-form>
       <legend ne-form>Fieldset legend</legend>
       <label ne-form>
         <input ne-checkradio name="group" type="radio">
-        Label
+        Default
       </label>
       <label ne-form>
-        <input ne-checkradio name="group" type="radio">
-        Label 2
+        <input ne-checkradio checked name="group" type="radio">
+        Checked
+      </label>
+      <label ne-form>
+        <input ne-checkradio data-indeterminate name="group" type="radio">
+        Indeterminate
       </label>
       <label ne-form>
         <input ne-checkradio name="group" disabled type="radio">
-        Label 3
+        Disabled
       </label>
     </fieldset>
 
@@ -316,6 +324,11 @@ p q r s t u v w x y z { | } ~ </pre>
 
   <script src="https://unpkg.com/dialog-polyfill@0.4.10/dialog-polyfill.js"></script>
   <script>
+    let indeterminates = document.querySelectorAll("[data-indeterminate]");
+    [].forEach.call(indeterminates, function(item) {
+      item.indeterminate = true;
+    });
+
     let modalTriggers = document.querySelectorAll('.modalTrigger');
     let modalClose = document.querySelectorAll('.modalClose');
 
