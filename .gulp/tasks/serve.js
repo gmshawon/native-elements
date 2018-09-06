@@ -19,7 +19,6 @@ export const serve = (done) => {
   server.init({
     server: {
       baseDir: ["./"],
-      directory: true,
       index: "/demo/index.html",
       serveStaticOptions: {
         extensions: ["html"]
