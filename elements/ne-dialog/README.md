@@ -29,9 +29,12 @@ Native HTML `<dialog>` element with **CSS API** that give you superpowers. 🕶
 
 ```css
 html {
+  --ne-dialog-background: #F5F5F5;
 }
 
-.SpecialColorpicker {
+.WarningDialog {
+  --ne-dialog-background: #FFF;
+  --ne-dialog-border: 2px solid red;
 }
 ```
 
@@ -65,7 +68,7 @@ Check the [live demo](https://ne-dialog.stackblitz.io/)
 ## Install
 
 You can just install it with **npm** by running:
-```
+```shell
 yarn add -D @native-elements/ne-dialog
 ```
 
