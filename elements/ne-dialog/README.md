@@ -1,9 +1,9 @@
-# Dialog - Native Elements
+# Dialog - Native Elements (experimental 👨‍🔬)
 > by [Native Elements](https://github.com/equinusocio/native-elements)
 
 Native HTML `<dialog>` element with **CSS API** that give you superpowers. 🕶
 
-- [Dialog - Native Elements](#dialog---native-elements)
+- [Dialog - Native Elements (experimental 👨‍🔬)](#dialog---native-elements-experimental-%F0%9F%91%A8%E2%80%8D%F0%9F%94%AC)
   - [Example](#example)
   - [CSS API](#css-api)
   - [Install](#install)

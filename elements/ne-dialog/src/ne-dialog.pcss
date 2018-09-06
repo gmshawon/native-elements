@@ -3,6 +3,8 @@
 [ne-dialog] {
   @mixin dialog-config;
 
+  width: fit-content;
+  height: fit-content;
   position: fixed;
   margin: auto;
   top: 50%;
@@ -13,6 +15,10 @@
   border-radius: var(--dialogBorderRadius);
   padding: var(--dialogPadding);
   max-width: var(--dialogMaxWidth);
+
+  &:not([open]) {
+    display: none;
+  }
 
   &[open] {
     animation-name: modal-show;
