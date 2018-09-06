@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.11"></a>
+## [0.1.11](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.1.10...@native-elements/ne-textfield@0.1.11) (2018-09-06)
+
+
+### Bug Fixes
+
+* Improve read only textfield style ([915de7e](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/commit/915de7e))
+
+
+
+
+
 <a name="0.1.10"></a>
 ## [0.1.10](https://github.com/equinusocio/native-elements/tree/master/elements/ne-textfield/compare/@native-elements/ne-textfield@0.1.8...@native-elements/ne-textfield@0.1.10) (2018-09-06)
 

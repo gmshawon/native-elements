@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.5"></a>
+## [0.2.5](https://github.com/equinusocio/native-elements/tree/master/elements/ne-details/compare/@native-elements/ne-details@0.2.4...@native-elements/ne-details@0.2.5) (2018-09-06)
+
+
+### Bug Fixes
+
+* Fix outline radius on focus ([5dc5494](https://github.com/equinusocio/native-elements/tree/master/elements/ne-details/commit/5dc5494))
+
+
+
+
+
 <a name="0.2.4"></a>
 ## [0.2.4](https://github.com/equinusocio/native-elements/tree/master/elements/ne-details/compare/@native-elements/ne-details@0.2.2...@native-elements/ne-details@0.2.4) (2018-09-06)
 
