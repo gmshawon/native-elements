@@ -56,7 +56,6 @@ Check the [live demo](https://ne-dialog.stackblitz.io/)
   --ne-dialog-y-padding: 2rem; /* unit */
   --ne-dialog-x-padding: 2rem; /* unit */
   --ne-dialog-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* box-shadow */
-  --ne-dialog-index: 999999999999; /* number */
   --ne-dialog-max-width: 40rem; /* unit */
 
   /* Backdrop API */
