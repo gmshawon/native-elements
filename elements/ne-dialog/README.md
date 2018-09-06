@@ -15,7 +15,16 @@ Native HTML `<dialog>` element with **CSS API** that give you superpowers. 🕶
 ## Example
 
 ```html
-  <dialog>Confirm</dialog>
+  <dialog ne-dialog>
+    <header><h1>Dialog Header</h1></header>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minus aut laborum eum, obcaecati odit  accusantium enim tempore, nam suscipit cumque repellendus at. Repellendus molestias ea labore error iste dicta.
+    </p>
+    <footer>
+      <button ne-button>Yeah, confirm</button>
+      <button ne-button>Cancel</button>
+    </footer>
+  </dialog>
 ```
 
 ```css
@@ -33,7 +42,24 @@ Check the [live demo](https://ne-dialog.stackblitz.io/)
 
 ```css
 * {
+  /* Border API */
+  --ne-dialog-border: 0; /* border */
 
+  /* Background API */
+  --ne-dialog-background: #FFF; /* background */
+
+  /* Misc API */
+  --ne-dialog-radius: 5px; /*  border-radius */
+  --ne-dialog-y-padding: 2rem; /* unit */
+  --ne-dialog-x-padding: 2rem; /* unit */
+  --ne-dialog-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* box-shadow */
+  --ne-dialog-index: 999999999999; /* number */
+  --ne-dialog-max-width: 40rem; /* unit */
+
+  /* Backdrop API */
+  --ne-dialog-backdrop: rgba(0, 0, 0, 0.3); /* background */
+  --ne-dialog-backdrop-filter: blur(10px); /* backdrop-filter */
+}
 ```
 
 ## Install
