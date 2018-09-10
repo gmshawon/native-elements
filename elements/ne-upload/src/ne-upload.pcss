@@ -3,7 +3,48 @@
 [ne-upload] {
   @mixin upload-config;
 
-  &::-webkit-file-upload-button {
-    display: none;
+  display: grid;
+  position: relative;
+  background: var(--uploadBackground);
+  border-radius: var(--uploadRadius);
+  padding: var(--uploadPadding);
+  place-content: center;
+  place-items: center;
+
+  &:hover {
+    cursor: alias;
+  }
+
+  & > input[type='file'] {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: var(--uploadImage);
+  }
+
+  &::after {
+    content: attr(data-content);
+    margin: auto;
+    font-weight: var(--uploadLabelWeight);
+    font-size: var(--uploadLabelFontSize);
+  }
+
+  &:focus-within,
+  &:active {
+    box-shadow: 0 0 0 var(--uploadOutlineWidth) var(--uploadOutlineColor);
   }
 }
