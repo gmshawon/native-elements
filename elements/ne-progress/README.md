@@ -45,7 +45,7 @@ Check the [live demo](https://ne-progress.stackblitz.io/)
 
   /* Background API */
   --ne-progress-background: hsl(220, 10%, 95%); /* color */
-  --ne-progress-filled-color: var(--ne-progress-border-color); /* color */
+  --ne-progress-filled-color: hsl(233, 64%, 62%); /* color */
 
   /* Stripes API */
   --ne-progress-stripe-size: 16px; /* unit */

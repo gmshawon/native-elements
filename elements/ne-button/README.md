@@ -61,14 +61,14 @@ Check the [live demo](https://ne-button.stackblitz.io/)
   --ne-button-hover-background: hsl(233, 64%, 52%); /*  background  */
   --ne-button-focus-background: var(--ne-button-hover-background); /*  background  */
   --ne-button-active-background: hsl(233, 64%, 32%); /*  background  */
-  --ne-button-disabled-background: hsl(220, 10%, 95%); /*  background  */
+  --ne-button-disabled-background: hsl(233, 64%, 96%); /*  background  */
 
   /* Foreground API */
   --ne-button-foreground: #FFF; /*  color */
   --ne-button-hover-color: var(--ne-button-color); /*  color */
   --ne-button-focus-color: var(--ne-button-color); /*  color */
   --ne-button-active-color: var(--ne-button-color); /*  color */
-  --ne-button-disabled-color: hsl(220, 10%, 60%); /*  color */
+  --ne-button-disabled-color: hsl(233, 34%, 72%); /*  color */
 
   /* Icon API */
   --ne-button-icon-margin: calc(2rem / 2.2); /*  unit */
