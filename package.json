@@ -26,8 +26,8 @@
     "build": "npm run lint && gulp --silent",
     "dev": "gulp dev",
     "clean": "gulp clean",
-    "release": "git pull && npm run build && lerna publish --conventional-commits",
-    "release-nonpm": "git pull && npm run build && lerna publish --skip-npm --conventional-commits"
+    "release": "git pull && npm run build && lerna publish from-git --conventional-commits",
+    "release-nonpm": "git pull && npm run build && lerna version --conventional-commits"
   },
   "files": [
     "elements"
