@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/equinusocio/native-elements/tree/master/elements/ne-progress/compare/@native-elements/ne-progress@0.1.8...@native-elements/ne-progress@0.2.0) (2018-10-12)
+
+**Note:** Version bump only for package @native-elements/ne-progress
+
+
+
+
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/equinusocio/native-elements/tree/master/elements/ne-progress/compare/@native-elements/ne-progress@0.1.6...@native-elements/ne-progress@0.1.8) (2018-09-06)
 
