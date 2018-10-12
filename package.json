@@ -23,7 +23,6 @@
   },
   "scripts": {
     "lint": "stylelint elements/**/*.pcss",
-    "precommit": "npm run lint",
     "build": "npm run lint && gulp --silent",
     "dev": "gulp dev",
     "clean": "gulp clean",
@@ -68,5 +67,10 @@
     "postcss-preset-env": "6.0.7",
     "postcss-reporter": "6.0.0",
     "stylelint": "9.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
